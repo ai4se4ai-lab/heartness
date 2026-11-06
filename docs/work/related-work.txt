@@ -1,0 +1,1881 @@
+Several recent papers address the use of Model-Driven Engineering (MDE) and model checking to formally represent and analyze the evolution of software artifacts, focusing on traceability, provenance, consistency, and the correspondence between models and implementations:
+
+The paper "Model-Driven Discipline for Multi-Agent LLMs: Requirement-to-Verification Generation of Traceable System Models" (2026) proposes an MDE approach with automated traceability and formal verification using CSP model checking, supporting change-impact analysis and executable traceability across heterogeneous models.
+"Towards Continuous Assurance with Formal Verification and Assurance Cases" (2025) describes a model-driven assurance pipeline that automatically regenerates traceable assurance arguments as specifications and verification results evolve, integrating formal verification and traceability.
+"Towards a Model-Based Framework for Automated Traceable Systems and Probabilistic Model Checking" (2025) integrates MDE with probabilistic model checking, automating verification of evolving requirements via bidirectional traceability links between requirements and behavioral models.
+"Model-based Security Engineering for Evolving Systems" (2010) uses UMLsec model verification with traceability links to implementation, updating mappings during refactoring to support evolving software.
+Other relevant works in the results address consistency management, model repair, and bounded verification in evolving model-driven systems. These collectively cover formal representations of state and transitions, traceability, and the challenges of maintaining correspondence between models and implementations as systems evolve.
+
+Model-Driven Discipline for Multi-Agent LLMs: Requirement-to-Verification Generation of Traceable System Models
+Ran Wei
+Le-Tian Zhu
+Haochi Wang
++5 authors
+Xiang Ji
+•
+
+arXiv.org
+•
+
+2026
+Uses MDE to generate heterogeneous system models with executable traceability and automated change-impact analysis, and formally verifies generated behaviour models with CSP model checking.
+
+
+Towards Continuous Assurance with Formal Verification and Assurance Cases
+Dhaminda B. Abeywickrama
+Michael Fisher
+Frederic Wheeler
+Louise A. Dennis
+•
+
+arXiv.org
+•
+
+2025
+Uses model-driven transformations to regenerate assurance arguments from formal verification artefacts as specifications and results change, supporting traceability in evolving autonomous-system assurance.
+
+
+Towards a Model-Based Framework for Automated Traceable Systems and Probabilistic Model Checking
+Haochi Wang
+Ying-Quan Wang
+Ran Wei
+Xu-Dong Zhao
+•
+
+International Conference Civil Engineering and Architecture
+•
+
+2025
+Integrates MDE with probabilistic model checking and automates verification of evolving requirements via bidirectional traceability links between requirement and behavioral models.
+
+
+Infrastructure and tool support for MDE in the petrochemical industry automation
+C. E. X. Correia
+L. B. Becker
+F. Basso
+•
+
+Journal of the Brazilian Computer Society
+•
+
+2025
+Uses MDE to interoperate simulation and deployment tools for industrial automation, reducing redundant modeling and inconsistencies; it does not discuss formal verification or model checking for software evolution.
+
+
+ReMoDeL: A Pure Functional Object-Oriented Concept Language for Models, Metamodels and Model Transformation
+Anthony J. H. Simons
+•
+
+International Conference on Model-Driven Engineering and Software Development
+•
+
+2025
+Uses a model-driven language for metamodels, models, and transformations, with transformations amenable to formal proof; discusses model translation, correction, refactoring, and improvement rather than explicit traceability or model checking.
+
+
+Modeling the composition of analysis components and automatic constraint checking for semantic soundness
+Bahareh Taghavi
+S. Weber
+Adrian Marin
++4 authors
+Robert Heinrich
+•
+
+Journal of Systems and Software
+•
+
+2025
+Uses model transformation and constraint checking to validate semantic soundness of architectural models; related to consistency/correspondence, but not clearly about software evolution or formal verification of evolving systems.
+
+
+A Formal Framework for Metamodeling in the Context of MDE
+L. Favre
+•
+
+Journal of universal computer science (Online)
+•
+
+2025
+Uses formal methods to specify and translate MOF/Nereus metamodels, helping reduce metamodel inconsistencies in MDE; it is related to evolution concerns but not explicit model checking or traceability.
+
+
+Towards Formal Specification of Agent-based Transport Models
+J. Kübler
+P. Vortisch
+•
+
+ANT/EDI40
+•
+
+2025
+Proposes a metamodel and DEVS mapping for agent-based transport models, enabling validation and code generation; it also supports reuse/integration of behavioral models, but not explicit software evolution or traceability.
+
+
+An Ecore Metamodel for the W3C PROV Provenance Data Model
+Marcos Alves Vieira
+G. Velasco
+Sérgio T. Carvalho
+•
+
+Brazilian Symposium on Information Systems
+•
+
+2024
+Uses MDE to build an Ecore metamodel for W3C PROV provenance, with strong focus on provenance representation and metamodel fidelity; no formal verification or model checking.
+
+
+Automatic Generation of Models from Their Metamodels Using Multilayer Perceptron Network
+Karima Berramla
+E. A. Deba
+•
+
+International Conference on Model-Driven Engineering and Software Development
+•
+
+2024
+Uses MDE to automatically generate models from metamodels and emphasizes conformity/constraint verification, but does not discuss formal model checking or traceability/provenance in evolving systems.
+
+
+A Metamodel for Enhancing Program Increment (PI) Planning: Towards a Framework for Modeling and Impact Analysis
+F. Somda
+Désiré Guel
+Kisito K. Kabore
+•
+
+Proceedings of the 6th Computer Science Research Days, JRI 2023, 18-20 December 2023, Ouagadougou, Burkina Faso
+•
+
+2024
+Uses a metamodel for PI planning and impact analysis, with general MDE discussion of verification, traceability, and consistency, but not formal model checking or evolving model-driven systems.
+
+
+Model-Based System Engineering of the Internet of Things: A Bibliometric Literature Analysis
+Ehsan Ahmad
+•
+
+IEEE Access
+•
+
+2023
+Surveys MBSE/MDE for IoT and cites work combining model-driven development with formal verification, plus history-aware model-driven techniques for runtime adaptation.
+
+
+UCLAONT: Ontology-Based UML Class Models Verification Tool
+A. Rajab
+Abdul Hafeez
+Asadullah Shaikh
++3 authors
+Khairan D. Rajab
+•
+
+Applied Sciences
+•
+
+2022
+Uses ontology and a reasoner to verify UML class models for satisfiability, consistency, XOR constraints, and dependency relationships; it is MDE-related but not focused on software evolution.
+
+
+The Need for a Meta-Architecture for Robot Autonomy
+Stalin Muñoz Gutiérrez
+Gerald Steinbauer-Wagner
+•
+
+AREA@IJCAI-ECAI
+•
+
+2022
+Uses model-driven engineering for robot autonomy and mentions model checkers and consistency in transformations, but not software evolution or explicit traceability/provenance work.
+
+
+Multi-Model Evolution through Model Repair
+Patrick Stünkel
+H. König
+Adrian Rutle
+Yngve Lamo
+•
+
+Journal of Object Technology
+•
+
+2021
+Uses model repair to manage evolving inter-related MDE models and preserve global consistency across changes; it is about evolution, but not formal verification or model checking.
+
+
+More Than Two Decades of Research on Verification of UML Class Models: A Systematic Literature Review
+Asadullah Shaikh
+Abdul Hafeez
+A. Wagan
++2 authors
+Mana Saleh al Reshan
+•
+
+IEEE Access
+•
+
+2021
+Reviews formal verification approaches for UML class models in MDE, focusing on correctness and consistency checking rather than software evolution or traceability.
+
+
+Integrated model‐driven engineering of blockchain applications for business processes and asset management
+Qing-Hua Lu
+An Binh Tran
+Ingo Weber
++5 authors
+Ross Jeffery
+•
+
+Software, Practice & Experience
+•
+
+2020
+Uses model-driven engineering to generate blockchain smart contracts and keep deployed code aligned with the model, but does not focus on formal verification/model checking or evolving systems.
+
+
+Preparatory Reflections on Safe Context-adaptive Software (Position Paper)
+Dominik Grzelak
+U. Assmann
+•
+
+International Conference on Internet of Things, Big Data and Security
+•
+
+2020
+Discusses model-driven engineering for adapting and transforming software, and mentions model checking for correctness, but not specifically software evolution verification or traceability/provenance/consistency mechanisms.
+
+
+Flexible Production Systems: Automated Generation of Operations Plans Based on ISA-95 and PDDL
+Bernhard Wally
+J. Vyskočil
+Petr Novák
++4 authors
+M. Wimmer
+•
+
+IEEE Robotics and Automation Letters
+•
+
+2019
+Uses MDE to transform production-system models into planning files and merge generated plans back into the model; mentions model checking, but not software evolution or explicit traceability/provenance work.
+
+
+Which is the Impact of adding Traceability support over the Quality of ATL Model Transformations
+Iván Santiago
+J. M. Vara
+V. de Castro
+Esperanza Marcos
+•
+
+2018
+Uses traceability support in ATL model transformations to study how making implicit traces explicit affects transformation quality in MDE.
+
+
+On the application of model-driven engineering in data reengineering
+Francisco Javier Bermudez Ruiz
+J. Molina
+O. García
+•
+
+Information Systems
+•
+
+2017
+Uses MDE for data reengineering in a migration scenario, but does not discuss formal verification/model checking or explicit traceability/provenance mechanisms.
+
+
+Probabilistic Failure Analysis in Model Validation & Verification
+Ning Ge
+M. Pantel
+X. Crégut
+•
+
+arXiv.org
+•
+
+2016
+Uses model checking and simulation-based validation for fault localization in MDE, with a matching-degree computation between HMM and simulation model rather than explicit evolution traceability.
+
+
+Bounded Verification of Software Models: Challenges and Opportunities
+R. Clarisó
+•
+
+2015
+Uses bounded formal verification for model-driven engineering models and discusses correctness of models and transformations, which is close to correspondence/consistency in evolving MDE systems.
+
+
+Change-driven Incremental Symbolic Execution of Evolving State Machines
+Amal Khalil
+•
+
+SRC@MoDELS
+•
+
+2015
+Uses incremental symbolic execution to re-verify evolving state-machine models after each refinement, supporting model evolution analysis rather than traceability-focused correspondence management.
+
+
+Model-Driven Software Engineering in Practice
+Marco Brambilla
+Jordi Cabot
+M. Wimmer
+•
+
+Synthesis Lectures on Software Engineering
+•
+
+2012
+Introduces model-driven engineering in software development practice and mentions consistency/correctness concerns, but does not focus on formal verification, model checking, or evolving traceability/provenance.
+
+
+Model Validation in Ontology Based Transformations
+J. Almendros-Jiménez
+L. Iribarne
+•
+
+International Workshop on Automated Specification and Verification of Web Sites
+•
+
+2012
+Uses logic-programming-based validation for ODM/UML model transformations, checking pre/postconditions and invariants; it is about model correctness rather than software evolution or traceability.
+
+
+Formal Model-Driven Engineering: Generating Data and Behavioural Components
+Chen-Wei Wang
+J. Davies
+•
+
+International Workshop on Formal Techniques for Safety-Critical Systems
+•
+
+2012
+Uses formal techniques to verify model transformations in MDE, focusing on semantics-preserving generation from object models to SQL; it is not specifically about software evolution.
+
+
+Work Package 4-Consistency checking & co-evolution University in Focus : University of Louvain ( UCL ) Moves Newsletter
+K. Mens
+Sergio Castro
+A. Lozano
++5 authors
+Pierre-Yves Schobbens
+•
+
+2011
+Covers consistency checking and inconsistency management in model-driven engineering, and also mentions formal verification research within a software evolution-focused MoVES newsletter.
+
+
+Rigorous identification and encoding of trace-links in model-driven engineering
+R. Paige
+Nikolaos Drivalos
+D. Kolovos
++3 authors
+S. Zschaler
+•
+
+Journal of Software and Systems Modeling
+•
+
+2011
+Uses semantically rich trace-links to maintain and analyse traceability, consistency, and coherence across models in end-to-end MDE processes.
+
+
+Security in Model-driven Architecture Organisation Workshop Chairs Programme Committee Supporting Organisations Model-based Security Engineering for Evolving Systems Software Vulnerabilities, Prevention and Detection Methods: a Review 1
+Sintef Erkuden Rios
+•
+
+2010
+Uses UMLsec model verification with traceability links to implementation, and updates the mapping during refactoring to support evolving software.
+
+
+Traceability Mechanism for Error Localization in Model Transformation
+Vincent Aranega
+Jean-Marie Mottu
+Anne Etien
+J. Dekeyser
+•
+
+International Conference on Software and Data Technologies
+•
+
+2009
+Uses traceability across model transformations and transformation chains to analyze impacts of model evolutions and localize transformation errors.
+
+
+Model-driven Development of Complex Software: A Research Roadmap
+R. France
+Bernhard Rumpe
+•
+
+Future of Software Engineering (FOSE '07)
+•
+
+2007
+Discusses MDE research challenges and notes model checking integration plus maintaining a web of models, but only at a roadmap level rather than a focused evolution/traceability study.
+
+
+
+
+@article{Wei2026ModelDrivenDFA,
+  title={Model-Driven Discipline for Multi-Agent LLMs: Requirement-to-Verification Generation of Traceable System Models},
+  author={Ran Wei and Le-Tian Zhu and Haochi Wang and Ruizhe Yang and Jia-Peng Guan and Si-Yuan Ji and Yu-Chen Hu and Zhe Jiang and Xiang Ji},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2607.16708},
+  url={https://api.semanticscholar.org/CorpusId:290362499}
+}
+
+@article{Abeywickrama2025TowardsCAB,
+  title={Towards Continuous Assurance with Formal Verification and Assurance Cases},
+  author={Dhaminda B. Abeywickrama and Michael Fisher and Frederic Wheeler and Louise A. Dennis},
+  journal={ArXiv},
+  year={2025},
+  volume={abs/2511.14805},
+  url={https://api.semanticscholar.org/CorpusId:283103728}
+}
+
+@article{Wang2025TowardsAMC,
+  title={Towards a Model-Based Framework for Automated Traceable Systems and Probabilistic Model Checking},
+  author={Haochi Wang and Ying-Quan Wang and Ran Wei and Xu-Dong Zhao},
+  journal={2025 6th International Conference on Computer Engineering and Application (ICCEA)},
+  year={2025},
+  pages={01-06},
+  url={http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=\&arnumber=11103400}
+}
+
+@article{Correia2025InfrastructureATD,
+  title={Infrastructure and tool support for MDE in the petrochemical industry automation},
+  author={C. E. X. Correia and L. B. Becker and F. Basso},
+  journal={J. Braz. Comput. Soc.},
+  year={2025},
+  volume={31},
+  pages={488-507},
+  url={https://api.semanticscholar.org/CorpusId:280277788}
+}
+
+@inproceedings{Simons2025ReMoDeLAPE,
+  title={ReMoDeL: A Pure Functional Object-Oriented Concept Language for Models, Metamodels and Model Transformation},
+  author={Anthony J. H. Simons},
+  booktitle={International Conference on Model-Driven Engineering and Software Development},
+  year={2025},
+  url={https://api.semanticscholar.org/CorpusId:276775573}
+}
+
+@article{Taghavi2025ModelingTCF,
+  title={Modeling the composition of analysis components and automatic constraint checking for semantic soundness},
+  author={Bahareh Taghavi and S. Weber and Adrian Marin and Bernhard Rumpe and Sebastian St{\"u}ber and J. Hen{\ss} and Thomas Weber and Robert Heinrich},
+  journal={J. Syst. Softw.},
+  year={2025},
+  volume={231},
+  pages={112637},
+  url={https://api.semanticscholar.org/CorpusId:281664145}
+}
+
+@article{Favre2025AFFG,
+  title={A Formal Framework for Metamodeling in the Context of MDE},
+  author={L. Favre},
+  journal={J. Univers. Comput. Sci.},
+  year={2025},
+  volume={31},
+  pages={338-362},
+  url={https://api.semanticscholar.org/CorpusId:277296756}
+}
+
+@inproceedings{Kbler2025TowardsFSH,
+  title={Towards Formal Specification of Agent-based Transport Models},
+  author={J. K{\"u}bler and P. Vortisch},
+  booktitle={ANT/EDI40},
+  year={2025},
+  url={https://api.semanticscholar.org/CorpusId:278116306}
+}
+
+@article{Vieira2024AnEMI,
+  title={An Ecore Metamodel for the W3C PROV Provenance Data Model},
+  author={Marcos Alves Vieira and G. Velasco and S{\'e}rgio T. Carvalho},
+  journal={Proceedings of the 20th Brazilian Symposium on Information Systems},
+  year={2024},
+  url={https://api.semanticscholar.org/CorpusId:269987680}
+}
+
+@inproceedings{Berramla2024AutomaticGOJ,
+  title={Automatic Generation of Models from Their Metamodels Using Multilayer Perceptron Network},
+  author={Karima Berramla and E. A. Deba},
+  booktitle={International Conference on Model-Driven Engineering and Software Development},
+  year={2024},
+  url={https://api.semanticscholar.org/CorpusId:267946848}
+}
+
+@article{Somda2024AMFK,
+  title={A Metamodel for Enhancing Program Increment (PI) Planning: Towards a Framework for Modeling and Impact Analysis},
+  author={F. Somda and D{\'e}sir{\'e} Guel and Kisito K. Kabore},
+  journal={Proceedings of the 6th Computer Science Research Days, JRI 2023, 18-20 December 2023, Ouagadougou, Burkina Faso},
+  year={2024},
+  url={https://api.semanticscholar.org/CorpusId:270632027}
+}
+
+@article{Ahmad2023ModelBasedSEL,
+  title={Model-Based System Engineering of the Internet of Things: A Bibliometric Literature Analysis},
+  author={Ehsan Ahmad},
+  journal={IEEE Access},
+  year={2023},
+  volume={11},
+  pages={50642-50658},
+  url={https://api.semanticscholar.org/CorpusId:258775574}
+}
+
+@article{Rajab2022UCLAONTOUM,
+  title={UCLAONT: Ontology-Based UML Class Models Verification Tool},
+  author={A. Rajab and Abdul Hafeez and Asadullah Shaikh and A. Alghamdi and Mana Saleh al Reshan and Mohammed Hamdi and Khairan D. Rajab},
+  journal={Applied Sciences},
+  year={2022},
+  url={https://api.semanticscholar.org/CorpusId:246421565}
+}
+
+@inproceedings{Gutirrez2022TheNFN,
+  title={The Need for a Meta-Architecture for Robot Autonomy},
+  author={Stalin Mu{\~n}oz Guti{\'e}rrez and Gerald Steinbauer-Wagner},
+  booktitle={AREA@IJCAI-ECAI},
+  year={2022},
+  url={https://api.semanticscholar.org/CorpusId:250698981}
+}
+
+@article{Stnkel2021MultiModelETO,
+  title={Multi-Model Evolution through Model Repair},
+  author={Patrick St{\"u}nkel and H. K{\"o}nig and Adrian Rutle and Yngve Lamo},
+  journal={J. Object Technol.},
+  year={2021},
+  volume={20},
+  pages={1:1-25},
+  url={https://api.semanticscholar.org/CorpusId:231793068}
+}
+
+@article{Shaikh2021MoreTTP,
+  title={More Than Two Decades of Research on Verification of UML Class Models: A Systematic Literature Review},
+  author={Asadullah Shaikh and Abdul Hafeez and A. Wagan and M. Alrizq and A. Alghamdi and Mana Saleh al Reshan},
+  journal={IEEE Access},
+  year={2021},
+  volume={PP},
+  pages={1-1},
+  url={https://api.semanticscholar.org/CorpusId:240003092}
+}
+
+@article{Lu2020IntegratedMEQ,
+  title={Integrated model‐driven engineering of blockchain applications for business processes and asset management},
+  author={Qing-Hua Lu and An Binh Tran and Ingo Weber and Hugo O'Connor and Paul Rimba and Xi-Wei Xu and M. Staples and Li-Ming Zhu and Ross Jeffery},
+  journal={Software: Practice and Experience},
+  year={2020},
+  volume={51},
+  pages={1059 - 1079},
+  url={https://api.semanticscholar.org/CorpusId:218889575}
+}
+
+@inproceedings{Grzelak2020PreparatoryROR,
+  title={Preparatory Reflections on Safe Context-adaptive Software (Position Paper)},
+  author={Dominik Grzelak and U. Assmann},
+  booktitle={International Conference on Internet of Things, Big Data and Security},
+  year={2020},
+  url={https://api.semanticscholar.org/CorpusId:219328063}
+}
+
+@article{Wally2019FlexiblePSS,
+  title={Flexible Production Systems: Automated Generation of Operations Plans Based on ISA-95 and PDDL},
+  author={Bernhard Wally and J. Vysko{\vc}il and Petr Nov{\'a}k and C. Huemer and R. {\vS}indel{\'a}ř and Petr Kadera and Alexandra Mazak and M. Wimmer},
+  journal={IEEE Robotics and Automation Letters},
+  year={2019},
+  volume={4},
+  pages={4062-4069},
+  url={https://api.semanticscholar.org/CorpusId:199541173}
+}
+
+@inproceedings{Santiago2018WhichITT,
+  title={Which is the Impact of adding Traceability support over the Quality of ATL Model Transformations},
+  author={Iv{\'a}n Santiago and J. M. Vara and V. de Castro and Esperanza Marcos},
+  booktitle={unknown},
+  year={2018},
+  url={https://api.semanticscholar.org/CorpusId:54002920}
+}
+
+@article{Ruiz2017OnTAU,
+  title={On the application of model-driven engineering in data reengineering},
+  author={Francisco Javier Bermudez Ruiz and J. Molina and O. Garc{\'i}a},
+  journal={Inf. Syst.},
+  year={2017},
+  volume={72},
+  pages={136-160},
+  url={https://doi.org/10.1016/j.is.2017.10.004}
+}
+
+@article{Ge2016ProbabilisticFAV,
+  title={Probabilistic Failure Analysis in Model Validation \& Verification},
+  author={Ning Ge and M. Pantel and X. Cr{\'e}gut},
+  journal={ArXiv},
+  year={2016},
+  volume={abs/1611.05083},
+  url={https://api.semanticscholar.org/CorpusId:15085701}
+}
+
+@inproceedings{Claris2015BoundedVOW,
+  title={Bounded Verification of Software Models: Challenges and Opportunities},
+  author={R. Claris{\'o}},
+  booktitle={unknown},
+  year={2015},
+  url={https://api.semanticscholar.org/CorpusId:58414734}
+}
+
+@inproceedings{Khalil2015ChangedrivenISX,
+  title={Change-driven Incremental Symbolic Execution of Evolving State Machines},
+  author={Amal Khalil},
+  booktitle={SRC@MoDELS},
+  year={2015},
+  url={https://ceur-ws.org/Vol-1503/04\_pap\_khalil.pdf}
+}
+
+@article{Brambilla2012ModelDrivenSEY,
+  title={Model-Driven Software Engineering in Practice},
+  author={Marco Brambilla and Jordi Cabot and M. Wimmer},
+  journal={Synthesis Lectures on Software Engineering},
+  year={2012},
+  url={https://doi.org/10.2200/s00441ed1v01y201208swe001}
+}
+
+@inproceedings{AlmendrosJimnez2012ModelVIZ,
+  title={Model Validation in Ontology Based Transformations},
+  author={J. Almendros-Jim{\'e}nez and L. Iribarne},
+  booktitle={International Workshop on Automated Specification and Verification of Web Sites},
+  year={2012},
+  url={https://api.semanticscholar.org/CorpusId:715629}
+}
+
+@inproceedings{Wang2012FormalMEAA,
+  title={Formal Model-Driven Engineering: Generating Data and Behavioural Components},
+  author={Chen-Wei Wang and J. Davies},
+  booktitle={International Workshop on Formal Techniques for Safety-Critical Systems},
+  year={2012},
+  url={https://api.semanticscholar.org/CorpusId:15025670}
+}
+
+@inproceedings{Mens2011WorkP4AB,
+  title={Work Package 4-Consistency checking \& co-evolution University in Focus : University of Louvain ( UCL ) Moves Newsletter},
+  author={K. Mens and Sergio Castro and A. Lozano and J. Brichau and Coen De Roover and E. Abbasi and Andreas Classen and P. Heymans and Pierre-Yves Schobbens},
+  booktitle={unknown},
+  year={2011},
+  url={http://moves.vub.ac.be/\_media/info/newsletter/newsletter\_4.pdf}
+}
+
+@article{Paige2011RigorousIAAC,
+  title={Rigorous identification and encoding of trace-links in model-driven engineering},
+  author={R. Paige and Nikolaos Drivalos and D. Kolovos and K. Fernandes and Christopher Power and G. K. Olsen and S. Zschaler},
+  journal={Software \& Systems Modeling},
+  year={2011},
+  volume={10},
+  pages={469-487},
+  url={https://api.semanticscholar.org/CorpusId:10318811}
+}
+
+@inproceedings{Rios2010SecurityIMAD,
+  title={Security in Model-driven Architecture Organisation Workshop Chairs Programme Committee Supporting Organisations Model-based Security Engineering for Evolving Systems Software Vulnerabilities, Prevention and Detection Methods: a Review 1},
+  author={Sintef Erkuden Rios},
+  booktitle={unknown},
+  year={2010},
+  url={https://www.utwente.nl/ctit/library/proceedings/wp0906.pdf}
+}
+
+@inproceedings{Aranega2009TraceabilityMFAE,
+  title={Traceability Mechanism for Error Localization in Model Transformation},
+  author={Vincent Aranega and Jean-Marie Mottu and Anne Etien and J. Dekeyser},
+  booktitle={International Conference on Software and Data Technologies},
+  year={2009},
+  url={https://api.semanticscholar.org/CorpusId:19003961}
+}
+
+@article{France2007ModeldrivenDOAF,
+  title={Model-driven Development of Complex Software: A Research Roadmap},
+  author={R. France and Bernhard Rumpe},
+  journal={Future of Software Engineering (FOSE '07)},
+  year={2007},
+  pages={37-54},
+  url={https://api.semanticscholar.org/CorpusId:14920149}
+}
+
+
+
+----
+Recent research addresses the challenge of traceability and provenance in self-evolving AI systems, particularly regarding debugging, maintenance, and accountability. Key findings include:
+
+Several papers propose technical solutions for versioning and provenance in evolving AI software, such as MLOps frameworks, branching development graphs, and version-aware infrastructures. These approaches aim to ensure that every modification—whether generated automatically or by developers—is recorded with its rationale, dependencies, and validation results.
+
+Governance and accountability are addressed through cryptographic techniques, immutable logs, and co-versioning patterns. These methods help trace the propagation of changes, identify affected components, and support selective repair or rollback when errors are discovered.
+
+Surveys and empirical studies highlight the importance of execution provenance and evidence tracing, especially in large language model (LLM) agents and agentic software engineering. These works emphasize the need for transparent, auditable records to establish accountability and facilitate debugging.
+
+The literature also discusses the risks of uncontrolled accumulation of changes in self-modifying systems, underscoring the necessity of treating every evolutionary change as a versioned, traceable software modification—similar to best practices in traditional software engineering, but adapted for autonomous and AI-driven environments.
+
+Choose Your Own Adventure: Non-Linear AI-Assisted Programming with EvoGraph
+Vassilios Exarhakos
+Jinghui Cheng
+Jin L. C. Guo
+•
+
+arXiv.org
+•
+
+2026
+Uses a branching development graph to record AI-assisted coding history, compare and merge states, and support inspection, rewinding, and accountability in AI-mediated programming.
+
+
+AI Identification: An Integrated Framework for Sustainable Governance in Digital Enterprises
+D. Gao
+Jing-Dao Chen
+Shahram Rahimi
+•
+
+Sustainability
+•
+
+2026
+Uses weight-level IDs, hashing, blockchain registration, and change screening to support lifecycle traceability, versioning, and accountability for evolving AI systems.
+
+
+From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents
+Yi-Qi Wang
+Jia-Qi Zhang
+Tao-Tao Cai
++7 authors
+Yan-Min Zhu
+•
+
+arXiv.org
+•
+
+2026
+Uses execution provenance and evidence tracing to support verification, debugging, audit, and end-to-end accountability in LLM agents; only loosely touches version-control-like concerns through trace management.
+
+
+AI Commit Ledger: Bridging the AI Transparency Gap in Version Control with Deterministic Session Attribution
+Piyush A. Gaikwad
+•
+
+International Journal of Advanced Research in Science, Communication and Technology
+•
+
+2026
+Uses Git-native provenance records and AI receipts to track AI-generated commits, supporting attribution and governance; only indirectly touches debugging and accountability rather than adaptive self-modifying AI.
+
+
+BonsAIDE: An Extended Vision for Human–AI Interaction in IDEs
+David Moreno-Lumbreras
+R. G. Kula
+Christoph Treude
+•
+
+ACM Transactions on Software Engineering and Methodology
+•
+
+2026
+Uses branching, pruning, and provenance tracking for AI-generated code, with version-control support and sandboxing; also touches validation and licensing/ethics for accountability.
+
+
+From Traceability to Justifiability: Accountability Structures in Agentic Software Engineering
+Rashid Azarang
+•
+
+arXiv.org
+•
+
+2026
+Measures traceability and accountability records for agentic AI deployments, highlights weak versioning practices, and examines assurance gaps in published evidence for shipped systems.
+
+
+BONSAI: A Mixed-Initiative Workspace for Human-AI Co-Development of Visual Analytics Applications
+Thilo Spinner
+Matthias Miller
+Mennatallah El-Assady
+•
+
+arXiv.org
+•
+
+2026
+Uses layered provenance and actor attribution to audit, compare, and roll back human-AI changes; also references workflow versioning and maintenance-oriented review processes.
+
+
+Provenance Tracking in AI Compilers through the Lens of Coalgebra
+Zilu Tian
+Liying Liu
+•
+
+arXiv.org
+•
+
+2026
+Uses coalgebraic provenance tracking to preserve tensor/operator lineage through aggressive compiler rewrites, supporting debugging and transformation validation; also touches reproducibility and accountability in ML workflows.
+
+
+The Ground Is Shifting: A Reflection on the Foundations of Software Measurement
+Thomas Bock
+Audris Mockus
+Bogdan Vasilescu
+•
+
+Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering
+•
+
+2026
+Uses commit-level provenance metadata to track AI-authored changes and support transparency, traceability, and accountability; also proposes AI-assisted replication to reassess evolving software-engineering findings.
+
+
+Generative AI for trustworthy systems - Towards a health check model
+Jan Bosch
+Rick Kazman
+Henry Muccini
+H. Olsson
+•
+
+2026
+Uses a health-check model for GenAI-assisted systems, with traceability/comprehensibility, debugging difficulty, and governance dimensions that support oversight and accountability.
+
+
+On Automated and Explainable Provenance of AI-Generated Code
+Alejandro Velasco
+Nathan Wintersgill
+Trevor Stalnaker
++1 authors
+Denys Poshyvanyk
+•
+
+IEEE International Conference on Software Maintenance and Evolution
+•
+
+2026
+Uses explainable provenance to trace AI-generated code back to prompts, training data, and model components, supporting compliance and post-hoc investigation rather than self-modification control.
+
+
+Self-Evolving Analytics Pipelines for Reliable AI-Augmented Software Systems
+P. Pareek
+•
+
+Journal of Intelligent Decision Making and Information Science
+•
+
+2026
+Uses self-evolving analytics pipelines to monitor drift, control promotion, and assemble accountability evidence for AI systems; it is strongest on accountability, with lighter links to traceability, versioning, and maintenance.
+
+
+Operationalising artificial intelligence bills of materials for verifiable AI provenance and lifecycle assurance
+P. Radanliev
+Omar Santos
+C. Maple
+Kay Atefi
+•
+
+Frontiers Comput. Sci.
+•
+
+2026
+Uses an AIBOM schema to capture model lineage and training provenance, with cryptographic validation and automated auditing for lifecycle assurance; it is adjacent to versioning, maintenance, and accountability rather than self-modifying AI specifically.
+
+
+Architectural Accountability, Decision Traceability, and Governance in Artificial Intelligence–Driven Mission-Critical Data Platforms
+A. Srinivas
+Ajay Srinivas Kiran Gemidi
+•
+
+Journal of Information Systems Engineering & Management
+•
+
+2026
+Uses governance controls, versioned registries, and audit records to make AI decisions traceable and defensible; also addresses model drift and accountability in regulated platforms.
+
+
+Operational Identity: A Finite Audit of Declared and Implemented Rules of Sameness
+Denise M. Case
+•
+
+arXiv.org
+•
+
+2026
+Uses audit-style identity comparisons to support provenance and accountability analysis for AI agents; only lightly touches versioning and debugging through divergence detection.
+
+
+Rethinking Issue Resolution for AI/ML Systems
+Ahmed Adnan
+Mushfiqur Rahman
+Antu Saha
+Oscar Chaparro
+•
+
+IEEE International Conference on Software Maintenance and Evolution
+•
+
+2026
+Uses issue-resolution findings to propose maintenance support for AI/ML systems, including provenance, coordinated artifact changes, and human-AI collaboration for debugging and verification.
+
+
+Accountable Autonomous Systems: A Provenance-Aware Multiagent Approach
+T. Sirqueira
+Marx L. Viana
+Elder Cirilo
++2 authors
+Carlos J. P. Lucena
+•
+
+IEEE Access
+•
+
+2026
+Uses provenance-aware tracing to explain autonomous multiagent decisions and support accountability, with some overlap on debugging via execution traces; it does not address version control or self-modifying evolution.
+
+
+"You Can't Open an LLM With a Screwdriver": The De-Democratization of Software
+Zi-Xuan Feng
+Ítalo Santos
+Kostadin Damevski
+Anita Sarma
+•
+
+arXiv.org
+•
+
+2026
+Uses provenance, governance, and accountability framing for AI-generated software; discusses inspection, maintenance, and post-deployment responsibility, but not self-modifying system version control.
+
+
+Where Accountability Lives: Mapping Human Responsibility to Workflow Artifacts in Agentic Software Development
+Sabry E. Farrag
+Youssef Saber
+•
+
+arXiv.org
+•
+
+2026
+Maps responsibility, verification, and record-keeping across agentic coding workflows; also touches provenance and repository events, but not debugging or maintenance.
+
+
+Bridging the Gap on AI-Assisted Scientific Software Development Through Transparency and Traceability
+Chaitanya Bhave
+P. Simon
+Casey T. Icenhour
++3 authors
+Christopher S. Ritter
+•
+
+arXiv.org
+•
+
+2026
+Uses traceability, commit-level provenance, and human accountability to govern AI-assisted scientific software development; only indirectly addresses self-modifying or adaptive AI systems.
+
+
+Agentic Pipelines in Embedded Software Engineering: Emerging Practices and Challenges
+Si-Min Sun
+Miroslaw Staron
+•
+
+IEEE International Conference on Software Analysis, Evolution, and Reengineering
+•
+
+2026
+Uses embedded-software case study to discuss reproducibility, versioning, traceability, and governance challenges for generative AI workflows, with some accountability and maintenance implications.
+
+
+Fine-Grained Traceability for Transparent ML Pipelines
+Li-Ping Chen
+Mu-Jie Liu
+Haytham M. Fayek
+•
+
+The Web Conference
+•
+
+2026
+Uses verifiable traceability and tamper-evident logging to reconstruct sample histories in ML pipelines, with some support for auditing, reproducibility, and accountability rather than self-modifying AI specifically.
+
+
+An (Updated) Overview of Data Provenance: Concepts, Challenges and Opportunities
+Chrysanthi Kosyfaki
+Paul Groth
+•
+
+SIGMOD Companion
+•
+
+2026
+Uses provenance to trace data transformations, diagnose quality issues, and support transparency/accountability in complex AI pipelines, but does not address self-modifying AI directly.
+
+
+Is US Defense Acquisition Ready to Acquire AI-Enabled Capabilities? Assessing the DoD Software Acquisition Pathway Through a Scenario-Based Policy Analysis
+Daniel Lugo
+James C. Davis
+•
+
+arXiv.org
+•
+
+2026
+Uses scenario-based policy analysis to assess AI acquisition governance, highlighting provenance, lifecycle management, monitoring, and human oversight for evolving AI capabilities.
+
+
+The Grand Software Supply Chain of AI Systems
+Carmine Cesarano
+M. Monperrus
+•
+
+arXiv.org
+•
+
+2026
+Analyzes AI supply-chain properties like versioning, traceability, observability, and verifiability, which support provenance, reproducibility, and attribution, but not self-modifying AI specifically.
+
+
+Lowering barriers to federated learning: collaboration management and provenance
+Marius Schlegel
+Daniel Scheliga
+Kai-Uwe Sattler
++1 authors
+Patrick Mäder
+•
+
+Journal of Big Data
+•
+
+2026
+Uses provenance graphs and Git/MLflow integration to trace FL artifacts, assess configuration impacts, and improve auditability, but it does not address self-modifying AI systems directly.
+
+
+Rethinking Data Quality for AI-Driven Systems: Evidence from Practitioner Interviews
+Hariharan Gopinath
+Jan Bosch
+H. Olsson
+•
+
+2026
+Uses lifecycle assurance and lineage to attribute model behavior, diagnose end-to-end failures, and support trustworthy AI data governance.
+
+
+AGL-1: The Enterprise AI Governance Layer as a Control Plane for Trusted Enterprise Intelligence
+Roopam W. Sure
+•
+
+arXiv.org
+•
+
+2026
+Uses governance and provenance controls to trace AI actions, support audits, and investigate incidents across evolving enterprise AI workflows.
+
+
+Rethinking Software Engineering for Agentic AI Systems
+Mamdouh Alenezi
+•
+
+arXiv.org
+•
+
+2026
+Uses verification-first workflows, human oversight gates, and traceability-oriented specifications to manage AI-generated code, with some discussion of maintenance, evolving outputs, and accountability.
+
+
+ReqToCode: Embedding Requirements Traceability as a Structural Property of the Codebase
+Thorsten Schlathoelter
+•
+
+arXiv.org
+•
+
+2026
+Uses build-time traceability and version-history coverage to track requirement/code changes, with branch-aware analysis and warning-to-failure lifecycle support; only indirectly related to self-modifying AI.
+
+
+LARGE LANGUAGE MODELS IN SCIENTIFIC RESEARCH WORKFLOWS: A SYSTEMATIC LITERATURE REVIEW OF APPLICATIONS, CHALLENGES, AND FUTURE DIRECTIONS
+Kolawole Olulana
+Chunling Du
+•
+
+Journal of Intelligent Systems and Applied Data Science
+•
+
+2026
+Uses provenance tracking, archived model versions, and reproducible reporting to support transparency and accountability in LLM-assisted research workflows.
+
+
+Attesting LLM Pipelines: Enforcing Verifiable Training and Release Claims
+Zhuo-Ran Tan
+Jeremy Singer
+Christos Anagnostopoulos
+•
+
+SIGSOFT FSE Companion
+•
+
+2026
+Uses attestation and provenance controls for LLM supply chains, with some overlap on lineage and governance, but it does not focus on self-modifying or adaptive AI maintenance.
+
+
+AI4SE and SE4AI Exploration: A Decade Looking Back and Forward
+H. S. Bank
+Daniel R. Herber
+T. Bradley
+•
+
+arXiv.org
+•
+
+2026
+Uses provenance tracking and human-in-the-loop governance for AI-generated artifacts, with broader guidance on AI adoption, assurance, and emerging certification frameworks.
+
+
+Scientific software development in the AI era: reproducibility, MLOps, and applications in soft matter physics
+N. Cheimarios
+•
+
+Frontiers of Physics
+•
+
+2025
+Uses MLOps and governance practices to make evolving AI software auditable, versioned, maintainable, and accountable, with explicit attention to reproducibility and regulatory frameworks.
+
+
+Code Digital Twin: A Knowledge Infrastructure for AI-Assisted Complex Software Development
+Xin Peng
+Chong Wang
+•
+
+2025
+Uses a version-aware knowledge infrastructure to preserve rationale, provenance, and traceability for evolving codebases, while supporting debugging, refactoring, and maintainability of AI-assisted development.
+
+
+PROV-AGENT: Unified Provenance for Tracking AI Agent Interactions in Agentic Workflows
+Renan Souza
+Amal Gueroudji
+Stephen Dewitt
++4 authors
+R. D. da Silva
+•
+
+eScience
+•
+
+2025
+Uses unified provenance to trace agent prompts, responses, and decisions across workflows, supporting root-cause debugging and reproducibility; it only indirectly touches versioning and accountability.
+
+
+Traceability and Accountability in Role-Specialized Multi-Agent LLM Pipelines
+Amine Barrak
+•
+
+2025 40th IEEE/ACM International Conference on Automated Software Engineering Workshops (ASEW)
+•
+
+2025
+Uses structured handoffs and saved records to trace agent actions, support root-cause debugging, and assign blame in multi-agent LLM pipelines.
+
+
+Responsible Agentic Reasoning and AI Agents: A Critical Survey
+Shaina Raza
+Ranjan Sapkota
+Manoj Karkee
+Christos Emmanouilidis
+•
+
+Robotics
+•
+
+2025
+Uses explicit reasoning traces, auditability, and model provenance to support accountable agent behavior; also touches logging and version tracking, but not self-modifying system maintenance.
+
+
+Evaluating User Safety Aspects of AI-Based Systems in Industrial Occupational Safety: A Critical Review of Research Literature
+Jaroslava Huber
+Bernhard Anzengruber-Tanase
+Martin Schobesberger
++2 authors
+Alois Ferscha
+•
+
+International Journal of Environmental Research and Public Health
+•
+
+2025
+Uses an AI trustworthiness framework covering accountability, traceability, and maintainability, but only in general safety-review terms rather than self-modifying systems.
+
+
+Blueprints of Trust: AI System Cards for End to End Transparency and Governance
+Huzaifa Sidhpurwala
+E. Fox
+Garth Mollett
++1 authors
+R. Zhukov
+•
+
+arXiv.org
+•
+
+2025
+Uses system cards and data provenance to improve transparency, auditability, and accountability; also mentions debugging support, but not self-evolving version control.
+
+
+Ensuring Ethical and Responsible Use of Artificial Intelligence
+Nazim Khan
+•
+
+Journal of Computer Science and Technology Studies
+•
+
+2025
+Uses audit trails, provenance tracking, runtime monitoring, and governance safeguards to support responsible AI operations, with only indirect coverage of self-modifying systems.
+
+
+Blockchain Timestamping for AI Model Lifecycle Tracking
+Sofia Dimitrova
+•
+
+Scientific Journal of Artificial Intelligence and Blockchain Technologies
+•
+
+2025
+Uses blockchain timestamping to record model lifecycle artifacts for provenance, reproducibility, monitoring, and auditability, but does not focus on self-modifying or self-evolving AI.
+
+
+MBSE Co‐Pilot: A Research Roadmap
+Wenheng Zhang
+Callum Cockburn
+Michael Henshaw
++3 authors
+Si-Yuan Ji
+•
+
+Systems Engineering
+•
+
+2025
+Uses dynamic traceability and dependency mapping to manage evolving MBSE models, with some attention to transparency and reliability, but not self-modifying AI specifically.
+
+
+AI Model Passport: Data and system traceability framework for transparent AI in health
+Varvara Kalokyri
+N. Tachos
+Charalampos Kalantzopoulos
++9 authors
+M. Tsiknakis
+•
+
+Computational and Structural Biotechnology Journal
+•
+
+2025
+Uses a model-passport framework to track provenance, versioning, and accountability for AI development and deployment; it is not about self-modifying or adaptive debugging.
+
+
+TAIBOM: Bringing Trustworthiness to AI-Enabled Systems
+Vadim Safronov
+Anthony McCaigue
+Nicholas Allott
+Andrew Martin
+•
+
+SPAIML@ECAI
+•
+
+2025
+Uses TAIBOM to improve AI component provenance, traceability, and accountability across evolving pipelines; mentions version-control challenges for retrained models, but not debugging or maintenance methods.
+
+
+Enhancing Transparency and Traceability in Healthcare AI: The AI Product Passport
+Ali Anil Sinaci
+S. Postaci
+Dogukan Çavdaroglu
++5 authors
+K. Lekadir
+•
+
+arXiv.org
+•
+
+2025
+Uses lifecycle documentation and automated provenance tracking to improve transparency, traceability, and auditable governance for healthcare AI; only indirectly touches version control and accountability, not self-modifying debugging.
+
+
+BOMs Away! Inside the Minds of Stakeholders: A Comprehensive Study of Bills of Materials for Software Systems
+Trevor Stalnaker
+Nathan Wintersgill
+Oscar Chaparro
++2 authors
+Denys Poshyvanyk
+•
+
+International Conference on Software Engineering
+•
+
+2023
+Uses SBOMs to improve software provenance, maintenance, and compliance; relevant to AI only indirectly through dependency tracking and stakeholder concerns, not self-modifying systems specifically.
+
+
+TraceFL: Interpretability-Driven Debugging in Federated Learning via Neuron Provenance
+Waris Gill
+Ali Anwar
+Muhammad Ali Gulzar
+•
+
+International Conference on Software Engineering
+•
+
+2023
+Uses neuron provenance to localize responsible clients in federated learning, supporting debugging and attribution; it only indirectly relates to evolution control and accountability rather than self-modifying AI governance.
+
+
+Responsible AI Pattern Catalogue: A Collection of Best Practices for AI Governance and Engineering
+Qing-Hua Lu
+Li-Ming Zhu
+Xi-Wei Xu
++2 authors
+Aurelie Jacquet
+•
+
+ACM Computing Surveys
+•
+
+2022
+Uses multi-level co-versioning and registries to track model, data, code, and configuration lineage, supporting traceability, versioning, maintenance, and accountability across AI lifecycles.
+
+
+Software engineering for Responsible AI: An empirical study and operationalised patterns
+Qing-Hua Lu
+Li-Ming Zhu
+Xi-Wei Xu
++2 authors
+Conrad Sanderson
+•
+
+2022 IEEE/ACM 44th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)
+•
+
+2021
+Uses co-versioning and immutable logs to preserve provenance and traceability, and discusses post-deployment monitoring; only indirectly touches accountability and maintenance.
+
+@article{Exarhakos2026ChooseYOA,
+  title={Choose Your Own Adventure: Non-Linear AI-Assisted Programming with EvoGraph},
+  author={Vassilios Exarhakos and Jinghui Cheng and Jin L. C. Guo},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2604.18883},
+  url={https://api.semanticscholar.org/CorpusId:287636618}
+}
+
+@article{Gao2026AIIAB,
+  title={AI Identification: An Integrated Framework for Sustainable Governance in Digital Enterprises},
+  author={D. Gao and Jing-Dao Chen and Shahram Rahimi},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2604.10473},
+  url={https://api.semanticscholar.org/CorpusId:285520343}
+}
+
+@article{Wang2026FromATC,
+  title={From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents},
+  author={Yi-Qi Wang and Jia-Qi Zhang and Tao-Tao Cai and Zi-Rui Liu and Qing-Qiang Sun and Ze-Qun Sun and Zhang-Kai Wu and Man-Qing Dong and Ming-Kai Zheng and Xuefei Yin and Yan-Min Zhu},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2606.04990},
+  url={https://api.semanticscholar.org/CorpusId:288976153}
+}
+
+@article{Gaikwad2026AICLD,
+  title={AI Commit Ledger: Bridging the AI Transparency Gap in Version Control with Deterministic Session Attribution},
+  author={Piyush A. Gaikwad},
+  journal={International Journal of Advanced Research in Science Communication and Technology},
+  year={2026},
+  url={https://api.semanticscholar.org/CorpusId:286658867}
+}
+
+@article{MorenoLumbreras2026BonsAIDEAEE,
+  title={BonsAIDE: An Extended Vision for Human–AI Interaction in IDEs},
+  author={David Moreno-Lumbreras and R. G. Kula and Christoph Treude},
+  journal={ACM Transactions on Software Engineering and Methodology},
+  year={2026},
+  volume={35},
+  pages={1 - 25},
+  url={https://api.semanticscholar.org/CorpusId:285049070}
+}
+
+@article{Azarang2026FromTTF,
+  title={From Traceability to Justifiability: Accountability Structures in Agentic Software Engineering},
+  author={Rashid Azarang},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2608.23610},
+  url={https://api.semanticscholar.org/CorpusId:291334527}
+}
+
+@article{Spinner2026BONSAIAMG,
+  title={BONSAI: A Mixed-Initiative Workspace for Human-AI Co-Development of Visual Analytics Applications},
+  author={Thilo Spinner and Matthias Miller and Mennatallah El-Assady},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2604.19247},
+  url={https://api.semanticscholar.org/CorpusId:287636207}
+}
+
+@article{Tian2026ProvenanceTIH,
+  title={Provenance Tracking in AI Compilers through the Lens of Coalgebra},
+  author={Zilu Tian and Liying Liu},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2606.10937},
+  url={https://api.semanticscholar.org/CorpusId:289132524}
+}
+
+@article{Bock2026TheGII,
+  title={The Ground Is Shifting: A Reflection on the Foundations of Software Measurement},
+  author={Thomas Bock and Audris Mockus and Bogdan Vasilescu},
+  journal={Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering},
+  year={2026},
+  url={https://api.semanticscholar.org/CorpusId:290832903}
+}
+
+@inproceedings{Bosch2026GenerativeAFJ,
+  title={Generative AI for trustworthy systems - Towards a health check model},
+  author={Jan Bosch and Rick Kazman and Henry Muccini and H. Olsson},
+  booktitle={unknown},
+  year={2026},
+  url={https://api.semanticscholar.org/CorpusId:291901709}
+}
+
+@article{Velasco2026OnAAK,
+  title={On Automated and Explainable Provenance of AI-Generated Code},
+  author={Alejandro Velasco and Nathan Wintersgill and Trevor Stalnaker and Oscar Chaparro and Denys Poshyvanyk},
+  journal={2026 IEEE International Conference on Software Maintenance and Evolution (ICSME)},
+  year={2026},
+  pages={1194-1199},
+  url={https://api.semanticscholar.org/CorpusId:290830319}
+}
+
+@article{Pareek2026SelfEvolvingAPL,
+  title={Self-Evolving Analytics Pipelines for Reliable AI-Augmented Software Systems},
+  author={P. Pareek},
+  journal={Journal of Intelligent Decision Making and Information Science},
+  year={2026},
+  url={https://api.semanticscholar.org/CorpusId:290813792}
+}
+
+@article{Radanliev2026OperationalisingAIM,
+  title={Operationalising artificial intelligence bills of materials for verifiable AI provenance and lifecycle assurance},
+  author={P. Radanliev and Omar Santos and C. Maple and Kay Atefi},
+  journal={Frontiers Comput. Sci.},
+  year={2026},
+  volume={8},
+  url={https://api.semanticscholar.org/CorpusId:285000712}
+}
+
+@article{Srinivas2026ArchitecturalADN,
+  title={Architectural Accountability, Decision Traceability, and Governance in Artificial Intelligence–Driven Mission-Critical Data Platforms},
+  author={A. Srinivas and Ajay Srinivas Kiran Gemidi},
+  journal={Journal of Information Systems Engineering and Management},
+  year={2026},
+  url={https://api.semanticscholar.org/CorpusId:287168046}
+}
+
+@article{Case2026OperationalIAO,
+  title={Operational Identity: A Finite Audit of Declared and Implemented Rules of Sameness},
+  author={Denise M. Case},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2607.20729},
+  url={https://api.semanticscholar.org/CorpusId:290466974}
+}
+
+@article{Adnan2026RethinkingIRP,
+  title={Rethinking Issue Resolution for AI/ML Systems},
+  author={Ahmed Adnan and Mushfiqur Rahman and Antu Saha and Oscar Chaparro},
+  journal={2026 IEEE International Conference on Software Maintenance and Evolution (ICSME)},
+  year={2026},
+  pages={1200-1205},
+  url={https://api.semanticscholar.org/CorpusId:290212774}
+}
+
+@article{Sirqueira2026AccountableASQ,
+  title={Accountable Autonomous Systems: A Provenance-Aware Multiagent Approach},
+  author={T. Sirqueira and Marx L. Viana and Elder Cirilo and Paulo S. C. Alencar and Donald D. Cowan and Carlos J. P. Lucena},
+  journal={IEEE Access},
+  year={2026},
+  volume={14},
+  pages={94334-94356},
+  url={https://api.semanticscholar.org/CorpusId:289370569}
+}
+
+@article{Feng2026YouCOR,
+  title={"You Can't Open an LLM With a Screwdriver": The De-Democratization of Software},
+  author={Zi-Xuan Feng and {\'I}talo Santos and Kostadin Damevski and Anita Sarma},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2608.24720},
+  url={https://api.semanticscholar.org/CorpusId:291337884}
+}
+
+@article{Farrag2026WhereALS,
+  title={Where Accountability Lives: Mapping Human Responsibility to Workflow Artifacts in Agentic Software Development},
+  author={Sabry E. Farrag and Youssef Saber},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2608.15678},
+  url={https://api.semanticscholar.org/CorpusId:291183309}
+}
+
+@article{Bhave2026BridgingTGT,
+  title={Bridging the Gap on AI-Assisted Scientific Software Development Through Transparency and Traceability},
+  author={Chaitanya Bhave and P. Simon and Casey T. Icenhour and Lin Yang and C. Permann and D. Schwen and Christopher S. Ritter},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2605.17675},
+  url={https://api.semanticscholar.org/CorpusId:288650744}
+}
+
+@article{Sun2026AgenticPIU,
+  title={Agentic Pipelines in Embedded Software Engineering: Emerging Practices and Challenges},
+  author={Si-Min Sun and Miroslaw Staron},
+  journal={2026 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
+  year={2026},
+  pages={136-146},
+  url={https://api.semanticscholar.org/CorpusId:284738046}
+}
+
+@article{Chen2026FineGrainedTFV,
+  title={Fine-Grained Traceability for Transparent ML Pipelines},
+  author={Li-Ping Chen and Mu-Jie Liu and Haytham M. Fayek},
+  journal={Proceedings of the ACM Web Conference 2026},
+  year={2026},
+  url={https://api.semanticscholar.org/CorpusId:284917785}
+}
+
+@article{Kosyfaki2026AnOW,
+  title={An (Updated) Overview of Data Provenance: Concepts, Challenges and Opportunities},
+  author={Chrysanthi Kosyfaki and Paul Groth},
+  journal={Companion of the International Conference on Management of Data},
+  year={2026},
+  url={https://api.semanticscholar.org/CorpusId:288732510}
+}
+
+@article{Lugo2026IsUDX,
+  title={Is US Defense Acquisition Ready to Acquire AI-Enabled Capabilities? Assessing the DoD Software Acquisition Pathway Through a Scenario-Based Policy Analysis},
+  author={Daniel Lugo and James C. Davis},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2606.07393},
+  url={https://api.semanticscholar.org/CorpusId:288985805}
+}
+
+@article{Cesarano2026TheGSY,
+  title={The Grand Software Supply Chain of AI Systems},
+  author={Carmine Cesarano and M. Monperrus},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2604.27781},
+  url={https://api.semanticscholar.org/CorpusId:287915730}
+}
+
+@article{Schlegel2026LoweringBTZ,
+  title={Lowering barriers to federated learning: collaboration management and provenance},
+  author={Marius Schlegel and Daniel Scheliga and Kai-Uwe Sattler and M. Seeland and Patrick M{\"a}der},
+  journal={Journal of Big Data},
+  year={2026},
+  volume={13},
+  url={https://api.semanticscholar.org/CorpusId:285811501}
+}
+
+@inproceedings{Gopinath2026RethinkingDQAA,
+  title={Rethinking Data Quality for AI-Driven Systems: Evidence from Practitioner Interviews},
+  author={Hariharan Gopinath and Jan Bosch and H. Olsson},
+  booktitle={unknown},
+  year={2026},
+  url={https://api.semanticscholar.org/CorpusId:292363307}
+}
+
+@article{Sure2026AGL1TEAB,
+  title={AGL-1: The Enterprise AI Governance Layer as a Control Plane for Trusted Enterprise Intelligence},
+  author={Roopam W. Sure},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2607.03516},
+  url={https://api.semanticscholar.org/CorpusId:289933523}
+}
+
+@article{Alenezi2026RethinkingSEAC,
+  title={Rethinking Software Engineering for Agentic AI Systems},
+  author={Mamdouh Alenezi},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2604.10599},
+  url={https://api.semanticscholar.org/CorpusId:287433298}
+}
+
+@article{Schlathoelter2026ReqToCodeERAD,
+  title={ReqToCode: Embedding Requirements Traceability as a Structural Property of the Codebase},
+  author={Thorsten Schlathoelter},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2603.13999},
+  url={https://api.semanticscholar.org/CorpusId:286572532}
+}
+
+@article{Olulana2026LARGELMAE,
+  title={LARGE LANGUAGE MODELS IN SCIENTIFIC RESEARCH WORKFLOWS: A SYSTEMATIC LITERATURE REVIEW OF APPLICATIONS, CHALLENGES, AND FUTURE DIRECTIONS},
+  author={Kolawole Olulana and Chunling Du},
+  journal={Journal of Intelligent Systems and Applied Data Science},
+  year={2026},
+  url={https://api.semanticscholar.org/CorpusId:289897235}
+}
+
+@article{Tan2026AttestingLPAF,
+  title={Attesting LLM Pipelines: Enforcing Verifiable Training and Release Claims},
+  author={Zhuo-Ran Tan and Jeremy Singer and Christos Anagnostopoulos},
+  journal={Proceedings of the 34th ACM International Conference on the Foundations of Software Engineering},
+  year={2026},
+  url={https://api.semanticscholar.org/CorpusId:286976973}
+}
+
+@article{Bank2026AI4SEASAG,
+  title={AI4SE and SE4AI Exploration: A Decade Looking Back and Forward},
+  author={H. S. Bank and Daniel R. Herber and T. Bradley},
+  journal={ArXiv},
+  year={2026},
+  volume={abs/2606.19630},
+  url={https://api.semanticscholar.org/CorpusId:289627369}
+}
+
+@article{Cheimarios2025ScientificSDAH,
+  title={Scientific software development in the AI era: reproducibility, MLOps, and applications in soft matter physics},
+  author={N. Cheimarios},
+  journal={Frontiers in Physics},
+  year={2025},
+  url={https://api.semanticscholar.org/CorpusId:283508168}
+}
+
+@inproceedings{Peng2025CodeDTAI,
+  title={Code Digital Twin: A Knowledge Infrastructure for AI-Assisted Complex Software Development},
+  author={Xin Peng and Chong Wang},
+  booktitle={unknown},
+  year={2025},
+  url={https://api.semanticscholar.org/CorpusId:285269659}
+}
+
+@article{Souza2025PROVAGENTUPAJ,
+  title={PROV-AGENT: Unified Provenance for Tracking AI Agent Interactions in Agentic Workflows},
+  author={Renan Souza and Amal Gueroudji and Stephen Dewitt and Daniel Rosendo and Tirthankar Ghosal and Robert B. Ross and Prasanna Balaprakash and R. D. da Silva},
+  journal={2025 IEEE International Conference on eScience (eScience)},
+  year={2025},
+  pages={467-473},
+  url={http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=\&arnumber=11181558}
+}
+
+@article{Barrak2025TraceabilityAAAK,
+  title={Traceability and Accountability in Role-Specialized Multi-Agent LLM Pipelines},
+  author={Amine Barrak},
+  journal={2025 40th IEEE/ACM International Conference on Automated Software Engineering Workshops (ASEW)},
+  year={2025},
+  pages={315-322},
+  url={https://api.semanticscholar.org/CorpusId:281950772}
+}
+
+@article{Raza2025ResponsibleARAL,
+  title={Responsible Agentic Reasoning and AI Agents: A Critical Survey},
+  author={Shaina Raza and Ranjan Sapkota and Manoj Karkee and Christos Emmanouilidis},
+  journal={SuperIntelligence - Robotics - Safety \&amp; Alignment},
+  year={2025},
+  url={https://api.semanticscholar.org/CorpusId:282166683}
+}
+
+@article{Huber2025EvaluatingUSAM,
+  title={Evaluating User Safety Aspects of AI-Based Systems in Industrial Occupational Safety: A Critical Review of Research Literature},
+  author={Jaroslava Huber and Bernhard Anzengruber-Tanase and Martin Schobesberger and Michael Haslgr{\"u}bler and Robert Fischer-Schwarz and Alois Ferscha},
+  journal={International Journal of Environmental Research and Public Health},
+  year={2025},
+  volume={22},
+  url={https://api.semanticscholar.org/CorpusId:278352182}
+}
+
+@article{Sidhpurwala2025BlueprintsOTAN,
+  title={Blueprints of Trust: AI System Cards for End to End Transparency and Governance},
+  author={Huzaifa Sidhpurwala and E. Fox and Garth Mollett and Florencio Cano Gabarda and R. Zhukov},
+  journal={ArXiv},
+  year={2025},
+  volume={abs/2509.20394},
+  url={https://api.semanticscholar.org/CorpusId:281526123}
+}
+
+@article{Khan2025EnsuringEAAO,
+  title={Ensuring Ethical and Responsible Use of Artificial Intelligence},
+  author={Nazim Khan},
+  journal={Journal of Computer Science and Technology Studies},
+  year={2025},
+  url={https://api.semanticscholar.org/CorpusId:279103012}
+}
+
+@article{Dimitrova2025BlockchainTFAP,
+  title={Blockchain Timestamping for AI Model Lifecycle Tracking},
+  author={Sofia Dimitrova},
+  journal={Scientific Journal of Artificial Intelligence and Blockchain Technologies},
+  year={2025},
+  url={https://api.semanticscholar.org/CorpusId:282338701}
+}
+
+@article{Zhang2025MBSECAAQ,
+  title={MBSE Co‐Pilot: A Research Roadmap},
+  author={Wenheng Zhang and Callum Cockburn and Michael Henshaw and Peter Douglas and Paul Palmer and Joshua Olivier‐Myall and Si-Yuan Ji},
+  journal={Systems Engineering},
+  year={2025},
+  volume={29},
+  pages={20 - 33},
+  url={https://api.semanticscholar.org/CorpusId:281160058}
+}
+
+@article{Kalokyri2025AIMPAR,
+  title={AI Model Passport: Data and system traceability framework for transparent AI in health},
+  author={Varvara Kalokyri and N. Tachos and Charalampos Kalantzopoulos and S. Sfakianakis and H. Kondylakis and Dimitrios I. Zaridis and Sara Colantonio and D. Regge and N. Papanikolaou and ProCAncer-I Consortium and K. Marias and D. Fotiadis and M. Tsiknakis},
+  journal={Computational and Structural Biotechnology Journal},
+  year={2025},
+  volume={28},
+  pages={386 - 404},
+  url={https://api.semanticscholar.org/CorpusId:280011715}
+}
+
+@article{Safronov2025TAIBOMBTAS,
+  title={TAIBOM: Bringing Trustworthiness to AI-Enabled Systems},
+  author={Vadim Safronov and Anthony McCaigue and Nicholas Allott and Andrew Martin},
+  journal={ArXiv},
+  year={2025},
+  volume={abs/2510.02169},
+  url={https://api.semanticscholar.org/CorpusId:281724667}
+}
+
+@article{Sinaci2025EnhancingTAAT,
+  title={Enhancing Transparency and Traceability in Healthcare AI: The AI Product Passport},
+  author={Ali Anil Sinaci and S. Postaci and Dogukan Çavdaroglu and M. Boonstra and Okan Mercan and K. Yilmaz and G. Laleci and F. Asselbergs and K. Lekadir},
+  journal={ArXiv},
+  year={2025},
+  volume={abs/2512.13702},
+  url={https://api.semanticscholar.org/CorpusId:283909460}
+}
+
+@article{Stalnaker2023BOMsAIAU,
+  title={BOMs Away! Inside the Minds of Stakeholders: A Comprehensive Study of Bills of Materials for Software Systems},
+  author={Trevor Stalnaker and Nathan Wintersgill and Oscar Chaparro and M. D. Di Penta and Daniel M. Germ{\'a}n and Denys Poshyvanyk},
+  journal={2024 IEEE/ACM 46th International Conference on Software Engineering (ICSE)},
+  year={2023},
+  pages={517-529},
+  url={http://dl.acm.org/citation.cfm?id=3623347}
+}
+
+@article{Gill2023TraceFLIDAV,
+  title={TraceFL: Interpretability-Driven Debugging in Federated Learning via Neuron Provenance},
+  author={Waris Gill and Ali Anwar and Muhammad Ali Gulzar},
+  journal={2025 IEEE/ACM 47th International Conference on Software Engineering (ICSE)},
+  year={2023},
+  pages={2264-2276},
+  url={https://api.semanticscholar.org/CorpusId:266436078}
+}
+
+@article{Lu2022ResponsibleAPAW,
+  title={Responsible AI Pattern Catalogue: A Collection of Best Practices for AI Governance and Engineering},
+  author={Qing-Hua Lu and Li-Ming Zhu and Xi-Wei Xu and Jon Whittle and D. Zowghi and Aurelie Jacquet},
+  journal={ACM Computing Surveys},
+  year={2022},
+  volume={56},
+  pages={1 - 35},
+  url={https://api.semanticscholar.org/CorpusId:262904746}
+}
+
+@article{Lu2021SoftwareEFAX,
+  title={Software engineering for Responsible AI: An empirical study and operationalised patterns},
+  author={Qing-Hua Lu and Li-Ming Zhu and Xi-Wei Xu and J. Whittle and David M. Douglas and Conrad Sanderson},
+  journal={2022 IEEE/ACM 44th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)},
+  year={2021},
+  pages={241-242},
+  url={https://api.semanticscholar.org/CorpusId:244345795}
+}
+
+@article{Kroll2021OutliningTAAY,
+  title={Outlining Traceability: A Principle for Operationalizing Accountability in Computing Systems},
+  author={J. Kroll},
+  journal={Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency},
+  year={2021},
+  url={https://api.semanticscholar.org/CorpusId:231698900}
+}
+
+@article{Lewis2021SoftwareACAZ,
+  title={Software Architecture Challenges for ML Systems},
+  author={Grace A. Lewis and I. Ozkaya and Xi-Wei Xu},
+  journal={2021 IEEE International Conference on Software Maintenance and Evolution (ICSME)},
+  year={2021},
+  pages={634-638},
+  url={http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=\&arnumber=9609199}
+}
+
+@article{MoraCantallops2021TraceabilityFTBA,
+  title={Traceability for Trustworthy AI: A Review of Models and Tools},
+  author={Marçal Mora-Cantallops and S. S{\'a}nchez-Alonso and E. Garc{\'i}a-Barriocanal and M. Sicilia},
+  journal={Big Data Cogn. Comput.},
+  year={2021},
+  volume={5},
+  pages={20},
+  url={https://api.semanticscholar.org/CorpusId:235525714}
+}
+
+@article{Lekadir2021FUTUREAIGPBB,
+  title={FUTURE-AI: Guiding Principles and Consensus Recommendations for Trustworthy Artificial Intelligence in Medical Imaging},
+  author={Karim Lekadir and Richard Osuala and C. Gallin and Noussair Lazrak and Kaisar Kushibar and G. Tsakou and Susanna Auss'o and L. Cerd{\'a}-Alberich and K. Marias and M. Tsiknakis and S. Colantonio and Nickolas Papanikolaou and Zohaib Salahuddin and H. Woodruff and P. Lambin and L. Mart{\'i}-Bonmat{\'i}},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2109.09658},
+  url={https://api.semanticscholar.org/CorpusId:237572282}
+}
+
+@article{Andrade2021TheIOBC,
+  title={The impact of traceability on software maintenance and evolution: A mapping study},
+  author={H. Andrade and Jo{\~a}o Bispo and Filipe F. Correia},
+  journal={Journal of Software: Evolution and Process},
+  year={2021},
+  volume={37},
+  url={https://api.semanticscholar.org/CorpusId:236912951}
+}
+
+@inproceedings{Kroll2020AccountabilityICBD,
+  title={Accountability in Computer Systems},
+  author={J. Kroll},
+  booktitle={unknown},
+  year={2020},
+  url={https://doi.org/10.1093/oxfordhb\%2F9780190067397.013.10}
+}
+
+@article{Aitken2020EstablishingASBE,
+  title={Establishing a social licence for Financial Technology: Reflections on the role of the private sector in pursuing ethical data practices},
+  author={M. Aitken and Ehsan Toreini and Peter Carmichael and Kovila P. L. Coopamootoo and Karen Elliott and A. van Moorsel},
+  journal={Big Data \& Society},
+  year={2020},
+  volume={7},
+  url={https://api.semanticscholar.org/CorpusId:214709934}
+}
+
+@article{Wieringa2020WhatTABF,
+  title={What to account for when accounting for algorithms: a systematic literature review on algorithmic accountability},
+  author={M. Wieringa},
+  journal={Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency},
+  year={2020},
+  url={http://dl.acm.org/citation.cfm?id=3372833}
+}
+
+@article{MartnezFernndez2020ResearchDFBG,
+  title={Research Directions for Developing and Operating Artificial Intelligence Models in Trustworthy Autonomous Systems},
+  author={Silverio Mart{\'i}nez-Fern{\'a}ndez and X. Franch and Andreas Jedlitschka and M. Oriol and Adam Trendowicz},
+  journal={ArXiv},
+  year={2020},
+  volume={abs/2003.05434},
+  url={https://arxiv.org/pdf/2003.05434.pdf}
+}
+
+@article{Lthi2019DistributedLFBH,
+  title={Distributed Ledger for Provenance Tracking of Artificial Intelligence Assets},
+  author={Philipp L{\"u}thi and Thibault Gagnaux and Marcel Gygli},
+  journal={ArXiv},
+  year={2019},
+  volume={abs/2002.11000},
+  url={https://api.semanticscholar.org/CorpusId:211296696}
+}
+
