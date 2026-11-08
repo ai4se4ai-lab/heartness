@@ -1,0 +1,2441 @@
+{
+ "active": [
+  "D1-p0",
+  "D2-p0",
+  "r10",
+  "r11",
+  "r12",
+  "r13",
+  "r5",
+  "r6",
+  "r7",
+  "r8",
+  "r9"
+ ],
+ "artifacts": {
+  "D1-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D1-p0",
+   "kind": "agent",
+   "path": "profiles/D1.md",
+   "sources": [],
+   "text": "You are a careful Python programmer. Write correct, readable functions that satisfy the docstring and examples exactly."
+  },
+  "D2-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D2-p0",
+   "kind": "agent",
+   "path": "profiles/D2.md",
+   "sources": [],
+   "text": "You are a pragmatic Python engineer. Solve the task directly and handle edge cases mentioned in the docstring."
+  },
+  "r0": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   "id": "r0",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [],
+   "text": "When dealing with lists, consider using list comprehensions or generator expressions for concise and efficient iteration."
+  },
+  "r1": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   "id": "r1",
+   "kind": "memory",
+   "path": "insights/r1.md",
+   "sources": [],
+   "text": "When working with strings, consider using dictionaries to map characters to their corresponding values or meanings."
+  },
+  "r10": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [
+    "e16",
+    "e17",
+    "e18",
+    "e19"
+   ],
+   "id": "r10",
+   "kind": "memory",
+   "path": "insights/r10.md",
+   "sources": [
+    "r1",
+    "r3",
+    "r5",
+    "r6",
+    "r7",
+    "r8",
+    "r9"
+   ],
+   "text": "When working with strings, consider using dictionaries to map characters to their corresponding values or meanings, especially when dealing with multiple conditions or edge cases."
+  },
+  "r11": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e16",
+    "e17",
+    "e18",
+    "e19"
+   ],
+   "id": "r11",
+   "kind": "memory",
+   "path": "insights/r1.md",
+   "sources": [
+    "r1",
+    "r3",
+    "r5",
+    "r6",
+    "r7",
+    "r8",
+    "r9"
+   ],
+   "text": "When dealing with multiple conditions, consider using the `or` operator to simplify the logic and reduce nesting, but also consider using if-else statements for clarity and readability."
+  },
+  "r12": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [
+    "e20",
+    "e21",
+    "e22",
+    "e23"
+   ],
+   "id": "r12",
+   "kind": "memory",
+   "path": "insights/r12.md",
+   "sources": [
+    "r3",
+    "r5",
+    "r6",
+    "r7",
+    "r8",
+    "r9",
+    "r10",
+    "r11"
+   ],
+   "text": "When solving problems, consider breaking down the task into smaller sub-problems and tackling them one by one to avoid getting overwhelmed by the complexity of the task."
+  },
+  "r13": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e20",
+    "e21",
+    "e22",
+    "e23"
+   ],
+   "id": "r13",
+   "kind": "memory",
+   "path": "insights/r3.md",
+   "sources": [
+    "r3",
+    "r5",
+    "r6",
+    "r7",
+    "r8",
+    "r9",
+    "r10",
+    "r11"
+   ],
+   "text": "When dealing with multiple conditions, consider using the `or` operator to simplify the logic and reduce nesting, but also consider using if-else statements for clarity and readability, and to avoid unexpected behavior."
+  },
+  "r2": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   "id": "r2",
+   "kind": "memory",
+   "path": "insights/r2.md",
+   "sources": [],
+   "text": "When comparing strings, consider using the `set` function to count unique characters, as it is more efficient than iterating over each character."
+  },
+  "r3": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   "id": "r3",
+   "kind": "memory",
+   "path": "insights/r3.md",
+   "sources": [],
+   "text": "When dealing with multiple conditions, consider using the `or` operator to simplify the logic and reduce nesting."
+  },
+  "r4": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ],
+   "id": "r4",
+   "kind": "memory",
+   "path": "insights/r4.md",
+   "sources": [
+    "r0",
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "text": "When solving problems, consider breaking down the task into smaller sub-problems and tackling them one by one to avoid getting overwhelmed by the complexity of the task."
+  },
+  "r5": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ],
+   "id": "r5",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [
+    "r0",
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "text": "When dealing with lists, consider using list comprehensions or generator expressions for concise and efficient iteration, and also consider using the `set` function to remove duplicates."
+  },
+  "r6": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [
+    "e8",
+    "e9",
+    "e10",
+    "e11"
+   ],
+   "id": "r6",
+   "kind": "memory",
+   "path": "insights/r6.md",
+   "sources": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5"
+   ],
+   "text": "When handling edge cases, consider explicitly checking for them to avoid unexpected behavior and improve code robustness."
+  },
+  "r7": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e8",
+    "e9",
+    "e10",
+    "e11"
+   ],
+   "id": "r7",
+   "kind": "memory",
+   "path": "insights/r2.md",
+   "sources": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5"
+   ],
+   "text": "When dealing with multiple conditions, consider using the `or` operator to simplify the logic and reduce nesting, but also consider using if-else statements for clarity and readability."
+  },
+  "r8": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [
+    "e12",
+    "e13",
+    "e14",
+    "e15"
+   ],
+   "id": "r8",
+   "kind": "memory",
+   "path": "insights/r8.md",
+   "sources": [
+    "r1",
+    "r3",
+    "r4",
+    "r5",
+    "r6",
+    "r7"
+   ],
+   "text": "When solving problems, consider using a step-by-step approach to break down complex tasks into manageable sub-problems, and to avoid getting overwhelmed by the complexity of the task."
+  },
+  "r9": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e12",
+    "e13",
+    "e14",
+    "e15"
+   ],
+   "id": "r9",
+   "kind": "memory",
+   "path": "insights/r4.md",
+   "sources": [
+    "r1",
+    "r3",
+    "r4",
+    "r5",
+    "r6",
+    "r7"
+   ],
+   "text": "When solving problems, consider breaking down the task into smaller sub-problems and tackling them one by one to avoid getting overwhelmed by the complexity of the task, and also consider using a step-by-step approach to ensure a clear and logical solution."
+  }
+ },
+ "config": {
+  "batch": 6,
+  "benchmark": "humaneval",
+  "compose_at": [
+   12,
+   24
+  ],
+  "expel_batch": 4,
+  "expel_top": 5,
+  "fault": null,
+  "k_memories": 3,
+  "k_reflect": 2,
+  "k_skills": 2,
+  "model": "llama3.1:8b",
+  "n_evolve": 24,
+  "policy": "expel",
+  "seed": 1
+ },
+ "dataset": "evalplus/humanevalplus@d32357cf319e50e9c8d8dab5ea876c72b0fd321b",
+ "deployments": {
+  "D1": [
+   "r10",
+   "r11",
+   "r12",
+   "r13",
+   "r5",
+   "r6",
+   "r7",
+   "r8",
+   "r9"
+  ],
+  "D2": [
+   "r10",
+   "r11",
+   "r12",
+   "r13",
+   "r5"
+  ]
+ },
+ "environment": {
+  "cluster": "fir",
+  "git": "",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "host": "fc11004",
+  "phase": "gen",
+  "platform": "Linux-5.14.0-687.29.1.el9_8.x86_64-x86_64-AMD_EPYC_9454_48-Core_Processor-with-glibc2.37",
+  "python": "3.11.5",
+  "source_sha256": "2d88e045157d7f2e0be8389a406bfa28b5086242e483764e7320fe791809522f"
+ },
+ "eval": {
+  "clean": [
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/49"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/20"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/132"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/154"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/55"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/100"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/69"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/48"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/75"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/122"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/33"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/16"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/6"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/95"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/163"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "HumanEval/153"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/37"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/94"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": true
+    },
+    "task": "HumanEval/146"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/0"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/109"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/130"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/155"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/41"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/2"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/4"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/51"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/121"
+   },
+   {
+    "context": [
+     "r11",
+     "r13",
+     "r5",
+     "r10",
+     "r12",
+     "r6",
+     "r8",
+     "r7",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/52"
+   }
+  ],
+  "seed_only": [
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/49"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/20"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/132"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/154"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/55"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/100"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/69"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/48"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/75"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/122"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/33"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/16"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/6"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/95"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/163"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "HumanEval/153"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/37"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/94"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": true
+    },
+    "task": "HumanEval/146"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/0"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/109"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/130"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/155"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/41"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/2"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/4"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/51"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/121"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/52"
+   }
+  ]
+ },
+ "eval_tasks": [
+  "HumanEval/49",
+  "HumanEval/20",
+  "HumanEval/132",
+  "HumanEval/154",
+  "HumanEval/55",
+  "HumanEval/100",
+  "HumanEval/69",
+  "HumanEval/48",
+  "HumanEval/75",
+  "HumanEval/122",
+  "HumanEval/33",
+  "HumanEval/16",
+  "HumanEval/6",
+  "HumanEval/95",
+  "HumanEval/163",
+  "HumanEval/153",
+  "HumanEval/37",
+  "HumanEval/94",
+  "HumanEval/146",
+  "HumanEval/0",
+  "HumanEval/109",
+  "HumanEval/130",
+  "HumanEval/155",
+  "HumanEval/41",
+  "HumanEval/2",
+  "HumanEval/4",
+  "HumanEval/51",
+  "HumanEval/121",
+  "HumanEval/52"
+ ],
+ "evolution": [
+  {
+   "context": [
+    "D1-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 0,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/142"
+  },
+  {
+   "context": [
+    "D2-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 1,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/17"
+  },
+  {
+   "context": [
+    "D1-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 2,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/133"
+  },
+  {
+   "context": [
+    "D2-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r0",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r1",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r2",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r3",
+      "target": null,
+      "verb": "ADD"
+     }
+    ],
+    "response": "ADD: When dealing with lists, consider using list comprehensions or generator expressions for concise and efficient iteration.\n\nADD: When working with strings, consider using dictionaries to map characters to their corresponding values or meanings.\n\nADD: When comparing strings, consider using the `set` function to count unique characters, as it is more efficient than iterating over each character.\n\nADD: When dealing with multiple conditions, consider using the `or` operator to simplify the logic and reduce nesting.",
+    "shown": []
+   },
+   "feedback": "PASSED all tests.",
+   "i": 3,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/158"
+  },
+  {
+   "context": [
+    "r0",
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 4,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/101"
+  },
+  {
+   "context": [
+    "r0",
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 5,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/13"
+  },
+  {
+   "context": [
+    "r0",
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 6,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/34"
+  },
+  {
+   "context": [
+    "r0",
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r4",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r5",
+      "target": "r0",
+      "verb": "EDIT"
+     },
+     {
+      "target": "r1",
+      "verb": "AGREE"
+     },
+     {
+      "target": "r2",
+      "verb": "REMOVE"
+     }
+    ],
+    "response": "ADD: When solving problems, consider breaking down the task into smaller sub-problems and tackling them one by one to avoid getting overwhelmed by the complexity of the task.\n\nEDIT 1: When dealing with lists, consider using list comprehensions or generator expressions for concise and efficient iteration, and also consider using the `set` function to remove duplicates.\n\nAGREE 2\n\nREMOVE 3",
+    "shown": [
+     "r0",
+     "r1",
+     "r2",
+     "r3"
+    ]
+   },
+   "feedback": "FAILED: AssertionError",
+   "i": 7,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/135"
+  },
+  {
+   "context": [
+    "r1",
+    "r5",
+    "r3",
+    "r4",
+    "r2"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 8,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/9"
+  },
+  {
+   "context": [
+    "r1",
+    "r5",
+    "r3",
+    "r4",
+    "r2"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "FAILED: AssertionError",
+   "i": 9,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/125"
+  },
+  {
+   "context": [
+    "r1",
+    "r5",
+    "r3",
+    "r4",
+    "r2"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 10,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/28"
+  },
+  {
+   "context": [
+    "r1",
+    "r5",
+    "r3",
+    "r4",
+    "r2"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r6",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r7",
+      "target": "r2",
+      "verb": "EDIT"
+     },
+     {
+      "target": "r3",
+      "verb": "AGREE"
+     },
+     {
+      "target": "r5",
+      "verb": "REMOVE"
+     }
+    ],
+    "response": "ADD: When handling edge cases, consider explicitly checking for them to avoid unexpected behavior and improve code robustness.\n\nEDIT 2: When dealing with multiple conditions, consider using the `or` operator to simplify the logic and reduce nesting, but also consider using if-else statements for clarity and readability.\n\nAGREE 3\n\nREMOVE 5",
+    "shown": [
+     "r1",
+     "r2",
+     "r3",
+     "r4",
+     "r5"
+    ]
+   },
+   "feedback": "PASSED all tests.",
+   "i": 11,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/106"
+  },
+  {
+   "context": [
+    "r1",
+    "r3",
+    "r4",
+    "r5",
+    "r6",
+    "r7"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 12,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/74"
+  },
+  {
+   "context": [
+    "r1",
+    "r3",
+    "r4",
+    "r5",
+    "r6"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 13,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/27"
+  },
+  {
+   "context": [
+    "r1",
+    "r3",
+    "r4",
+    "r5",
+    "r6",
+    "r7"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 14,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/68"
+  },
+  {
+   "context": [
+    "r1",
+    "r3",
+    "r4",
+    "r5",
+    "r6"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r8",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r9",
+      "target": "r4",
+      "verb": "EDIT"
+     },
+     {
+      "target": "r1",
+      "verb": "AGREE"
+     },
+     {
+      "target": "r7",
+      "verb": "REMOVE"
+     }
+    ],
+    "response": "ADD: When solving problems, consider using a step-by-step approach to break down complex tasks into manageable sub-problems, and to avoid getting overwhelmed by the complexity of the task.\n\nEDIT 3: When solving problems, consider breaking down the task into smaller sub-problems and tackling them one by one to avoid getting overwhelmed by the complexity of the task, and also consider using a step-by-step approach to ensure a clear and logical solution.\n\nAGREE 1\n\nREMOVE 6",
+    "shown": [
+     "r1",
+     "r3",
+     "r4",
+     "r5",
+     "r6",
+     "r7"
+    ]
+   },
+   "feedback": "PASSED all tests.",
+   "i": 15,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/25"
+  },
+  {
+   "context": [
+    "r1",
+    "r3",
+    "r9",
+    "r5",
+    "r6",
+    "r8",
+    "r7"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 16,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/86"
+  },
+  {
+   "context": [
+    "r1",
+    "r3",
+    "r9",
+    "r5",
+    "r6"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 17,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/19"
+  },
+  {
+   "context": [
+    "r1",
+    "r3",
+    "r9",
+    "r5",
+    "r6",
+    "r8",
+    "r7"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 18,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/81"
+  },
+  {
+   "context": [
+    "r1",
+    "r3",
+    "r9",
+    "r5",
+    "r6"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r10",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r11",
+      "target": "r1",
+      "verb": "EDIT"
+     },
+     {
+      "target": "r5",
+      "verb": "AGREE"
+     },
+     {
+      "target": "r9",
+      "verb": "REMOVE"
+     }
+    ],
+    "response": "ADD: When working with strings, consider using dictionaries to map characters to their corresponding values or meanings, especially when dealing with multiple conditions or edge cases.\n\nEDIT 1: When dealing with multiple conditions, consider using the `or` operator to simplify the logic and reduce nesting, but also consider using if-else statements for clarity and readability.\n\nAGREE 3\n\nREMOVE 7",
+    "shown": [
+     "r1",
+     "r3",
+     "r5",
+     "r6",
+     "r7",
+     "r8",
+     "r9"
+    ]
+   },
+   "feedback": "FAILED: AssertionError",
+   "i": 19,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/126"
+  },
+  {
+   "context": [
+    "r11",
+    "r3",
+    "r5",
+    "r10",
+    "r6",
+    "r8",
+    "r9",
+    "r7"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 20,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/140"
+  },
+  {
+   "context": [
+    "r11",
+    "r3",
+    "r5",
+    "r10",
+    "r6"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "FAILED: AssertionError",
+   "i": 21,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/64"
+  },
+  {
+   "context": [
+    "r11",
+    "r3",
+    "r5",
+    "r10",
+    "r6",
+    "r8",
+    "r9",
+    "r7"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 22,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/124"
+  },
+  {
+   "context": [
+    "r11",
+    "r3",
+    "r5",
+    "r10",
+    "r6"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r12",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r13",
+      "target": "r3",
+      "verb": "EDIT"
+     },
+     {
+      "target": "r5",
+      "verb": "AGREE"
+     },
+     {
+      "target": "r9",
+      "verb": "REMOVE"
+     }
+    ],
+    "response": "ADD: When solving problems, consider breaking down the task into smaller sub-problems and tackling them one by one to avoid getting overwhelmed by the complexity of the task.\n\nEDIT 1: When dealing with multiple conditions, consider using the `or` operator to simplify the logic and reduce nesting, but also consider using if-else statements for clarity and readability, and to avoid unexpected behavior.\n\nAGREE 2\n\nREMOVE 6",
+    "shown": [
+     "r3",
+     "r5",
+     "r6",
+     "r7",
+     "r8",
+     "r9",
+     "r10",
+     "r11"
+    ]
+   },
+   "feedback": "PASSED all tests.",
+   "i": 23,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/105"
+  }
+ ],
+ "experiences": {
+  "e0": {
+   "id": "e0",
+   "outcome": "pass",
+   "run": "r0",
+   "task": "HumanEval/142"
+  },
+  "e1": {
+   "id": "e1",
+   "outcome": "pass",
+   "run": "r1",
+   "task": "HumanEval/17"
+  },
+  "e10": {
+   "id": "e10",
+   "outcome": "pass",
+   "run": "r10",
+   "task": "HumanEval/28"
+  },
+  "e11": {
+   "id": "e11",
+   "outcome": "pass",
+   "run": "r11",
+   "task": "HumanEval/106"
+  },
+  "e12": {
+   "id": "e12",
+   "outcome": "pass",
+   "run": "r12",
+   "task": "HumanEval/74"
+  },
+  "e13": {
+   "id": "e13",
+   "outcome": "pass",
+   "run": "r13",
+   "task": "HumanEval/27"
+  },
+  "e14": {
+   "id": "e14",
+   "outcome": "fail",
+   "run": "r14",
+   "task": "HumanEval/68"
+  },
+  "e15": {
+   "id": "e15",
+   "outcome": "pass",
+   "run": "r15",
+   "task": "HumanEval/25"
+  },
+  "e16": {
+   "id": "e16",
+   "outcome": "fail",
+   "run": "r16",
+   "task": "HumanEval/86"
+  },
+  "e17": {
+   "id": "e17",
+   "outcome": "pass",
+   "run": "r17",
+   "task": "HumanEval/19"
+  },
+  "e18": {
+   "id": "e18",
+   "outcome": "fail",
+   "run": "r18",
+   "task": "HumanEval/81"
+  },
+  "e19": {
+   "id": "e19",
+   "outcome": "fail",
+   "run": "r19",
+   "task": "HumanEval/126"
+  },
+  "e2": {
+   "id": "e2",
+   "outcome": "pass",
+   "run": "r2",
+   "task": "HumanEval/133"
+  },
+  "e20": {
+   "id": "e20",
+   "outcome": "fail",
+   "run": "r20",
+   "task": "HumanEval/140"
+  },
+  "e21": {
+   "id": "e21",
+   "outcome": "fail",
+   "run": "r21",
+   "task": "HumanEval/64"
+  },
+  "e22": {
+   "id": "e22",
+   "outcome": "fail",
+   "run": "r22",
+   "task": "HumanEval/124"
+  },
+  "e23": {
+   "id": "e23",
+   "outcome": "pass",
+   "run": "r23",
+   "task": "HumanEval/105"
+  },
+  "e3": {
+   "id": "e3",
+   "outcome": "pass",
+   "run": "r3",
+   "task": "HumanEval/158"
+  },
+  "e4": {
+   "id": "e4",
+   "outcome": "pass",
+   "run": "r4",
+   "task": "HumanEval/101"
+  },
+  "e5": {
+   "id": "e5",
+   "outcome": "pass",
+   "run": "r5",
+   "task": "HumanEval/13"
+  },
+  "e6": {
+   "id": "e6",
+   "outcome": "pass",
+   "run": "r6",
+   "task": "HumanEval/34"
+  },
+  "e7": {
+   "id": "e7",
+   "outcome": "fail",
+   "run": "r7",
+   "task": "HumanEval/135"
+  },
+  "e8": {
+   "id": "e8",
+   "outcome": "pass",
+   "run": "r8",
+   "task": "HumanEval/9"
+  },
+  "e9": {
+   "id": "e9",
+   "outcome": "fail",
+   "run": "r9",
+   "task": "HumanEval/125"
+  }
+ },
+ "fault_index": 1,
+ "history_events": 110,
+ "importance": {
+  "r0": 2,
+  "r1": 4,
+  "r10": 2,
+  "r11": 5,
+  "r12": 2,
+  "r13": 4,
+  "r2": 1,
+  "r3": 3,
+  "r4": 2,
+  "r5": 4,
+  "r6": 2,
+  "r7": 1,
+  "r8": 2,
+  "r9": 1
+ },
+ "llm": {
+  "cache_hits": 0,
+  "calls": 88,
+  "llm_seconds": 1951.184,
+  "tokens_in": 37984,
+  "tokens_out": 14264
+ },
+ "loaded": {
+  "r0": [
+   "D1-p0"
+  ],
+  "r1": [
+   "D2-p0"
+  ],
+  "r10": [
+   "r1",
+   "r2",
+   "r3",
+   "r4",
+   "r5"
+  ],
+  "r11": [
+   "r1",
+   "r2",
+   "r3",
+   "r4",
+   "r5"
+  ],
+  "r12": [
+   "r1",
+   "r3",
+   "r4",
+   "r5",
+   "r6",
+   "r7"
+  ],
+  "r13": [
+   "r1",
+   "r3",
+   "r4",
+   "r5",
+   "r6"
+  ],
+  "r14": [
+   "r1",
+   "r3",
+   "r4",
+   "r5",
+   "r6",
+   "r7"
+  ],
+  "r15": [
+   "r1",
+   "r3",
+   "r4",
+   "r5",
+   "r6"
+  ],
+  "r16": [
+   "r1",
+   "r3",
+   "r5",
+   "r6",
+   "r7",
+   "r8",
+   "r9"
+  ],
+  "r17": [
+   "r1",
+   "r3",
+   "r5",
+   "r6",
+   "r9"
+  ],
+  "r18": [
+   "r1",
+   "r3",
+   "r5",
+   "r6",
+   "r7",
+   "r8",
+   "r9"
+  ],
+  "r19": [
+   "r1",
+   "r3",
+   "r5",
+   "r6",
+   "r9"
+  ],
+  "r2": [
+   "D1-p0"
+  ],
+  "r20": [
+   "r10",
+   "r11",
+   "r3",
+   "r5",
+   "r6",
+   "r7",
+   "r8",
+   "r9"
+  ],
+  "r21": [
+   "r10",
+   "r11",
+   "r3",
+   "r5",
+   "r6"
+  ],
+  "r22": [
+   "r10",
+   "r11",
+   "r3",
+   "r5",
+   "r6",
+   "r7",
+   "r8",
+   "r9"
+  ],
+  "r23": [
+   "r10",
+   "r11",
+   "r3",
+   "r5",
+   "r6"
+  ],
+  "r3": [
+   "D2-p0"
+  ],
+  "r4": [
+   "r0",
+   "r1",
+   "r2",
+   "r3"
+  ],
+  "r5": [
+   "r0",
+   "r1",
+   "r2",
+   "r3"
+  ],
+  "r6": [
+   "r0",
+   "r1",
+   "r2",
+   "r3"
+  ],
+  "r7": [
+   "r0",
+   "r1",
+   "r2",
+   "r3"
+  ],
+  "r8": [
+   "r1",
+   "r2",
+   "r3",
+   "r4",
+   "r5"
+  ],
+  "r9": [
+   "r1",
+   "r2",
+   "r3",
+   "r4",
+   "r5"
+  ]
+ },
+ "models": {
+  "llama3.1:8b": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+  "nomic-embed-text:latest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+ },
+ "tau": {
+  "embed": 0.55,
+  "tfidf": 0.05
+ },
+ "timing": {
+  "engine_total": 0.3783417926169932,
+  "evolve_total": 253.8581085857004,
+  "wall_total": 573.9548728466034
+ },
+ "universe": [
+  "D1-p0",
+  "D2-p0",
+  "r10",
+  "r11",
+  "r12",
+  "r13",
+  "r5",
+  "r6",
+  "r7",
+  "r8",
+  "r9"
+ ]
+}

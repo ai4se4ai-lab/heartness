@@ -1,0 +1,2384 @@
+{
+ "active": [
+  "D1-p0",
+  "D2-p0",
+  "r16",
+  "r17",
+  "r18",
+  "r19"
+ ],
+ "artifacts": {
+  "D1-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D1-p0",
+   "kind": "agent",
+   "path": "profiles/D1.md",
+   "sources": [],
+   "text": "You are a careful Python programmer. Write correct, readable functions that satisfy the docstring and examples exactly."
+  },
+  "D2-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D2-p0",
+   "kind": "agent",
+   "path": "profiles/D2.md",
+   "sources": [],
+   "text": "You are a pragmatic Python engineer. Solve the task directly and handle edge cases mentioned in the docstring."
+  },
+  "r0": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   "id": "r0",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [],
+   "text": "Understand the problem requirements thoroughly before coding."
+  },
+  "r1": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ],
+   "id": "r1",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [
+    "r0"
+   ],
+   "text": "Ensure the code handles edge cases and constraints explicitly."
+  },
+  "r10": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e12",
+    "e13",
+    "e14",
+    "e15"
+   ],
+   "id": "r10",
+   "kind": "memory",
+   "path": "insights/r3.md",
+   "sources": [
+    "r4",
+    "r5",
+    "r6",
+    "r7"
+   ],
+   "text": "Test the function with various edge cases and constraints to ensure robustness."
+  },
+  "r11": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e12",
+    "e13",
+    "e14",
+    "e15"
+   ],
+   "id": "r11",
+   "kind": "memory",
+   "path": "insights/r7.md",
+   "sources": [
+    "r4",
+    "r5",
+    "r6",
+    "r7"
+   ],
+   "text": "Implement error handling for invalid input types and values."
+  },
+  "r12": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e16",
+    "e17",
+    "e18",
+    "e19"
+   ],
+   "id": "r12",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [
+    "r8",
+    "r9",
+    "r10",
+    "r11"
+   ],
+   "text": "Ensure the code handles edge cases and constraints explicitly."
+  },
+  "r13": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e16",
+    "e17",
+    "e18",
+    "e19"
+   ],
+   "id": "r13",
+   "kind": "memory",
+   "path": "insights/r2.md",
+   "sources": [
+    "r8",
+    "r9",
+    "r10",
+    "r11"
+   ],
+   "text": "Use type hints for function parameters and return types for better readability and maintenance."
+  },
+  "r14": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e16",
+    "e17",
+    "e18",
+    "e19"
+   ],
+   "id": "r14",
+   "kind": "memory",
+   "path": "insights/r3.md",
+   "sources": [
+    "r8",
+    "r9",
+    "r10",
+    "r11"
+   ],
+   "text": "Test the function with various edge cases and constraints to ensure robustness."
+  },
+  "r15": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e16",
+    "e17",
+    "e18",
+    "e19"
+   ],
+   "id": "r15",
+   "kind": "memory",
+   "path": "insights/r7.md",
+   "sources": [
+    "r8",
+    "r9",
+    "r10",
+    "r11"
+   ],
+   "text": "Implement error handling for invalid input types and values."
+  },
+  "r16": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e20",
+    "e21",
+    "e22",
+    "e23"
+   ],
+   "id": "r16",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [
+    "r12",
+    "r13",
+    "r14",
+    "r15"
+   ],
+   "text": "Ensure the code handles edge cases and constraints explicitly."
+  },
+  "r17": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e20",
+    "e21",
+    "e22",
+    "e23"
+   ],
+   "id": "r17",
+   "kind": "memory",
+   "path": "insights/r2.md",
+   "sources": [
+    "r12",
+    "r13",
+    "r14",
+    "r15"
+   ],
+   "text": "Use type hints for function parameters and return types for better readability and maintenance."
+  },
+  "r18": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e20",
+    "e21",
+    "e22",
+    "e23"
+   ],
+   "id": "r18",
+   "kind": "memory",
+   "path": "insights/r3.md",
+   "sources": [
+    "r12",
+    "r13",
+    "r14",
+    "r15"
+   ],
+   "text": "Test the function with various edge cases and constraints to ensure robustness."
+  },
+  "r19": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e20",
+    "e21",
+    "e22",
+    "e23"
+   ],
+   "id": "r19",
+   "kind": "memory",
+   "path": "insights/r7.md",
+   "sources": [
+    "r12",
+    "r13",
+    "r14",
+    "r15"
+   ],
+   "text": "Implement error handling for invalid input types and values."
+  },
+  "r2": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ],
+   "id": "r2",
+   "kind": "memory",
+   "path": "insights/r2.md",
+   "sources": [
+    "r0"
+   ],
+   "text": "Use type hints for function parameters and return types for better readability and maintenance."
+  },
+  "r3": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ],
+   "id": "r3",
+   "kind": "memory",
+   "path": "insights/r3.md",
+   "sources": [
+    "r0"
+   ],
+   "text": "Test the function with various edge cases and constraints to ensure robustness."
+  },
+  "r4": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e8",
+    "e9",
+    "e10",
+    "e11"
+   ],
+   "id": "r4",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "text": "Ensure the code handles edge cases and constraints explicitly."
+  },
+  "r5": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e8",
+    "e9",
+    "e10",
+    "e11"
+   ],
+   "id": "r5",
+   "kind": "memory",
+   "path": "insights/r2.md",
+   "sources": [
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "text": "Use type hints for function parameters and return types for better readability and maintenance."
+  },
+  "r6": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e8",
+    "e9",
+    "e10",
+    "e11"
+   ],
+   "id": "r6",
+   "kind": "memory",
+   "path": "insights/r3.md",
+   "sources": [
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "text": "Test the function with various edge cases and constraints to ensure robustness."
+  },
+  "r7": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [
+    "e8",
+    "e9",
+    "e10",
+    "e11"
+   ],
+   "id": "r7",
+   "kind": "memory",
+   "path": "insights/r7.md",
+   "sources": [
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "text": "Implement error handling for invalid input types and values."
+  },
+  "r8": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e12",
+    "e13",
+    "e14",
+    "e15"
+   ],
+   "id": "r8",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [
+    "r4",
+    "r5",
+    "r6",
+    "r7"
+   ],
+   "text": "Ensure the code handles edge cases and constraints explicitly."
+  },
+  "r9": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e12",
+    "e13",
+    "e14",
+    "e15"
+   ],
+   "id": "r9",
+   "kind": "memory",
+   "path": "insights/r2.md",
+   "sources": [
+    "r4",
+    "r5",
+    "r6",
+    "r7"
+   ],
+   "text": "Use type hints for function parameters and return types for better readability and maintenance."
+  }
+ },
+ "config": {
+  "batch": 6,
+  "benchmark": "humaneval",
+  "compose_at": [
+   12,
+   24
+  ],
+  "expel_batch": 4,
+  "expel_top": 5,
+  "fault": null,
+  "k_memories": 3,
+  "k_reflect": 2,
+  "k_skills": 2,
+  "model": "qwen2.5-coder:7b",
+  "n_evolve": 24,
+  "policy": "expel",
+  "seed": 3
+ },
+ "dataset": "evalplus/humanevalplus@d32357cf319e50e9c8d8dab5ea876c72b0fd321b",
+ "deployments": {
+  "D1": [
+   "r16",
+   "r17",
+   "r18",
+   "r19"
+  ],
+  "D2": [
+   "r16",
+   "r17",
+   "r18",
+   "r19"
+  ]
+ },
+ "environment": {
+  "cluster": "fir",
+  "git": "",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "host": "fc11003",
+  "phase": "gen",
+  "platform": "Linux-5.14.0-687.29.1.el9_8.x86_64-x86_64-AMD_EPYC_9454_48-Core_Processor-with-glibc2.37",
+  "python": "3.11.5",
+  "source_sha256": "2d88e045157d7f2e0be8389a406bfa28b5086242e483764e7320fe791809522f"
+ },
+ "eval": {
+  "clean": [
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/49"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/20"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/132"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/154"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/55"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/100"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/69"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/48"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/75"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/122"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/33"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/16"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/6"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/95"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/163"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "HumanEval/153"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/37"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/94"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/146"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/0"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/109"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/130"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/155"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/41"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/2"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/4"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/51"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/121"
+   },
+   {
+    "context": [
+     "r16",
+     "r17",
+     "r18",
+     "r19"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/52"
+   }
+  ],
+  "seed_only": [
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/49"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/20"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/132"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/154"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/55"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/100"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/69"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/48"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/75"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/122"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/33"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/16"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/6"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/95"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/163"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "HumanEval/153"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/37"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/94"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/146"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/0"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/109"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/130"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/155"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/41"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/2"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/4"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/51"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/121"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/52"
+   }
+  ]
+ },
+ "eval_tasks": [
+  "HumanEval/49",
+  "HumanEval/20",
+  "HumanEval/132",
+  "HumanEval/154",
+  "HumanEval/55",
+  "HumanEval/100",
+  "HumanEval/69",
+  "HumanEval/48",
+  "HumanEval/75",
+  "HumanEval/122",
+  "HumanEval/33",
+  "HumanEval/16",
+  "HumanEval/6",
+  "HumanEval/95",
+  "HumanEval/163",
+  "HumanEval/153",
+  "HumanEval/37",
+  "HumanEval/94",
+  "HumanEval/146",
+  "HumanEval/0",
+  "HumanEval/109",
+  "HumanEval/130",
+  "HumanEval/155",
+  "HumanEval/41",
+  "HumanEval/2",
+  "HumanEval/4",
+  "HumanEval/51",
+  "HumanEval/121",
+  "HumanEval/52"
+ ],
+ "evolution": [
+  {
+   "context": [
+    "D1-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 0,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/99"
+  },
+  {
+   "context": [
+    "D2-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 1,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/24"
+  },
+  {
+   "context": [
+    "D1-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 2,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/25"
+  },
+  {
+   "context": [
+    "D2-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r0",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "target": null,
+      "verb": "EDIT"
+     },
+     {
+      "target": null,
+      "verb": "EDIT"
+     },
+     {
+      "target": null,
+      "verb": "EDIT"
+     }
+    ],
+    "response": "ADD: Understand the problem requirements thoroughly before coding.\nEDIT 1: Ensure the function handles edge cases, such as rounding away from zero.\nEDIT 2: Implement efficient algorithms to solve problems within given constraints.\nEDIT 3: Use appropriate data structures and algorithms to optimize performance.\nEDIT 4: Write clear and concise code with proper documentation.",
+    "shown": []
+   },
+   "feedback": "PASSED all tests.",
+   "i": 3,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/156"
+  },
+  {
+   "context": [
+    "r0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 4,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/88"
+  },
+  {
+   "context": [
+    "r0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 5,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/142"
+  },
+  {
+   "context": [
+    "r0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 6,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/138"
+  },
+  {
+   "context": [
+    "r0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r1",
+      "target": "r0",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r2",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "target": null,
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r3",
+      "target": null,
+      "verb": "ADD"
+     }
+    ],
+    "response": "EDIT 1: Ensure the code handles edge cases and constraints explicitly.\nADD 2: Use type hints for function parameters and return types for better readability and maintenance.\nEDIT 3: Always include a docstring that clearly describes the problem and examples.\nADD 4: Test the function with various edge cases and constraints to ensure robustness.",
+    "shown": [
+     "r0"
+    ]
+   },
+   "feedback": "PASSED all tests.",
+   "i": 7,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/29"
+  },
+  {
+   "context": [
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 8,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/115"
+  },
+  {
+   "context": [
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 9,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/103"
+  },
+  {
+   "context": [
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 10,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/62"
+  },
+  {
+   "context": [
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r4",
+      "target": "r1",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r5",
+      "target": "r2",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r6",
+      "target": "r3",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r7",
+      "target": null,
+      "verb": "ADD"
+     }
+    ],
+    "response": "EDIT 1: Ensure the code handles edge cases and constraints explicitly.\nEDIT 2: Use type hints for function parameters and return types for better readability and maintenance.\nEDIT 3: Test the function with various edge cases and constraints to ensure robustness.\nADD: Implement error handling for invalid input types and values.",
+    "shown": [
+     "r1",
+     "r2",
+     "r3"
+    ]
+   },
+   "feedback": "FAILED: AssertionError",
+   "i": 11,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/127"
+  },
+  {
+   "context": [
+    "r4",
+    "r5",
+    "r6",
+    "r7"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 12,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/97"
+  },
+  {
+   "context": [
+    "r4",
+    "r5",
+    "r6",
+    "r7"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 13,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/42"
+  },
+  {
+   "context": [
+    "r4",
+    "r5",
+    "r6",
+    "r7"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 14,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/128"
+  },
+  {
+   "context": [
+    "r4",
+    "r5",
+    "r6",
+    "r7"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r8",
+      "target": "r4",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r9",
+      "target": "r5",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r10",
+      "target": "r6",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r11",
+      "target": "r7",
+      "verb": "EDIT"
+     }
+    ],
+    "response": "EDIT 1: Ensure the code handles edge cases and constraints explicitly.\nEDIT 2: Use type hints for function parameters and return types for better readability and maintenance.\nEDIT 3: Test the function with various edge cases and constraints to ensure robustness.\nEDIT 4: Implement error handling for invalid input types and values.",
+    "shown": [
+     "r4",
+     "r5",
+     "r6",
+     "r7"
+    ]
+   },
+   "feedback": "PASSED all tests.",
+   "i": 15,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/18"
+  },
+  {
+   "context": [
+    "r8",
+    "r10",
+    "r9",
+    "r11"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 16,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/80"
+  },
+  {
+   "context": [
+    "r8",
+    "r10",
+    "r9",
+    "r11"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 17,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/139"
+  },
+  {
+   "context": [
+    "r8",
+    "r10",
+    "r9",
+    "r11"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 18,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/71"
+  },
+  {
+   "context": [
+    "r8",
+    "r10",
+    "r9",
+    "r11"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r12",
+      "target": "r8",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r13",
+      "target": "r9",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r14",
+      "target": "r10",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r15",
+      "target": "r11",
+      "verb": "EDIT"
+     }
+    ],
+    "response": "EDIT 1: Ensure the code handles edge cases and constraints explicitly.\nEDIT 2: Use type hints for function parameters and return types for better readability and maintenance.\nEDIT 3: Test the function with various edge cases and constraints to ensure robustness.\nEDIT 4: Implement error handling for invalid input types and values.",
+    "shown": [
+     "r8",
+     "r9",
+     "r10",
+     "r11"
+    ]
+   },
+   "feedback": "PASSED all tests.",
+   "i": 19,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/74"
+  },
+  {
+   "context": [
+    "r12",
+    "r13",
+    "r14",
+    "r15"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 20,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/140"
+  },
+  {
+   "context": [
+    "r12",
+    "r13",
+    "r14",
+    "r15"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "FAILED: AssertionError",
+   "i": 21,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/91"
+  },
+  {
+   "context": [
+    "r12",
+    "r13",
+    "r14",
+    "r15"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 22,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/73"
+  },
+  {
+   "context": [
+    "r12",
+    "r13",
+    "r14",
+    "r15"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r16",
+      "target": "r12",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r17",
+      "target": "r13",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r18",
+      "target": "r14",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r19",
+      "target": "r15",
+      "verb": "EDIT"
+     }
+    ],
+    "response": "EDIT 1: Ensure the code handles edge cases and constraints explicitly.\nEDIT 2: Use type hints for function parameters and return types for better readability and maintenance.\nEDIT 3: Test the function with various edge cases and constraints to ensure robustness.\nEDIT 4: Implement error handling for invalid input types and values.",
+    "shown": [
+     "r12",
+     "r13",
+     "r14",
+     "r15"
+    ]
+   },
+   "feedback": "PASSED all tests.",
+   "i": 23,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/147"
+  }
+ ],
+ "experiences": {
+  "e0": {
+   "id": "e0",
+   "outcome": "pass",
+   "run": "r0",
+   "task": "HumanEval/99"
+  },
+  "e1": {
+   "id": "e1",
+   "outcome": "pass",
+   "run": "r1",
+   "task": "HumanEval/24"
+  },
+  "e10": {
+   "id": "e10",
+   "outcome": "pass",
+   "run": "r10",
+   "task": "HumanEval/62"
+  },
+  "e11": {
+   "id": "e11",
+   "outcome": "fail",
+   "run": "r11",
+   "task": "HumanEval/127"
+  },
+  "e12": {
+   "id": "e12",
+   "outcome": "fail",
+   "run": "r12",
+   "task": "HumanEval/97"
+  },
+  "e13": {
+   "id": "e13",
+   "outcome": "pass",
+   "run": "r13",
+   "task": "HumanEval/42"
+  },
+  "e14": {
+   "id": "e14",
+   "outcome": "pass",
+   "run": "r14",
+   "task": "HumanEval/128"
+  },
+  "e15": {
+   "id": "e15",
+   "outcome": "pass",
+   "run": "r15",
+   "task": "HumanEval/18"
+  },
+  "e16": {
+   "id": "e16",
+   "outcome": "pass",
+   "run": "r16",
+   "task": "HumanEval/80"
+  },
+  "e17": {
+   "id": "e17",
+   "outcome": "pass",
+   "run": "r17",
+   "task": "HumanEval/139"
+  },
+  "e18": {
+   "id": "e18",
+   "outcome": "pass",
+   "run": "r18",
+   "task": "HumanEval/71"
+  },
+  "e19": {
+   "id": "e19",
+   "outcome": "pass",
+   "run": "r19",
+   "task": "HumanEval/74"
+  },
+  "e2": {
+   "id": "e2",
+   "outcome": "pass",
+   "run": "r2",
+   "task": "HumanEval/25"
+  },
+  "e20": {
+   "id": "e20",
+   "outcome": "pass",
+   "run": "r20",
+   "task": "HumanEval/140"
+  },
+  "e21": {
+   "id": "e21",
+   "outcome": "fail",
+   "run": "r21",
+   "task": "HumanEval/91"
+  },
+  "e22": {
+   "id": "e22",
+   "outcome": "pass",
+   "run": "r22",
+   "task": "HumanEval/73"
+  },
+  "e23": {
+   "id": "e23",
+   "outcome": "pass",
+   "run": "r23",
+   "task": "HumanEval/147"
+  },
+  "e3": {
+   "id": "e3",
+   "outcome": "pass",
+   "run": "r3",
+   "task": "HumanEval/156"
+  },
+  "e4": {
+   "id": "e4",
+   "outcome": "pass",
+   "run": "r4",
+   "task": "HumanEval/88"
+  },
+  "e5": {
+   "id": "e5",
+   "outcome": "pass",
+   "run": "r5",
+   "task": "HumanEval/142"
+  },
+  "e6": {
+   "id": "e6",
+   "outcome": "pass",
+   "run": "r6",
+   "task": "HumanEval/138"
+  },
+  "e7": {
+   "id": "e7",
+   "outcome": "pass",
+   "run": "r7",
+   "task": "HumanEval/29"
+  },
+  "e8": {
+   "id": "e8",
+   "outcome": "fail",
+   "run": "r8",
+   "task": "HumanEval/115"
+  },
+  "e9": {
+   "id": "e9",
+   "outcome": "pass",
+   "run": "r9",
+   "task": "HumanEval/103"
+  }
+ },
+ "fault_index": 8,
+ "history_events": 128,
+ "importance": {
+  "r0": 2,
+  "r1": 3,
+  "r10": 4,
+  "r11": 3,
+  "r12": 6,
+  "r13": 5,
+  "r14": 5,
+  "r15": 4,
+  "r16": 7,
+  "r17": 6,
+  "r18": 6,
+  "r19": 5,
+  "r2": 2,
+  "r3": 2,
+  "r4": 4,
+  "r5": 3,
+  "r6": 3,
+  "r7": 2,
+  "r8": 5,
+  "r9": 4
+ },
+ "llm": {
+  "cache_hits": 0,
+  "calls": 88,
+  "llm_seconds": 1800.568,
+  "tokens_in": 30846,
+  "tokens_out": 12091
+ },
+ "loaded": {
+  "r0": [
+   "D1-p0"
+  ],
+  "r1": [
+   "D2-p0"
+  ],
+  "r10": [
+   "r1",
+   "r2",
+   "r3"
+  ],
+  "r11": [
+   "r1",
+   "r2",
+   "r3"
+  ],
+  "r12": [
+   "r4",
+   "r5",
+   "r6",
+   "r7"
+  ],
+  "r13": [
+   "r4",
+   "r5",
+   "r6",
+   "r7"
+  ],
+  "r14": [
+   "r4",
+   "r5",
+   "r6",
+   "r7"
+  ],
+  "r15": [
+   "r4",
+   "r5",
+   "r6",
+   "r7"
+  ],
+  "r16": [
+   "r10",
+   "r11",
+   "r8",
+   "r9"
+  ],
+  "r17": [
+   "r10",
+   "r11",
+   "r8",
+   "r9"
+  ],
+  "r18": [
+   "r10",
+   "r11",
+   "r8",
+   "r9"
+  ],
+  "r19": [
+   "r10",
+   "r11",
+   "r8",
+   "r9"
+  ],
+  "r2": [
+   "D1-p0"
+  ],
+  "r20": [
+   "r12",
+   "r13",
+   "r14",
+   "r15"
+  ],
+  "r21": [
+   "r12",
+   "r13",
+   "r14",
+   "r15"
+  ],
+  "r22": [
+   "r12",
+   "r13",
+   "r14",
+   "r15"
+  ],
+  "r23": [
+   "r12",
+   "r13",
+   "r14",
+   "r15"
+  ],
+  "r3": [
+   "D2-p0"
+  ],
+  "r4": [
+   "r0"
+  ],
+  "r5": [
+   "r0"
+  ],
+  "r6": [
+   "r0"
+  ],
+  "r7": [
+   "r0"
+  ],
+  "r8": [
+   "r1",
+   "r2",
+   "r3"
+  ],
+  "r9": [
+   "r1",
+   "r2",
+   "r3"
+  ]
+ },
+ "models": {
+  "nomic-embed-text:latest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+  "qwen2.5-coder:7b": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364"
+ },
+ "tau": {
+  "embed": 0.55,
+  "tfidf": 0.05
+ },
+ "timing": {
+  "engine_total": 1.1592632345855236,
+  "evolve_total": 192.0670885629952,
+  "wall_total": 500.43425941467285
+ },
+ "universe": [
+  "D1-p0",
+  "D2-p0",
+  "r16",
+  "r17",
+  "r18",
+  "r19"
+ ]
+}

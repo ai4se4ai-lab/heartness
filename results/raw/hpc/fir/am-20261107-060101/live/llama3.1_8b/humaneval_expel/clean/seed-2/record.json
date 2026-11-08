@@ -1,0 +1,2357 @@
+{
+ "active": [
+  "D1-p0",
+  "D2-p0",
+  "r10",
+  "r11",
+  "r12",
+  "r3",
+  "r6",
+  "r7",
+  "r8",
+  "r9"
+ ],
+ "artifacts": {
+  "D1-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D1-p0",
+   "kind": "agent",
+   "path": "profiles/D1.md",
+   "sources": [],
+   "text": "You are a careful Python programmer. Write correct, readable functions that satisfy the docstring and examples exactly."
+  },
+  "D2-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D2-p0",
+   "kind": "agent",
+   "path": "profiles/D2.md",
+   "sources": [],
+   "text": "You are a pragmatic Python engineer. Solve the task directly and handle edge cases mentioned in the docstring."
+  },
+  "r0": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   "id": "r0",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [],
+   "text": "Redundant imports can cause errors and should be removed."
+  },
+  "r1": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   "id": "r1",
+   "kind": "memory",
+   "path": "insights/r1.md",
+   "sources": [],
+   "text": "Functions should be defined before they are used."
+  },
+  "r10": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e16",
+    "e17",
+    "e18",
+    "e19"
+   ],
+   "id": "r10",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [
+    "r3",
+    "r4",
+    "r5",
+    "r6",
+    "r7",
+    "r8"
+   ],
+   "text": "Redundant imports can cause errors and should be removed, but also consider the context and purpose of the import."
+  },
+  "r11": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [
+    "e20",
+    "e21",
+    "e22",
+    "e23"
+   ],
+   "id": "r11",
+   "kind": "memory",
+   "path": "insights/r11.md",
+   "sources": [
+    "r3",
+    "r5",
+    "r6",
+    "r7",
+    "r8",
+    "r9",
+    "r10"
+   ],
+   "text": "Functions should be defined before they are used in the code, and imports should be at the top of the file."
+  },
+  "r12": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e20",
+    "e21",
+    "e22",
+    "e23"
+   ],
+   "id": "r12",
+   "kind": "memory",
+   "path": "insights/r5.md",
+   "sources": [
+    "r3",
+    "r5",
+    "r6",
+    "r7",
+    "r8",
+    "r9",
+    "r10"
+   ],
+   "text": "Consider the context and purpose of the code when deciding the order of imports and function definitions."
+  },
+  "r2": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   "id": "r2",
+   "kind": "memory",
+   "path": "insights/r2.md",
+   "sources": [],
+   "text": "Use descriptive variable names to improve code readability."
+  },
+  "r3": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ],
+   "id": "r3",
+   "kind": "memory",
+   "path": "insights/r3.md",
+   "sources": [
+    "r0",
+    "r1",
+    "r2"
+   ],
+   "text": "Functions should be defined before they are used in the code."
+  },
+  "r4": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ],
+   "id": "r4",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [
+    "r0",
+    "r1",
+    "r2"
+   ],
+   "text": "Redundant imports can cause errors and should be removed, but also consider the context and purpose of the import."
+  },
+  "r5": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [
+    "e8",
+    "e9",
+    "e10",
+    "e11"
+   ],
+   "id": "r5",
+   "kind": "memory",
+   "path": "insights/r5.md",
+   "sources": [
+    "r1",
+    "r2",
+    "r3",
+    "r4"
+   ],
+   "text": "Functions should be defined before they are used in the code, and imports should be at the top of the file."
+  },
+  "r6": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e8",
+    "e9",
+    "e10",
+    "e11"
+   ],
+   "id": "r6",
+   "kind": "memory",
+   "path": "insights/r1.md",
+   "sources": [
+    "r1",
+    "r2",
+    "r3",
+    "r4"
+   ],
+   "text": "Functions should be defined before they are used in the code, and imports should be at the top of the file."
+  },
+  "r7": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [
+    "e12",
+    "e13",
+    "e14",
+    "e15"
+   ],
+   "id": "r7",
+   "kind": "memory",
+   "path": "insights/r7.md",
+   "sources": [
+    "r2",
+    "r3",
+    "r4",
+    "r5",
+    "r6"
+   ],
+   "text": "Consider the order of operations when using loops and conditional statements to avoid unnecessary iterations."
+  },
+  "r8": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e12",
+    "e13",
+    "e14",
+    "e15"
+   ],
+   "id": "r8",
+   "kind": "memory",
+   "path": "insights/r2.md",
+   "sources": [
+    "r2",
+    "r3",
+    "r4",
+    "r5",
+    "r6"
+   ],
+   "text": "Functions should be defined before they are used in the code, and imports should be at the top of the file, but also consider the context and purpose of the code."
+  },
+  "r9": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [
+    "e16",
+    "e17",
+    "e18",
+    "e19"
+   ],
+   "id": "r9",
+   "kind": "memory",
+   "path": "insights/r9.md",
+   "sources": [
+    "r3",
+    "r4",
+    "r5",
+    "r6",
+    "r7",
+    "r8"
+   ],
+   "text": "Functions should be defined before they are used in the code, and imports should be at the top of the file."
+  }
+ },
+ "config": {
+  "batch": 6,
+  "benchmark": "humaneval",
+  "compose_at": [
+   12,
+   24
+  ],
+  "expel_batch": 4,
+  "expel_top": 5,
+  "fault": null,
+  "k_memories": 3,
+  "k_reflect": 2,
+  "k_skills": 2,
+  "model": "llama3.1:8b",
+  "n_evolve": 24,
+  "policy": "expel",
+  "seed": 2
+ },
+ "dataset": "evalplus/humanevalplus@d32357cf319e50e9c8d8dab5ea876c72b0fd321b",
+ "deployments": {
+  "D1": [
+   "r10",
+   "r11",
+   "r12",
+   "r3",
+   "r6",
+   "r7",
+   "r8",
+   "r9"
+  ],
+  "D2": [
+   "r10",
+   "r12",
+   "r6",
+   "r7",
+   "r8"
+  ]
+ },
+ "environment": {
+  "cluster": "fir",
+  "git": "",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "host": "fc11011",
+  "phase": "gen",
+  "platform": "Linux-5.14.0-687.29.1.el9_8.x86_64-x86_64-AMD_EPYC_9454_48-Core_Processor-with-glibc2.37",
+  "python": "3.11.5",
+  "source_sha256": "2d88e045157d7f2e0be8389a406bfa28b5086242e483764e7320fe791809522f"
+ },
+ "eval": {
+  "clean": [
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/49"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/20"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/132"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/154"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/55"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/100"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/69"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/48"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/75"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/122"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/33"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/16"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/6"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/95"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/163"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "HumanEval/153"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/37"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/94"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": true
+    },
+    "task": "HumanEval/146"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/0"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/109"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/130"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/155"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/41"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/2"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/4"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/51"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/121"
+   },
+   {
+    "context": [
+     "r12",
+     "r6",
+     "r7",
+     "r8",
+     "r10",
+     "r11",
+     "r3",
+     "r9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/52"
+   }
+  ],
+  "seed_only": [
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/49"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/20"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/132"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/154"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/55"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/100"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/69"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/48"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/75"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/122"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/33"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/16"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/6"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/95"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/163"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "HumanEval/153"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/37"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/94"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": true
+    },
+    "task": "HumanEval/146"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/0"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/109"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/130"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/155"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/41"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/2"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/4"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/51"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/121"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/52"
+   }
+  ]
+ },
+ "eval_tasks": [
+  "HumanEval/49",
+  "HumanEval/20",
+  "HumanEval/132",
+  "HumanEval/154",
+  "HumanEval/55",
+  "HumanEval/100",
+  "HumanEval/69",
+  "HumanEval/48",
+  "HumanEval/75",
+  "HumanEval/122",
+  "HumanEval/33",
+  "HumanEval/16",
+  "HumanEval/6",
+  "HumanEval/95",
+  "HumanEval/163",
+  "HumanEval/153",
+  "HumanEval/37",
+  "HumanEval/94",
+  "HumanEval/146",
+  "HumanEval/0",
+  "HumanEval/109",
+  "HumanEval/130",
+  "HumanEval/155",
+  "HumanEval/41",
+  "HumanEval/2",
+  "HumanEval/4",
+  "HumanEval/51",
+  "HumanEval/121",
+  "HumanEval/52"
+ ],
+ "evolution": [
+  {
+   "context": [
+    "D1-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 0,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/115"
+  },
+  {
+   "context": [
+    "D2-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 1,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/74"
+  },
+  {
+   "context": [
+    "D1-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 2,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": true
+   },
+   "task": "HumanEval/104"
+  },
+  {
+   "context": [
+    "D2-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r0",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r1",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r2",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "target": null,
+      "verb": "REMOVE"
+     }
+    ],
+    "response": "ADD: Redundant imports can cause errors and should be removed.\n\nADD: Functions should be defined before they are used.\n\nADD: Use descriptive variable names to improve code readability.\n\nREMOVE: 1 (the insight about redundant imports is more general and does not mention specific function names)",
+    "shown": []
+   },
+   "feedback": "FAILED: AssertionError",
+   "i": 3,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/87"
+  },
+  {
+   "context": [
+    "r0",
+    "r1",
+    "r2"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 4,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/18"
+  },
+  {
+   "context": [
+    "r0",
+    "r1",
+    "r2"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 5,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/28"
+  },
+  {
+   "context": [
+    "r0",
+    "r1",
+    "r2"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 6,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/114"
+  },
+  {
+   "context": [
+    "r0",
+    "r1",
+    "r2"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r3",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r4",
+      "target": "r0",
+      "verb": "EDIT"
+     },
+     {
+      "target": "r1",
+      "verb": "AGREE"
+     },
+     {
+      "target": "r2",
+      "verb": "REMOVE"
+     }
+    ],
+    "response": "ADD: Functions should be defined before they are used in the code.\n\nEDIT 1: Redundant imports can cause errors and should be removed, but also consider the context and purpose of the import.\n\nAGREE 2\n\nREMOVE 3",
+    "shown": [
+     "r0",
+     "r1",
+     "r2"
+    ]
+   },
+   "feedback": "FAILED: AssertionError",
+   "i": 7,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/145"
+  },
+  {
+   "context": [
+    "r1",
+    "r4",
+    "r3",
+    "r2"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 8,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/17"
+  },
+  {
+   "context": [
+    "r1",
+    "r4",
+    "r3",
+    "r2"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 9,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/149"
+  },
+  {
+   "context": [
+    "r1",
+    "r4",
+    "r3",
+    "r2"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 10,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/141"
+  },
+  {
+   "context": [
+    "r1",
+    "r4",
+    "r3",
+    "r2"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r5",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r6",
+      "target": "r1",
+      "verb": "EDIT"
+     },
+     {
+      "target": "r2",
+      "verb": "AGREE"
+     },
+     {
+      "target": "r3",
+      "verb": "REMOVE"
+     }
+    ],
+    "response": "ADD: Functions should be defined before they are used in the code, and imports should be at the top of the file.\n\nEDIT 1: Functions should be defined before they are used in the code, and imports should be at the top of the file.\n\nAGREE 2\n\nREMOVE 3\n\nADD: Redundant imports can cause errors and should be removed, but also consider the context and purpose of the import.\n\nEDIT 4: Redundant imports can cause errors and should be removed, but also consider the context and purpose of the import, and use descriptive variable names to improve code readability.",
+    "shown": [
+     "r1",
+     "r2",
+     "r3",
+     "r4"
+    ]
+   },
+   "feedback": "FAILED: AssertionError",
+   "i": 11,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/50"
+  },
+  {
+   "context": [
+    "r6",
+    "r4",
+    "r2",
+    "r5",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 12,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/61"
+  },
+  {
+   "context": [
+    "r6",
+    "r4",
+    "r2",
+    "r5",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "FAILED: AssertionError",
+   "i": 13,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/112"
+  },
+  {
+   "context": [
+    "r6",
+    "r4",
+    "r2",
+    "r5",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 14,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/140"
+  },
+  {
+   "context": [
+    "r6",
+    "r4",
+    "r2",
+    "r5",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r7",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r8",
+      "target": "r2",
+      "verb": "EDIT"
+     },
+     {
+      "target": "r3",
+      "verb": "AGREE"
+     },
+     {
+      "target": "r4",
+      "verb": "REMOVE"
+     }
+    ],
+    "response": "ADD: Consider the order of operations when using loops and conditional statements to avoid unnecessary iterations.\n\nEDIT 1: Functions should be defined before they are used in the code, and imports should be at the top of the file, but also consider the context and purpose of the code.\n\nAGREE 2\n\nREMOVE 3\n\nADD: Use descriptive variable names to improve code readability, and consider using meaningful variable names for complex data structures.\n\nEDIT 4: Functions should be defined before they are used in the code, and imports should be at the top of the file, but also consider the context and purpose of the code.",
+    "shown": [
+     "r2",
+     "r3",
+     "r4",
+     "r5",
+     "r6"
+    ]
+   },
+   "feedback": "PASSED all tests.",
+   "i": 15,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/161"
+  },
+  {
+   "context": [
+    "r6",
+    "r8",
+    "r3",
+    "r4",
+    "r5",
+    "r7"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 16,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/66"
+  },
+  {
+   "context": [
+    "r6",
+    "r8",
+    "r3",
+    "r4",
+    "r5"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 17,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/29"
+  },
+  {
+   "context": [
+    "r6",
+    "r8",
+    "r3",
+    "r4",
+    "r5",
+    "r7"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 18,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/35"
+  },
+  {
+   "context": [
+    "r6",
+    "r8",
+    "r3",
+    "r4",
+    "r5"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r9",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r10",
+      "target": "r4",
+      "verb": "EDIT"
+     },
+     {
+      "target": "r5",
+      "verb": "AGREE"
+     },
+     {
+      "target": "r6",
+      "verb": "REMOVE"
+     }
+    ],
+    "response": "ADD: Functions should be defined before they are used in the code, and imports should be at the top of the file.\n\nEDIT 2: Redundant imports can cause errors and should be removed, but also consider the context and purpose of the import.\n\nAGREE 3\n\nREMOVE 4",
+    "shown": [
+     "r3",
+     "r4",
+     "r5",
+     "r6",
+     "r7",
+     "r8"
+    ]
+   },
+   "feedback": "PASSED all tests.",
+   "i": 19,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/42"
+  },
+  {
+   "context": [
+    "r10",
+    "r5",
+    "r6",
+    "r8",
+    "r3",
+    "r7",
+    "r9"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 20,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/106"
+  },
+  {
+   "context": [
+    "r10",
+    "r5",
+    "r6",
+    "r8",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "FAILED: AssertionError",
+   "i": 21,
+   "passed": false,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/117"
+  },
+  {
+   "context": [
+    "r10",
+    "r5",
+    "r6",
+    "r8",
+    "r3",
+    "r7",
+    "r9"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 22,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/19"
+  },
+  {
+   "context": [
+    "r10",
+    "r5",
+    "r6",
+    "r8",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r11",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r12",
+      "target": "r5",
+      "verb": "EDIT"
+     },
+     {
+      "target": "r7",
+      "verb": "AGREE"
+     },
+     {
+      "target": "r10",
+      "verb": "REMOVE"
+     }
+    ],
+    "response": "ADD: Functions should be defined before they are used in the code, and imports should be at the top of the file.\n\nEDIT 2: Consider the context and purpose of the code when deciding the order of imports and function definitions.\n\nAGREE 4\n\nREMOVE 7",
+    "shown": [
+     "r3",
+     "r5",
+     "r6",
+     "r7",
+     "r8",
+     "r9",
+     "r10"
+    ]
+   },
+   "feedback": "PASSED all tests.",
+   "i": 23,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/13"
+  }
+ ],
+ "experiences": {
+  "e0": {
+   "id": "e0",
+   "outcome": "fail",
+   "run": "r0",
+   "task": "HumanEval/115"
+  },
+  "e1": {
+   "id": "e1",
+   "outcome": "pass",
+   "run": "r1",
+   "task": "HumanEval/74"
+  },
+  "e10": {
+   "id": "e10",
+   "outcome": "fail",
+   "run": "r10",
+   "task": "HumanEval/141"
+  },
+  "e11": {
+   "id": "e11",
+   "outcome": "fail",
+   "run": "r11",
+   "task": "HumanEval/50"
+  },
+  "e12": {
+   "id": "e12",
+   "outcome": "pass",
+   "run": "r12",
+   "task": "HumanEval/61"
+  },
+  "e13": {
+   "id": "e13",
+   "outcome": "fail",
+   "run": "r13",
+   "task": "HumanEval/112"
+  },
+  "e14": {
+   "id": "e14",
+   "outcome": "fail",
+   "run": "r14",
+   "task": "HumanEval/140"
+  },
+  "e15": {
+   "id": "e15",
+   "outcome": "pass",
+   "run": "r15",
+   "task": "HumanEval/161"
+  },
+  "e16": {
+   "id": "e16",
+   "outcome": "pass",
+   "run": "r16",
+   "task": "HumanEval/66"
+  },
+  "e17": {
+   "id": "e17",
+   "outcome": "pass",
+   "run": "r17",
+   "task": "HumanEval/29"
+  },
+  "e18": {
+   "id": "e18",
+   "outcome": "pass",
+   "run": "r18",
+   "task": "HumanEval/35"
+  },
+  "e19": {
+   "id": "e19",
+   "outcome": "pass",
+   "run": "r19",
+   "task": "HumanEval/42"
+  },
+  "e2": {
+   "id": "e2",
+   "outcome": "pass",
+   "run": "r2",
+   "task": "HumanEval/104"
+  },
+  "e20": {
+   "id": "e20",
+   "outcome": "pass",
+   "run": "r20",
+   "task": "HumanEval/106"
+  },
+  "e21": {
+   "id": "e21",
+   "outcome": "fail",
+   "run": "r21",
+   "task": "HumanEval/117"
+  },
+  "e22": {
+   "id": "e22",
+   "outcome": "pass",
+   "run": "r22",
+   "task": "HumanEval/19"
+  },
+  "e23": {
+   "id": "e23",
+   "outcome": "pass",
+   "run": "r23",
+   "task": "HumanEval/13"
+  },
+  "e3": {
+   "id": "e3",
+   "outcome": "fail",
+   "run": "r3",
+   "task": "HumanEval/87"
+  },
+  "e4": {
+   "id": "e4",
+   "outcome": "fail",
+   "run": "r4",
+   "task": "HumanEval/18"
+  },
+  "e5": {
+   "id": "e5",
+   "outcome": "pass",
+   "run": "r5",
+   "task": "HumanEval/28"
+  },
+  "e6": {
+   "id": "e6",
+   "outcome": "pass",
+   "run": "r6",
+   "task": "HumanEval/114"
+  },
+  "e7": {
+   "id": "e7",
+   "outcome": "fail",
+   "run": "r7",
+   "task": "HumanEval/145"
+  },
+  "e8": {
+   "id": "e8",
+   "outcome": "pass",
+   "run": "r8",
+   "task": "HumanEval/17"
+  },
+  "e9": {
+   "id": "e9",
+   "outcome": "pass",
+   "run": "r9",
+   "task": "HumanEval/149"
+  }
+ },
+ "fault_index": 7,
+ "history_events": 107,
+ "importance": {
+  "r0": 2,
+  "r1": 3,
+  "r10": 2,
+  "r11": 2,
+  "r12": 4,
+  "r2": 2,
+  "r3": 2,
+  "r4": 2,
+  "r5": 3,
+  "r6": 3,
+  "r7": 3,
+  "r8": 3,
+  "r9": 2
+ },
+ "llm": {
+  "cache_hits": 0,
+  "calls": 88,
+  "llm_seconds": 1669.668,
+  "tokens_in": 33301,
+  "tokens_out": 13495
+ },
+ "loaded": {
+  "r0": [
+   "D1-p0"
+  ],
+  "r1": [
+   "D2-p0"
+  ],
+  "r10": [
+   "r1",
+   "r2",
+   "r3",
+   "r4"
+  ],
+  "r11": [
+   "r1",
+   "r2",
+   "r3",
+   "r4"
+  ],
+  "r12": [
+   "r2",
+   "r3",
+   "r4",
+   "r5",
+   "r6"
+  ],
+  "r13": [
+   "r2",
+   "r3",
+   "r4",
+   "r5",
+   "r6"
+  ],
+  "r14": [
+   "r2",
+   "r3",
+   "r4",
+   "r5",
+   "r6"
+  ],
+  "r15": [
+   "r2",
+   "r3",
+   "r4",
+   "r5",
+   "r6"
+  ],
+  "r16": [
+   "r3",
+   "r4",
+   "r5",
+   "r6",
+   "r7",
+   "r8"
+  ],
+  "r17": [
+   "r3",
+   "r4",
+   "r5",
+   "r6",
+   "r8"
+  ],
+  "r18": [
+   "r3",
+   "r4",
+   "r5",
+   "r6",
+   "r7",
+   "r8"
+  ],
+  "r19": [
+   "r3",
+   "r4",
+   "r5",
+   "r6",
+   "r8"
+  ],
+  "r2": [
+   "D1-p0"
+  ],
+  "r20": [
+   "r10",
+   "r3",
+   "r5",
+   "r6",
+   "r7",
+   "r8",
+   "r9"
+  ],
+  "r21": [
+   "r10",
+   "r3",
+   "r5",
+   "r6",
+   "r8"
+  ],
+  "r22": [
+   "r10",
+   "r3",
+   "r5",
+   "r6",
+   "r7",
+   "r8",
+   "r9"
+  ],
+  "r23": [
+   "r10",
+   "r3",
+   "r5",
+   "r6",
+   "r8"
+  ],
+  "r3": [
+   "D2-p0"
+  ],
+  "r4": [
+   "r0",
+   "r1",
+   "r2"
+  ],
+  "r5": [
+   "r0",
+   "r1",
+   "r2"
+  ],
+  "r6": [
+   "r0",
+   "r1",
+   "r2"
+  ],
+  "r7": [
+   "r0",
+   "r1",
+   "r2"
+  ],
+  "r8": [
+   "r1",
+   "r2",
+   "r3",
+   "r4"
+  ],
+  "r9": [
+   "r1",
+   "r2",
+   "r3",
+   "r4"
+  ]
+ },
+ "models": {
+  "llama3.1:8b": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+  "nomic-embed-text:latest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+ },
+ "tau": {
+  "embed": 0.55,
+  "tfidf": 0.05
+ },
+ "timing": {
+  "engine_total": 0.4973270236514509,
+  "evolve_total": 217.0767267756164,
+  "wall_total": 494.26090145111084
+ },
+ "universe": [
+  "D1-p0",
+  "D2-p0",
+  "r10",
+  "r11",
+  "r12",
+  "r3",
+  "r6",
+  "r7",
+  "r8",
+  "r9"
+ ]
+}

@@ -1,0 +1,2802 @@
+{
+ "active": [
+  "D1-p24",
+  "D2-p24",
+  "k0",
+  "k1",
+  "k2",
+  "k3",
+  "m0",
+  "m1",
+  "m10",
+  "m11",
+  "m12",
+  "m13",
+  "m14",
+  "m15",
+  "m16",
+  "m17",
+  "m18",
+  "m19",
+  "m2",
+  "m20",
+  "m21",
+  "m22",
+  "m23",
+  "m3",
+  "m4",
+  "m5",
+  "m6",
+  "m7",
+  "m8",
+  "m9"
+ ],
+ "artifacts": {
+  "D1-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D1-p0",
+   "kind": "agent",
+   "path": "profiles/D1.md",
+   "sources": [],
+   "text": "You are a careful Python programmer. Write correct, readable functions that satisfy the docstring and examples exactly."
+  },
+  "D1-p12": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [
+    "k0",
+    "k1"
+   ],
+   "derivation": "edit",
+   "experiences": [],
+   "id": "D1-p12",
+   "kind": "agent",
+   "path": "profiles/D1.md",
+   "sources": [
+    "D1-p0",
+    "k0",
+    "k1"
+   ],
+   "text": "**Revised Agent Profile:**\n\nYou are an efficient Python programmer specializing in integer operations and list processing, ensuring code correctness, readability, and adherence to specified rules. Your functions will accurately perform tasks such as:\n\n- **Efficient Integer Operations**:\n  - Consistently round numbers towards zero for uniformity when equidistant.\n  - Efficiently find the largest divisor by checking downwards from half the number.\n  - Factorize integers, handling the prime number 2 separately and iterating through odd numbers up to the square root.\n  - Convert integers to Roman numerals using a mapping of tuples for iterative subtraction and appending.\n  - Safely access list elements by verifying index validity to avoid runtime errors.\n\n- **Efficient List Processing and Mathematical Operations**:\n  - Systematically check divisibility in loops, starting from the smallest even number relevant to the divisor.\n  - Use list comprehension for concise and efficient filtering, applying conditions directly within a single line.\n  - Correctly iterate over nested"
+  },
+  "D1-p24": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [
+    "k0",
+    "k1",
+    "k2",
+    "k3"
+   ],
+   "derivation": "edit",
+   "experiences": [],
+   "id": "D1-p24",
+   "kind": "agent",
+   "path": "profiles/D1.md",
+   "sources": [
+    "D1-p12",
+    "k0",
+    "k1",
+    "k2",
+    "k3"
+   ],
+   "text": "**Revised Agent Profile:**\n\nYou are a specialized Python coding agent focused on integer operations and list processing, ensuring code accuracy, readability, and compliance with specified rules. Your functions will precisely execute tasks such as:\n\n- **Efficient Integer Operations**:\n  - Round numbers towards zero when equidistant for consistency.\n  - Determine the largest divisor by examining downwards from half the number.\n  - Factorize integers, treating the prime number 2 distinctly and iterating through odd numbers up to the square root.\n  - Convert integers to Roman numerals using a tuple mapping for iterative subtraction and appending.\n  - Safely access list elements by validating index bounds to prevent runtime errors.\n\n- **Efficient List Processing and Mathematical Operations**:\n  - Methodically check divisibility in loops, beginning with the smallest pertinent even number.\n  - Employ list comprehension for succinct and efficient filtering, integrating conditions directly within a single line.\n  - Accurately iterate over nested lists, ensuring comprehensive data processing without"
+  },
+  "D2-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D2-p0",
+   "kind": "agent",
+   "path": "profiles/D2.md",
+   "sources": [],
+   "text": "You are a pragmatic Python engineer. Solve the task directly and handle edge cases mentioned in the docstring."
+  },
+  "D2-p12": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [
+    "k0",
+    "k1"
+   ],
+   "derivation": "edit",
+   "experiences": [],
+   "id": "D2-p12",
+   "kind": "agent",
+   "path": "profiles/D2.md",
+   "sources": [
+    "D2-p0",
+    "k0",
+    "k1"
+   ],
+   "text": "**Revised Agent Profile:**\n\nYou are a meticulous Python engineer specializing in efficient list processing and mathematical operations. Your primary role is to solve coding tasks directly, handling edge cases as outlined in the docstring. Key rules to follow include:\n\n1. **Divisibility Check in Loops**: Begin divisibility tests from the smallest relevant even number, incrementing by the divisor's value to ensure all potential factors are systematically checked.\n\n2. **List Filtering with List Comprehension**: Employ list comprehension for succinct and efficient filtering, applying conditions directly within a single line to filter elements, such as identifying strings that start with a specific prefix.\n\n3. **Iterating Over Nested Structures**: When processing 2D grids, correctly access and aggregate values from both dimensions to avoid index errors and ensure thorough data handling.\n\n4. **Calculating Averages**: Use the `round` function to secure a whole number for averages, addressing edge cases like significant disparities between numbers to maintain correct function behavior.\n\n5"
+  },
+  "D2-p24": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [
+    "k2",
+    "k3"
+   ],
+   "derivation": "edit",
+   "experiences": [],
+   "id": "D2-p24",
+   "kind": "agent",
+   "path": "profiles/D2.md",
+   "sources": [
+    "D2-p12",
+    "k2",
+    "k3"
+   ],
+   "text": "**Revised Agent Profile:**\n\nYou are a proficient Python engineer adept at list processing, mathematical operations, and data manipulation. Your primary role involves solving coding tasks with precision, adhering to the following key rules:\n\n1. **Divisibility Check in Loops**: Start divisibility tests from the smallest relevant even number, incrementing by the divisor's value to systematically check all potential factors.\n\n2. **List Filtering with List Comprehension**: Use list comprehension for efficient filtering, applying conditions directly within a single line to filter elements, such as identifying strings starting with a specific prefix.\n\n3. **Iterating Over Nested Structures**: When processing 2D grids, correctly access and aggregate values from both dimensions to avoid index errors and ensure thorough data handling.\n\n4. **Calculating Averages**: Employ the `round` function to secure a whole number for averages, addressing edge cases like significant disparities between numbers to maintain correct function behavior.\n\n5. **Efficient Data Manipulation**:"
+  },
+  "k0": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [],
+   "id": "k0",
+   "kind": "skill",
+   "path": "skills/k0.md",
+   "sources": [
+    "m0",
+    "m1",
+    "m2",
+    "m3",
+    "m4",
+    "m5"
+   ],
+   "text": "Title: Efficient Integer Operations and Handling\n\nSteps:\n\n1. **Consistent Rounding**: When rounding to the nearest integer, if equidistant, round towards the integer further from zero for uniformity.\n\n2. **Finding Largest Divisor**: To find the largest divisor of a number, start from half the number and move downwards, checking divisibility. Return the first divisor found for efficiency.\n\n3. **Integer Factorization**: For factorizing, begin by handling the prime 2 separately. Then, iterate through odd numbers up to the square root of the remaining number, checking divisibility and appending factors. If the remaining number exceeds 2 post-iteration, it's a prime factor.\n\n4. **Integer to Roman Numerals**: Convert integers to Roman numerals by mapping values to numerals via a list of tuples. Iteratively subtract and append numerals until the input number reduces to zero.\n\n5. **Safe List Access**: Before accessing list elements, verify the index is within range to prevent `"
+  },
+  "k1": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [],
+   "id": "k1",
+   "kind": "skill",
+   "path": "skills/k1.md",
+   "sources": [
+    "m6",
+    "m7",
+    "m8",
+    "m9",
+    "m10",
+    "m11"
+   ],
+   "text": "<title>Efficient List Processing and Mathematical Operations</title>\n\n1. **Divisibility Check in Loops**: Start from the smallest relevant even number and increment by the divisor's value to systematically test all possible factors, ensuring no potential factors are missed.\n\n2. **List Filtering with List Comprehension**: Utilize list comprehension for concise and efficient filtering. Apply conditions directly within a single line to filter elements, such as checking if strings start with a specific prefix.\n\n3. **Iterating Over Nested Structures**: When dealing with 2D grids, correctly access and accumulate values from both dimensions to prevent index errors and ensure comprehensive data processing.\n\n4. **Calculating Averages**: Use the `round` function to obtain a whole number for averages. Handle edge cases, like when one number is significantly greater than the other, to ensure correct function behavior.\n\n5. **Computing Polynomial Derivatives**: For polynomials represented by coefficient lists, iterate from the second coefficient (index 1) to the"
+  },
+  "k2": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [],
+   "id": "k2",
+   "kind": "skill",
+   "path": "skills/k2.md",
+   "sources": [
+    "m12",
+    "m13",
+    "m14",
+    "m15",
+    "m16",
+    "m17"
+   ],
+   "text": "Title: Efficient Python Data Manipulation and Calculation Skills\n\n1. **Extract Last Digit of Large Numbers**: Use the modulus operator (%) with 10 to isolate the units digit efficiently, regardless of input size.\n   - Example: `last_digit = large_number % 10`\n\n2. **Modify List Elements with List Comprehension**: Create a new list with desired changes, preserving the original list.\n   - Example: `new_list = [x*2 for x in original_list]`\n\n3. **Calculate Sign Product and Magnitude Sum**: Iterate through an array, updating the sign product and accumulating the magnitude sum.\n   - Example:\n     ```\n     sign_product = 1\n     magnitude_sum = 0\n     for num in array:\n         sign_product *= 1 if num > 0 else -1 if num < 0 else 0\n         magnitude_sum += abs(num)\n     ```\n\n4. **Count Overlapping Substring Occurrences**: Adjust the"
+  },
+  "k3": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [],
+   "id": "k3",
+   "kind": "skill",
+   "path": "skills/k3.md",
+   "sources": [
+    "m18",
+    "m19",
+    "m20",
+    "m21",
+    "m22",
+    "m23"
+   ],
+   "text": "Skill Title: Efficient Data Validation and Manipulation\n\nSteps:\n\n1. **Triangle Side Validation**: When validating triangle side lengths, sort the sides and check if the sum of the two smaller sides exceeds the largest side. This ensures they form a valid triangle before calculating the area.\n\n2. **List Comparison by Character Count**: When comparing lists, consider their total character counts. If lists have unequal lengths, return the shorter one; if equal, return either as they contribute equally. This prioritizes brevity when elements' content matters more than quantity.\n\n3. **String Manipulation with Regular Expressions**: Utilize the 're' module for complex pattern matching and replacement. This provides powerful tools for efficient text processing when dealing with intricate string manipulations.\n\n4. **Text Data Edge Case Handling**: Ensure to handle edge cases like empty strings or sentences. Use conditional checks to prevent errors when splitting or processing sentences, ensuring all elements are non-empty strings before further operations.\n\n5. **Array Comparison by Element"
+  },
+  "m0": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0"
+   ],
+   "id": "m0",
+   "kind": "memory",
+   "path": "memory/m0.md",
+   "sources": [],
+   "text": "When rounding to the nearest integer, if a number is equidistant from two integers, always round towards the integer further from zero to maintain consistent rounding behavior."
+  },
+  "m1": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e1"
+   ],
+   "id": "m1",
+   "kind": "memory",
+   "path": "memory/m1.md",
+   "sources": [
+    "m0"
+   ],
+   "text": "When searching for the largest divisor of a number, iterate from half of the number downwards, checking divisibility, and return the first divisor found. This approach efficiently identifies the largest divisor smaller than the input number."
+  },
+  "m10": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e10"
+   ],
+   "id": "m10",
+   "kind": "memory",
+   "path": "memory/m10.md",
+   "sources": [
+    "m1",
+    "m4"
+   ],
+   "text": "When computing derivatives of polynomials represented by coefficient lists, remember to iterate from the second coefficient (index 1) to the end, multiplying each by its corresponding power of x (represented by the index) to obtain the derivative's coefficients."
+  },
+  "m11": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e11"
+   ],
+   "id": "m11",
+   "kind": "memory",
+   "path": "memory/m11.md",
+   "sources": [
+    "m1",
+    "m5"
+   ],
+   "text": "\"When checking for prime numbers, test divisibility only up to the square root of the number, as any factor larger than this would have a corresponding factor smaller or equal to it.\""
+  },
+  "m12": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e12"
+   ],
+   "id": "m12",
+   "kind": "memory",
+   "path": "memory/m12.md",
+   "sources": [
+    "m1",
+    "m0"
+   ],
+   "text": "When extracting the last digit of large numbers for multiplication, use the modulus operator (%) with 10 to isolate the units digit, ensuring the operation remains efficient regardless of input size."
+  },
+  "m13": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e13"
+   ],
+   "id": "m13",
+   "kind": "memory",
+   "path": "memory/m13.md",
+   "sources": [
+    "m7",
+    "m4"
+   ],
+   "text": "<list_item>When modifying list elements, use list comprehension to create a new list with desired changes, preserving the original list. This approach is efficient and avoids in-place modifications that could unintentionally alter the code logic.</list_item>"
+  },
+  "m14": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e14"
+   ],
+   "id": "m14",
+   "kind": "memory",
+   "path": "memory/m14.md",
+   "sources": [
+    "m1",
+    "m7"
+   ],
+   "text": "When calculating the sign product and magnitude sum of an array, iterate through each number, updating the sign product by multiplying it with 1 for positive, -1 for negative, and 0 for zero. Accumulate the magnitude sum by adding the absolute values of each number."
+  },
+  "m15": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e15"
+   ],
+   "id": "m15",
+   "kind": "memory",
+   "path": "memory/m15.md",
+   "sources": [
+    "m1",
+    "m7"
+   ],
+   "text": "<list_item>When counting overlapping occurrences of a substring within a string, adjust the starting position for the search to just after the found substring, incrementing the count each time to include overlapping cases.</list_item>"
+  },
+  "m16": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e16"
+   ],
+   "id": "m16",
+   "kind": "memory",
+   "path": "memory/m16.md",
+   "sources": [
+    "m1",
+    "m4"
+   ],
+   "text": "When validating sequences, check adjacent elements for equality to ensure no repeated characters or patterns violate the condition, iterating through the sequence with a loop."
+  },
+  "m17": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e17"
+   ],
+   "id": "m17",
+   "kind": "memory",
+   "path": "memory/m17.md",
+   "sources": [
+    "m1",
+    "m3"
+   ],
+   "text": "When calculating factorials for a sequence of numbers, precompute and store factorial values in a list or dictionary to avoid redundant calculations, improving efficiency for repeated factorial computations within a function."
+  },
+  "m18": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e18"
+   ],
+   "id": "m18",
+   "kind": "memory",
+   "path": "memory/m18.md",
+   "sources": [
+    "m1",
+    "m0"
+   ],
+   "text": "When validating triangle side lengths, sort the sides and check if the sum of the two smaller sides exceeds the largest side to ensure they form a valid triangle before calculating the area."
+  },
+  "m19": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e19"
+   ],
+   "id": "m19",
+   "kind": "memory",
+   "path": "memory/m19.md",
+   "sources": [
+    "m1",
+    "m14"
+   ],
+   "text": "When comparing lists, consider their total character counts. If lists have unequal lengths, return the shorter one; if equal, return either as they contribute equally. This approach prioritizes brevity when elements' content matters more than quantity."
+  },
+  "m2": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e2"
+   ],
+   "id": "m2",
+   "kind": "memory",
+   "path": "memory/m2.md",
+   "sources": [
+    "m1",
+    "m0"
+   ],
+   "text": "When factorizing an integer, first handle the smallest prime (2) separately, then iterate through odd numbers up to the square root of the remaining number, checking divisibility and appending factors to the list. Finally, if the remaining number is greater than 2, it is a prime factor."
+  },
+  "m20": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e20"
+   ],
+   "id": "m20",
+   "kind": "memory",
+   "path": "memory/m20.md",
+   "sources": [
+    "m19",
+    "m7"
+   ],
+   "text": "<list_item>When manipulating strings, use regular expressions for complex pattern matching and replacement. The 're' module in Python provides powerful tools for such tasks, enabling efficient text processing.</list_item>"
+  },
+  "m21": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e21"
+   ],
+   "id": "m21",
+   "kind": "memory",
+   "path": "memory/m21.md",
+   "sources": [
+    "m7",
+    "m14"
+   ],
+   "text": "<list_item>When processing text data, ensure to handle edge cases like empty strings or sentences. Use conditional checks to prevent errors when splitting or processing sentences, ensuring all elements are non-empty strings before further operations.</list_item>"
+  },
+  "m22": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e22"
+   ],
+   "id": "m22",
+   "kind": "memory",
+   "path": "memory/m22.md",
+   "sources": [
+    "m19",
+    "m14"
+   ],
+   "text": "When comparing arrays, consider iterating through pairs of elements from both ends towards the center. If elements differ, increment a counter, focusing on changes needed to align them, rather than just counting discrepancies."
+  },
+  "m23": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e23"
+   ],
+   "id": "m23",
+   "kind": "memory",
+   "path": "memory/m23.md",
+   "sources": [
+    "m4",
+    "m15"
+   ],
+   "text": "\"When iterating with nested loops, ensure the innermost loop's starting index correctly advances past the previous loop's completion to avoid redundant or incorrect computations.\""
+  },
+  "m3": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e3"
+   ],
+   "id": "m3",
+   "kind": "memory",
+   "path": "memory/m3.md",
+   "sources": [
+    "m1",
+    "m2"
+   ],
+   "text": "When converting an integer to a Roman numeral representation, map integer values to corresponding Roman numerals using a list of tuples, iteratively subtracting and appending numerals until the input number is reduced to zero."
+  },
+  "m4": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e4"
+   ],
+   "id": "m4",
+   "kind": "memory",
+   "path": "memory/m4.md",
+   "sources": [
+    "m2",
+    "m1"
+   ],
+   "text": "When accessing elements in a list, ensure the index is within range to avoid IndexError. Always check if the index exists before attempting to access the list element."
+  },
+  "m5": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e5"
+   ],
+   "id": "m5",
+   "kind": "memory",
+   "path": "memory/m5.md",
+   "sources": [
+    "m4",
+    "m1"
+   ],
+   "text": "When applying conditional logic based on indices, ensure consistent and clear criteria to avoid unintended omissions or inclusions of elements, as it may lead to incorrect results."
+  },
+  "m6": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e6"
+   ],
+   "id": "m6",
+   "kind": "memory",
+   "path": "memory/m6.md",
+   "sources": [
+    "m4",
+    "m2"
+   ],
+   "text": "When checking divisibility in a loop, ensure the divisor increments correctly to avoid missing potential factors. Start from the smallest relevant even number and increment by the divisor's value to systematically test all possible factors."
+  },
+  "m7": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e7"
+   ],
+   "id": "m7",
+   "kind": "memory",
+   "path": "memory/m7.md",
+   "sources": [
+    "m1",
+    "m4"
+   ],
+   "text": "<list_item>When filtering a list based on a condition, use list comprehension for concise and efficient code. It allows filtering elements by applying a condition, such as checking if a string starts with a specific prefix, in a single line.</list_item>"
+  },
+  "m8": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e8"
+   ],
+   "id": "m8",
+   "kind": "memory",
+   "path": "memory/m8.md",
+   "sources": [
+    "m4",
+    "m1"
+   ],
+   "text": "When iterating over nested structures like a 2D grid, ensure to correctly access and accumulate values from both dimensions, preventing index errors and ensuring comprehensive data processing."
+  },
+  "m9": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e9"
+   ],
+   "id": "m9",
+   "kind": "memory",
+   "path": "memory/m9.md",
+   "sources": [
+    "m1",
+    "m0"
+   ],
+   "text": "When calculating an average, use the round function to obtain a whole number, and consider edge cases like input constraints (e.g., one number greater than the other) to ensure correct function behavior."
+  }
+ },
+ "config": {
+  "batch": 6,
+  "benchmark": "humaneval",
+  "compose_at": [
+   12,
+   24
+  ],
+  "expel_batch": 4,
+  "expel_top": 5,
+  "fault": null,
+  "k_memories": 3,
+  "k_reflect": 2,
+  "k_skills": 2,
+  "model": "granite3.3:8b",
+  "n_evolve": 24,
+  "policy": "curate",
+  "seed": 3
+ },
+ "dataset": "evalplus/humanevalplus@d32357cf319e50e9c8d8dab5ea876c72b0fd321b",
+ "deployments": {
+  "D1": [
+   "D1-p24",
+   "k0",
+   "k1",
+   "k2",
+   "k3"
+  ],
+  "D2": [
+   "D2-p24",
+   "k2",
+   "k3"
+  ]
+ },
+ "environment": {
+  "cluster": "fir",
+  "git": "",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "host": "fc11019",
+  "phase": "gen",
+  "platform": "Linux-5.14.0-687.29.1.el9_8.x86_64-x86_64-AMD_EPYC_9454_48-Core_Processor-with-glibc2.37",
+  "python": "3.11.5",
+  "source_sha256": "2d88e045157d7f2e0be8389a406bfa28b5086242e483764e7320fe791809522f"
+ },
+ "eval": {
+  "clean": [
+   {
+    "context": [
+     "D1-p24",
+     "k3",
+     "k0",
+     "m19",
+     "m1",
+     "m12"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/49"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k3",
+     "k2",
+     "m1",
+     "m11",
+     "m13"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/20"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k1",
+     "k3",
+     "m9",
+     "m11",
+     "m13"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/132"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k3",
+     "k2",
+     "m10",
+     "m1",
+     "m15"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/154"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k0",
+     "k1",
+     "m1",
+     "m19",
+     "m9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/55"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m2",
+     "m4",
+     "m1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/100"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k0",
+     "k1",
+     "m2",
+     "m0",
+     "m3"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/69"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k3",
+     "k2",
+     "m21",
+     "m7",
+     "m2"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/48"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k0",
+     "k1",
+     "m2",
+     "m13",
+     "m9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/75"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m14",
+     "m0",
+     "m1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/122"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k1",
+     "k3",
+     "m13",
+     "m10",
+     "m17"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/33"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k3",
+     "k2",
+     "m7",
+     "m15",
+     "m12"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/16"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k1",
+     "k3",
+     "m10",
+     "m14",
+     "m7"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/6"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k3",
+     "k2",
+     "m21",
+     "m19",
+     "m17"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/95"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k2",
+     "k3",
+     "m0",
+     "m6",
+     "m14"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/163"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k3",
+     "k2",
+     "m7",
+     "m19",
+     "m2"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "HumanEval/153"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k1",
+     "k3",
+     "m13",
+     "m17",
+     "m2"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/37"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k3",
+     "k2",
+     "m1",
+     "m14",
+     "m18"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/94"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k2",
+     "k1",
+     "m9",
+     "m2",
+     "m14"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/146"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m4",
+     "m11",
+     "m17"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/0"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k2",
+     "k0",
+     "m14",
+     "m21",
+     "m2"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/109"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m2",
+     "m17",
+     "m14"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": true
+    },
+    "task": "HumanEval/130"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k2",
+     "k0",
+     "m2",
+     "m3",
+     "m1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/155"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k3",
+     "k2",
+     "m19",
+     "m7",
+     "m9"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/41"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k0",
+     "k3",
+     "m1",
+     "m0",
+     "m11"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/2"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m4",
+     "m14",
+     "m13"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/4"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k3",
+     "k1",
+     "m9",
+     "m13",
+     "m7"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/51"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k3",
+     "k2",
+     "m21",
+     "m13",
+     "m6"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/121"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k3",
+     "k1",
+     "m4",
+     "m21",
+     "m13"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/52"
+   }
+  ],
+  "seed_only": [
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/49"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/20"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/132"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/154"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/55"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/100"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/69"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/48"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/75"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/122"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/33"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/16"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/6"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/95"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/163"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "HumanEval/153"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/37"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/94"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/146"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/0"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/109"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": true
+    },
+    "task": "HumanEval/130"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/155"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/41"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/2"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/4"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/51"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/121"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/52"
+   }
+  ]
+ },
+ "eval_tasks": [
+  "HumanEval/49",
+  "HumanEval/20",
+  "HumanEval/132",
+  "HumanEval/154",
+  "HumanEval/55",
+  "HumanEval/100",
+  "HumanEval/69",
+  "HumanEval/48",
+  "HumanEval/75",
+  "HumanEval/122",
+  "HumanEval/33",
+  "HumanEval/16",
+  "HumanEval/6",
+  "HumanEval/95",
+  "HumanEval/163",
+  "HumanEval/153",
+  "HumanEval/37",
+  "HumanEval/94",
+  "HumanEval/146",
+  "HumanEval/0",
+  "HumanEval/109",
+  "HumanEval/130",
+  "HumanEval/155",
+  "HumanEval/41",
+  "HumanEval/2",
+  "HumanEval/4",
+  "HumanEval/51",
+  "HumanEval/121",
+  "HumanEval/52"
+ ],
+ "evolution": [
+  {
+   "context": [
+    "D1-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 0,
+   "memory": "m0",
+   "passed": false,
+   "reflect_exposed": [],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/99"
+  },
+  {
+   "context": [
+    "D2-p0",
+    "m0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 1,
+   "memory": "m1",
+   "passed": true,
+   "reflect_exposed": [
+    "m0"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/24"
+  },
+  {
+   "context": [
+    "D1-p0",
+    "m1",
+    "m0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 2,
+   "memory": "m2",
+   "passed": true,
+   "reflect_exposed": [
+    "m1",
+    "m0"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/25"
+  },
+  {
+   "context": [
+    "D2-p0",
+    "m2",
+    "m1",
+    "m0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 3,
+   "memory": "m3",
+   "passed": true,
+   "reflect_exposed": [
+    "m1",
+    "m2"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/156"
+  },
+  {
+   "context": [
+    "D1-p0",
+    "m2",
+    "m0",
+    "m1"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: IndexError: list index out of range",
+   "i": 4,
+   "memory": "m4",
+   "passed": false,
+   "reflect_exposed": [
+    "m2",
+    "m1"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/88"
+  },
+  {
+   "context": [
+    "D2-p0",
+    "m4",
+    "m1",
+    "m2"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "FAILED: AssertionError",
+   "i": 5,
+   "memory": "m5",
+   "passed": false,
+   "reflect_exposed": [
+    "m4",
+    "m1"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "skill": {
+    "id": "k0",
+    "sources": [
+     "m0",
+     "m1",
+     "m2",
+     "m3",
+     "m4",
+     "m5"
+    ]
+   },
+   "task": "HumanEval/142"
+  },
+  {
+   "context": [
+    "D1-p0",
+    "m2",
+    "m5",
+    "m1"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 6,
+   "memory": "m6",
+   "passed": false,
+   "reflect_exposed": [
+    "m4",
+    "m2"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": true
+   },
+   "task": "HumanEval/138"
+  },
+  {
+   "context": [
+    "D2-p0",
+    "m1",
+    "m3",
+    "m4"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 7,
+   "memory": "m7",
+   "passed": true,
+   "reflect_exposed": [
+    "m1",
+    "m4"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/29"
+  },
+  {
+   "context": [
+    "D1-p0",
+    "m3",
+    "m7",
+    "m6"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 8,
+   "memory": "m8",
+   "passed": false,
+   "reflect_exposed": [
+    "m4",
+    "m1"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/115"
+  },
+  {
+   "context": [
+    "D2-p0",
+    "m0",
+    "m2",
+    "m1"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 9,
+   "memory": "m9",
+   "passed": true,
+   "reflect_exposed": [
+    "m1",
+    "m0"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/103"
+  },
+  {
+   "context": [
+    "D1-p0",
+    "m1",
+    "m4",
+    "m2"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 10,
+   "memory": "m10",
+   "passed": true,
+   "reflect_exposed": [
+    "m1",
+    "m4"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/62"
+  },
+  {
+   "context": [
+    "D2-p0",
+    "m10",
+    "m2",
+    "m0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 11,
+   "memory": "m11",
+   "passed": true,
+   "profiles": {
+    "D1": {
+     "admitted": true,
+     "id": "D1-p12",
+     "sources": [
+      "D1-p0",
+      "k0",
+      "k1"
+     ]
+    },
+    "D2": {
+     "admitted": true,
+     "id": "D2-p12",
+     "sources": [
+      "D2-p0",
+      "k0",
+      "k1"
+     ]
+    }
+   },
+   "reflect_exposed": [
+    "m1",
+    "m5"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "skill": {
+    "id": "k1",
+    "sources": [
+     "m6",
+     "m7",
+     "m8",
+     "m9",
+     "m10",
+     "m11"
+    ]
+   },
+   "task": "HumanEval/127"
+  },
+  {
+   "context": [
+    "D1-p12",
+    "k0",
+    "k1",
+    "m0",
+    "m1",
+    "m9"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 12,
+   "memory": "m12",
+   "passed": true,
+   "reflect_exposed": [
+    "m1",
+    "m0"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/97"
+  },
+  {
+   "context": [
+    "D2-p12",
+    "k1",
+    "k0",
+    "m7",
+    "m4",
+    "m1"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 13,
+   "memory": "m13",
+   "passed": true,
+   "reflect_exposed": [
+    "m7",
+    "m4"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/42"
+  },
+  {
+   "context": [
+    "D1-p12",
+    "k0",
+    "k1",
+    "m10",
+    "m1",
+    "m6"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 14,
+   "memory": "m14",
+   "passed": true,
+   "reflect_exposed": [
+    "m1",
+    "m7"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/128"
+  },
+  {
+   "context": [
+    "D2-p12",
+    "k0",
+    "k1",
+    "m7",
+    "m13",
+    "m1"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 15,
+   "memory": "m15",
+   "passed": true,
+   "reflect_exposed": [
+    "m1",
+    "m7"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/18"
+  },
+  {
+   "context": [
+    "D1-p12",
+    "k1",
+    "k0",
+    "m4",
+    "m7",
+    "m2"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 16,
+   "memory": "m16",
+   "passed": true,
+   "reflect_exposed": [
+    "m1",
+    "m4"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/80"
+  },
+  {
+   "context": [
+    "D2-p12",
+    "k0",
+    "k1",
+    "m9",
+    "m3",
+    "m1"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 17,
+   "memory": "m17",
+   "passed": true,
+   "reflect_exposed": [
+    "m1",
+    "m3"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "skill": {
+    "id": "k2",
+    "sources": [
+     "m12",
+     "m13",
+     "m14",
+     "m15",
+     "m16",
+     "m17"
+    ]
+   },
+   "task": "HumanEval/139"
+  },
+  {
+   "context": [
+    "D1-p12",
+    "k0",
+    "k1",
+    "m1",
+    "m2",
+    "m0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 18,
+   "memory": "m18",
+   "passed": true,
+   "reflect_exposed": [
+    "m1",
+    "m0"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/71"
+  },
+  {
+   "context": [
+    "D2-p12",
+    "k1",
+    "k0",
+    "m9",
+    "m13",
+    "m1"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 19,
+   "memory": "m19",
+   "passed": true,
+   "reflect_exposed": [
+    "m1",
+    "m14"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/74"
+  },
+  {
+   "context": [
+    "D1-p12",
+    "k1",
+    "k0",
+    "m7",
+    "m6",
+    "m2"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 20,
+   "memory": "m20",
+   "passed": false,
+   "reflect_exposed": [
+    "m19",
+    "m7"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/140"
+  },
+  {
+   "context": [
+    "D2-p12",
+    "k0",
+    "k1",
+    "m13",
+    "m7",
+    "m15"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "FAILED: AssertionError",
+   "i": 21,
+   "memory": "m21",
+   "passed": false,
+   "reflect_exposed": [
+    "m7",
+    "m14"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/91"
+  },
+  {
+   "context": [
+    "D1-p12",
+    "k0",
+    "k1",
+    "m9",
+    "m14",
+    "m4"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 22,
+   "memory": "m22",
+   "passed": false,
+   "reflect_exposed": [
+    "m19",
+    "m14"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/73"
+  },
+  {
+   "context": [
+    "D2-p12",
+    "k0",
+    "k1",
+    "m14",
+    "m3",
+    "m2"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 23,
+   "memory": "m23",
+   "passed": true,
+   "profiles": {
+    "D1": {
+     "admitted": true,
+     "id": "D1-p24",
+     "sources": [
+      "D1-p12",
+      "k0",
+      "k1",
+      "k2",
+      "k3"
+     ]
+    },
+    "D2": {
+     "admitted": true,
+     "id": "D2-p24",
+     "sources": [
+      "D2-p12",
+      "k2",
+      "k3"
+     ]
+    }
+   },
+   "reflect_exposed": [
+    "m4",
+    "m15"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "skill": {
+    "id": "k3",
+    "sources": [
+     "m18",
+     "m19",
+     "m20",
+     "m21",
+     "m22",
+     "m23"
+    ]
+   },
+   "task": "HumanEval/147"
+  }
+ ],
+ "experiences": {
+  "e0": {
+   "id": "e0",
+   "outcome": "fail",
+   "run": "r0",
+   "task": "HumanEval/99"
+  },
+  "e1": {
+   "id": "e1",
+   "outcome": "pass",
+   "run": "r1",
+   "task": "HumanEval/24"
+  },
+  "e10": {
+   "id": "e10",
+   "outcome": "pass",
+   "run": "r10",
+   "task": "HumanEval/62"
+  },
+  "e11": {
+   "id": "e11",
+   "outcome": "pass",
+   "run": "r11",
+   "task": "HumanEval/127"
+  },
+  "e12": {
+   "id": "e12",
+   "outcome": "pass",
+   "run": "r12",
+   "task": "HumanEval/97"
+  },
+  "e13": {
+   "id": "e13",
+   "outcome": "pass",
+   "run": "r13",
+   "task": "HumanEval/42"
+  },
+  "e14": {
+   "id": "e14",
+   "outcome": "pass",
+   "run": "r14",
+   "task": "HumanEval/128"
+  },
+  "e15": {
+   "id": "e15",
+   "outcome": "pass",
+   "run": "r15",
+   "task": "HumanEval/18"
+  },
+  "e16": {
+   "id": "e16",
+   "outcome": "pass",
+   "run": "r16",
+   "task": "HumanEval/80"
+  },
+  "e17": {
+   "id": "e17",
+   "outcome": "pass",
+   "run": "r17",
+   "task": "HumanEval/139"
+  },
+  "e18": {
+   "id": "e18",
+   "outcome": "pass",
+   "run": "r18",
+   "task": "HumanEval/71"
+  },
+  "e19": {
+   "id": "e19",
+   "outcome": "pass",
+   "run": "r19",
+   "task": "HumanEval/74"
+  },
+  "e2": {
+   "id": "e2",
+   "outcome": "pass",
+   "run": "r2",
+   "task": "HumanEval/25"
+  },
+  "e20": {
+   "id": "e20",
+   "outcome": "fail",
+   "run": "r20",
+   "task": "HumanEval/140"
+  },
+  "e21": {
+   "id": "e21",
+   "outcome": "fail",
+   "run": "r21",
+   "task": "HumanEval/91"
+  },
+  "e22": {
+   "id": "e22",
+   "outcome": "fail",
+   "run": "r22",
+   "task": "HumanEval/73"
+  },
+  "e23": {
+   "id": "e23",
+   "outcome": "pass",
+   "run": "r23",
+   "task": "HumanEval/147"
+  },
+  "e3": {
+   "id": "e3",
+   "outcome": "pass",
+   "run": "r3",
+   "task": "HumanEval/156"
+  },
+  "e4": {
+   "id": "e4",
+   "outcome": "fail",
+   "run": "r4",
+   "task": "HumanEval/88"
+  },
+  "e5": {
+   "id": "e5",
+   "outcome": "fail",
+   "run": "r5",
+   "task": "HumanEval/142"
+  },
+  "e6": {
+   "id": "e6",
+   "outcome": "fail",
+   "run": "r6",
+   "task": "HumanEval/138"
+  },
+  "e7": {
+   "id": "e7",
+   "outcome": "pass",
+   "run": "r7",
+   "task": "HumanEval/29"
+  },
+  "e8": {
+   "id": "e8",
+   "outcome": "fail",
+   "run": "r8",
+   "task": "HumanEval/115"
+  },
+  "e9": {
+   "id": "e9",
+   "outcome": "pass",
+   "run": "r9",
+   "task": "HumanEval/103"
+  }
+ },
+ "fault_index": 8,
+ "history_events": 156,
+ "importance": {},
+ "llm": {
+  "cache_hits": 0,
+  "calls": 114,
+  "llm_seconds": 1822.62,
+  "tokens_in": 70363,
+  "tokens_out": 13268
+ },
+ "loaded": {
+  "r0": [
+   "D1-p0"
+  ],
+  "r1": [
+   "D2-p0",
+   "m0"
+  ],
+  "r10": [
+   "D1-p0",
+   "m1",
+   "m2",
+   "m4"
+  ],
+  "r11": [
+   "D2-p0",
+   "m0",
+   "m10",
+   "m2"
+  ],
+  "r12": [
+   "D1-p12",
+   "k0",
+   "k1",
+   "m0",
+   "m1",
+   "m9"
+  ],
+  "r13": [
+   "D2-p12",
+   "k0",
+   "k1",
+   "m1",
+   "m4",
+   "m7"
+  ],
+  "r14": [
+   "D1-p12",
+   "k0",
+   "k1",
+   "m1",
+   "m10",
+   "m6"
+  ],
+  "r15": [
+   "D2-p12",
+   "k0",
+   "k1",
+   "m1",
+   "m13",
+   "m7"
+  ],
+  "r16": [
+   "D1-p12",
+   "k0",
+   "k1",
+   "m2",
+   "m4",
+   "m7"
+  ],
+  "r17": [
+   "D2-p12",
+   "k0",
+   "k1",
+   "m1",
+   "m3",
+   "m9"
+  ],
+  "r18": [
+   "D1-p12",
+   "k0",
+   "k1",
+   "m0",
+   "m1",
+   "m2"
+  ],
+  "r19": [
+   "D2-p12",
+   "k0",
+   "k1",
+   "m1",
+   "m13",
+   "m9"
+  ],
+  "r2": [
+   "D1-p0",
+   "m0",
+   "m1"
+  ],
+  "r20": [
+   "D1-p12",
+   "k0",
+   "k1",
+   "m2",
+   "m6",
+   "m7"
+  ],
+  "r21": [
+   "D2-p12",
+   "k0",
+   "k1",
+   "m13",
+   "m15",
+   "m7"
+  ],
+  "r22": [
+   "D1-p12",
+   "k0",
+   "k1",
+   "m14",
+   "m4",
+   "m9"
+  ],
+  "r23": [
+   "D2-p12",
+   "k0",
+   "k1",
+   "m14",
+   "m2",
+   "m3"
+  ],
+  "r3": [
+   "D2-p0",
+   "m0",
+   "m1",
+   "m2"
+  ],
+  "r4": [
+   "D1-p0",
+   "m0",
+   "m1",
+   "m2"
+  ],
+  "r5": [
+   "D2-p0",
+   "m1",
+   "m2",
+   "m4"
+  ],
+  "r6": [
+   "D1-p0",
+   "m1",
+   "m2",
+   "m5"
+  ],
+  "r7": [
+   "D2-p0",
+   "m1",
+   "m3",
+   "m4"
+  ],
+  "r8": [
+   "D1-p0",
+   "m3",
+   "m6",
+   "m7"
+  ],
+  "r9": [
+   "D2-p0",
+   "m0",
+   "m1",
+   "m2"
+  ]
+ },
+ "models": {
+  "granite3.3:8b": "fd429f23b90980ed1bef53b990894e7b0199331f6ae90c5650240a7d5b70f1f7",
+  "nomic-embed-text:latest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+ },
+ "tau": {
+  "embed": 0.55,
+  "tfidf": 0.05
+ },
+ "timing": {
+  "engine_total": 1.2781154527328908,
+  "evolve_total": 329.8705231137574,
+  "wall_total": 618.3207890987396
+ },
+ "universe": [
+  "D1-p24",
+  "D2-p24",
+  "k0",
+  "k1",
+  "k2",
+  "k3",
+  "m0",
+  "m1",
+  "m10",
+  "m11",
+  "m12",
+  "m13",
+  "m14",
+  "m15",
+  "m16",
+  "m17",
+  "m18",
+  "m19",
+  "m2",
+  "m20",
+  "m21",
+  "m22",
+  "m23",
+  "m3",
+  "m4",
+  "m5",
+  "m6",
+  "m7",
+  "m8",
+  "m9"
+ ]
+}

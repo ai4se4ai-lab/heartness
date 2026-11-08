@@ -1,0 +1,2802 @@
+{
+ "active": [
+  "D1-p24",
+  "D2-p24",
+  "k0",
+  "k1",
+  "k2",
+  "k3",
+  "m0",
+  "m1",
+  "m10",
+  "m11",
+  "m12",
+  "m13",
+  "m14",
+  "m15",
+  "m16",
+  "m17",
+  "m18",
+  "m19",
+  "m2",
+  "m20",
+  "m21",
+  "m22",
+  "m23",
+  "m3",
+  "m4",
+  "m5",
+  "m6",
+  "m7",
+  "m8",
+  "m9"
+ ],
+ "artifacts": {
+  "D1-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D1-p0",
+   "kind": "agent",
+   "path": "profiles/D1.md",
+   "sources": [],
+   "text": "You are a careful Python programmer. Write correct, readable functions that satisfy the docstring and examples exactly."
+  },
+  "D1-p12": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [
+    "k0",
+    "k1"
+   ],
+   "derivation": "edit",
+   "experiences": [],
+   "id": "D1-p12",
+   "kind": "agent",
+   "path": "profiles/D1.md",
+   "sources": [
+    "D1-p0",
+    "k0",
+    "k1"
+   ],
+   "text": "**Agent Profile:**\n\nI am a meticulous Python programmer, dedicated to writing clear, efficient, and accurate code. My primary focus is on maintaining the integrity of numerical and array operations, particularly in financial contexts where precision is crucial. I adhere strictly to the guidelines provided in my skill set, ensuring that all functions are well-documented and correctly implemented.\n\n**Key Rules:**\n1. **Precision and Accuracy:** When rounding floating-point numbers, I ensure that the `round` function is used with care, especially in financial applications, to preserve precision.\n2. **Efficiency in Operations:** I optimize the search for divisors by starting from half the number down to 1, which is more efficient for large numbers.\n3. **Clear and Concise Logic:** In factorizing integers, I use a straightforward approach starting from the smallest possible divisor (2) and incrementing, making the process clear and efficient.\n4. **List Comprehension and Even Numbers:** When creating list comprehensions, I clearly define the conditions for inclusion, ensuring that only even numbers"
+  },
+  "D1-p24": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [
+    "k0",
+    "k1",
+    "k2",
+    "k3"
+   ],
+   "derivation": "edit",
+   "experiences": [],
+   "id": "D1-p24",
+   "kind": "agent",
+   "path": "profiles/D1.md",
+   "sources": [
+    "D1-p12",
+    "k0",
+    "k1",
+    "k2",
+    "k3"
+   ],
+   "text": "**Agent Profile:**\n\nI am a Python programmer with a focus on precision and efficiency, particularly in financial applications where accuracy is paramount. My role involves maintaining the integrity of numerical and array operations, ensuring that all functions are well-documented and correctly implemented. I adhere strictly to the guidelines provided in my skill set, focusing on precision in rounding floating-point numbers and optimizing search for divisors. I also specialize in clear and concise logic in factorizing integers and handling even numbers in list comprehensions.\n\n**Key Rules:**\n\n1. **Precision in Financial Calculations:** When rounding floating-point numbers, I use the `round` function with care, ensuring that precision is preserved in financial contexts.\n2. **Efficient Divisor Search:** I optimize the search for divisors by starting from half the number down to 1, which is more efficient for large numbers.\n3. **Clear Factorization Logic:** In factorizing integers, I use a straightforward approach starting from the smallest possible divisor (2) and incrementing, making the process clear and efficient.\n4"
+  },
+  "D2-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D2-p0",
+   "kind": "agent",
+   "path": "profiles/D2.md",
+   "sources": [],
+   "text": "You are a pragmatic Python engineer. Solve the task directly and handle edge cases mentioned in the docstring."
+  },
+  "D2-p12": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [
+    "k0",
+    "k1"
+   ],
+   "derivation": "edit",
+   "experiences": [],
+   "id": "D2-p12",
+   "kind": "agent",
+   "path": "profiles/D2.md",
+   "sources": [
+    "D2-p0",
+    "k0",
+    "k1"
+   ],
+   "text": "**Agent Profile:**\n\nI am a Python engineer with a focus on efficiency and precision. My primary role involves solving tasks with a direct and pragmatic approach, ensuring that edge cases are handled as described in the documentation. I excel in numerical and array operations, utilizing Python's built-in functions and list comprehensions to perform tasks efficiently.\n\n**Key Rules:**\n\n1. **Rounding Precision:** When rounding floating-point numbers, I consider the distance to the nearest integers and, if equidistant, round away from zero to maintain numerical integrity, especially in financial calculations.\n\n2. **Efficient Divisor Search:** For finding divisors, I start searching from half the number down to 1, which is more efficient for large numbers. This method helps in reducing the number of iterations.\n\n3. **Factorization Efficiency:** I use a more efficient strategy for finding divisors by starting from the smallest possible divisor (2) and incrementing, simplifying the logic and reducing computational complexity.\n\n4. **List Comprehensions and Even Numbers:**\n   -"
+  },
+  "D2-p24": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [
+    "k2",
+    "k3"
+   ],
+   "derivation": "edit",
+   "experiences": [],
+   "id": "D2-p24",
+   "kind": "agent",
+   "path": "profiles/D2.md",
+   "sources": [
+    "D2-p12",
+    "k2",
+    "k3"
+   ],
+   "text": "**Agent Profile:**\n\nI am a Python engineer with a focus on efficiency and precision, specializing in numerical and array operations. My role involves solving tasks with a direct and pragmatic approach, ensuring that edge cases are handled as described in the documentation. I am skilled in rounding floating-point numbers away from zero for financial calculations, efficiently searching for divisors, and using list comprehensions for numerical and string operations. I also apply the modulo operator for simplification in numerical operations and clear list comprehensions for specific conditions.\n\n**Key Rules:**\n\n1. **Rounding Precision:** When rounding floating-point numbers, I round away from zero to maintain numerical integrity, especially in financial calculations, ensuring that the distance to the nearest integers is considered.\n\n2. **Efficient Divisor Search:** For finding divisors, I start searching from half the number down to 1, which is more efficient for large numbers and simplifies the logic.\n\n3. **Factorization Efficiency:** I use a more efficient strategy for finding divisors by starting from the smallest possible divisor (2) and incrementing"
+  },
+  "k0": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [],
+   "id": "k0",
+   "kind": "skill",
+   "path": "skills/k0.md",
+   "sources": [
+    "m0",
+    "m1",
+    "m2",
+    "m3",
+    "m4",
+    "m5"
+   ],
+   "text": "**Skill Title: Efficient Numerical and Array Operations**\n\n**Steps:**\n\n1. **Rounding Floating-Point Numbers:**\n   - When rounding floating-point numbers, consider the distance to the nearest integers. If equidistant, round away from zero to maintain numerical integrity.\n   - Use the `round` function in Python with caution, especially when dealing with financial calculations, to ensure precision is preserved.\n\n2. **Finding Divisors Efficiently:**\n   - Start searching for divisors from half the number down to 1. This method reduces the number of iterations and is more efficient for large numbers.\n   - Implement a loop that decrements from the number's square root (or half) to find the largest divisor efficiently.\n\n3. **Factorizing Integers:**\n   - Use a more efficient strategy for finding divisors by starting from the smallest possible divisor (2) and incrementing.\n   - This approach simplifies the logic and reduces computational complexity, making the function more efficient and easier to understand.\n\n4. **Converting Integ"
+  },
+  "k1": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [],
+   "id": "k1",
+   "kind": "skill",
+   "path": "skills/k1.md",
+   "sources": [
+    "m6",
+    "m7",
+    "m8",
+    "m9",
+    "m10",
+    "m11"
+   ],
+   "text": "**Reusable Skill: Efficient List Comprehensions and Even Number Handling**\n\n**Title:** Efficient List Comprehensions and Even Number Handling\n\n**Steps:**\n1. **Define Conditions Clearly:** When creating list comprehensions, clearly define the conditions for inclusion. This ensures that only elements meeting specific criteria are included in the resulting list. For example, if you need to include only even numbers, ensure your condition checks for evenness.\n\n2. **Utilize Even Number Properties:** When dealing with even numbers, leverage their properties. For instance, an even number is divisible by 2 without a remainder. Use this property to filter even numbers in your list comprehensions.\n\n3. **Optimize Nested Loop Performance:** When working with nested loops, consider the total number of elements to optimize performance. This helps in reducing unnecessary iterations and improves the efficiency of your code. For example, if you are iterating over a 2D list, calculate the total number of elements beforehand to set appropriate bounds for your loops.\n\n4. **Handle Edge Cases Gracefully"
+  },
+  "k2": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [],
+   "id": "k2",
+   "kind": "skill",
+   "path": "skills/k2.md",
+   "sources": [
+    "m12",
+    "m13",
+    "m14",
+    "m15",
+    "m16",
+    "m17"
+   ],
+   "text": "**Reusable Skill: Efficient Numerical and String Operations in Python**\n\n**Title:** Efficient Numerical and String Operations\n\n**Steps:**\n\n1. **Modulo Operator for Numerical Simplification:** When dealing with numerical operations, particularly when focusing on unit digits or significant figures, use the modulo operator (`%`). This operator helps in simplifying calculations by ensuring that the result remains within a specific range. For example, to extract the unit digit of a number, use `num % 10`. This method keeps the calculation focused and manageable, enhancing the integrity of the operation.\n\n2. **Clear List Comprehension Conditions:** When creating list comprehensions in Python, define the conditions clearly. This ensures that the resulting list contains only elements that meet the specified criterion. For instance, to create a list of even numbers from a given list, use `[x for x in list if x % 2 == 0]`. This approach maintains the correctness and clarity of the list output.\n\n3. **Sliding Window Technique for Substring Counting:** When solving"
+  },
+  "k3": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [],
+   "id": "k3",
+   "kind": "skill",
+   "path": "skills/k3.md",
+   "sources": [
+    "m18",
+    "m19",
+    "m20",
+    "m21",
+    "m22",
+    "m23"
+   ],
+   "text": "**Title: Validating and Manipulating Strings and Geometric Properties**\n\n**Steps:**\n\n1. **Input Validation for Geometric Calculations:**\n   - Ensure the inputs represent valid sides of a triangle by checking the triangle inequality theorem: \\(a + b > c\\), \\(a + c > b\\), and \\(b + c > a\\).\n   - If the inputs do not satisfy the triangle inequality theorem, return an error message indicating that the sides do not form a valid triangle.\n   - If the inputs are valid, proceed with geometric calculations such as area or angles using formulas appropriate for the type of triangle formed.\n\n2. **Comparing Lists of Strings by Total Length:**\n   - Calculate the total length of all strings in each list by summing the lengths of the strings.\n   - Compare the total lengths of the lists rather than individual strings.\n   - Return a result indicating which list has a greater total length, or if they are equal. This approach simplifies the comparison and avoids complexities when strings have different lengths.\n\n3. **String"
+  },
+  "m0": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0"
+   ],
+   "id": "m0",
+   "kind": "memory",
+   "path": "memory/m0.md",
+   "sources": [],
+   "text": "When dealing with floating-point numbers and rounding, consider the distance from the original number to its nearest integers. If the number is equidistant from two integers, round away from zero to ensure a consistent direction for rounding. This approach helps maintain the integrity of the numerical values and avoids bias in the rounding direction."
+  },
+  "m1": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e1"
+   ],
+   "id": "m1",
+   "kind": "memory",
+   "path": "memory/m1.md",
+   "sources": [
+    "m0"
+   ],
+   "text": "When searching for divisors, start from half the number and decrement to find the largest divisor efficiently. This method reduces the number of iterations and improves performance, especially for larger numbers."
+  },
+  "m10": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e10"
+   ],
+   "id": "m10",
+   "kind": "memory",
+   "path": "memory/m10.md",
+   "sources": [
+    "m7",
+    "m1"
+   ],
+   "text": "When creating list comprehensions in Python, ensure that the conditions are clearly defined to avoid unexpected behavior. This includes checking if an element meets a specific criterion and including it in the resulting list only if the condition is true. Properly handling these conditions helps maintain the integrity and correctness of the function's output."
+  },
+  "m11": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e11"
+   ],
+   "id": "m11",
+   "kind": "memory",
+   "path": "memory/m11.md",
+   "sources": [
+    "m7",
+    "m10"
+   ],
+   "text": "When implementing functions that involve interval intersections, ensure that the conditions for intersection are correctly handled to avoid incorrect results. This includes properly calculating the intersection start and end points and checking if the resulting interval length is a prime number. Properly handling these conditions helps maintain the correctness and reliability of the function's output."
+  },
+  "m12": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e12"
+   ],
+   "id": "m12",
+   "kind": "memory",
+   "path": "memory/m12.md",
+   "sources": [
+    "m0",
+    "m7"
+   ],
+   "text": "When working with numerical operations, particularly when dealing with unit digits or significant figures, consider using the modulo operator to extract relevant parts of the number. This approach simplifies calculations and ensures that the result is within the expected range, maintaining the integrity of the operation."
+  },
+  "m13": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e13"
+   ],
+   "id": "m13",
+   "kind": "memory",
+   "path": "memory/m13.md",
+   "sources": [
+    "m7",
+    "m10"
+   ],
+   "text": "When implementing list comprehensions in Python, clearly define the conditions for including elements in the resulting list. This ensures that the output list contains only the elements that meet the specified criterion, maintaining the integrity and correctness of the function's output."
+  },
+  "m14": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e14"
+   ],
+   "id": "m14",
+   "kind": "memory",
+   "path": "memory/m14.md",
+   "sources": [
+    "m0",
+    "m7"
+   ],
+   "text": "When working with arrays in Python, consider the implications of each operation on the overall result. This includes not only the mathematical operations but also how each element's presence or absence affects the outcome. Understanding these interactions can help in designing more effective and efficient algorithms."
+  },
+  "m15": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e15"
+   ],
+   "id": "m15",
+   "kind": "memory",
+   "path": "memory/m15.md",
+   "sources": [
+    "m3",
+    "m1"
+   ],
+   "text": "When solving substring counting problems, consider using a sliding window technique to efficiently check for substring occurrences. This approach minimizes the number of operations needed to find all occurrences of a substring within a string, improving both time and space complexity."
+  },
+  "m16": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e16"
+   ],
+   "id": "m16",
+   "kind": "memory",
+   "path": "memory/m16.md",
+   "sources": [
+    "m7",
+    "m10"
+   ],
+   "text": "When implementing functions that involve checking conditions on substrings, ensure that your conditions are clearly defined and consistently applied across the entire string. This helps avoid errors and ensures that the function behaves as expected for all possible inputs."
+  },
+  "m17": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e17"
+   ],
+   "id": "m17",
+   "kind": "memory",
+   "path": "memory/m17.md",
+   "sources": [
+    "m5",
+    "m12"
+   ],
+   "text": "When implementing factorial calculations, consider using the `math.prod` function for a more concise and efficient way to compute the product of a sequence of numbers. This can help streamline the code and reduce the likelihood of errors in the calculation process."
+  },
+  "m18": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e18"
+   ],
+   "id": "m18",
+   "kind": "memory",
+   "path": "memory/m18.md",
+   "sources": [
+    "m0",
+    "m9"
+   ],
+   "text": "When implementing functions that involve geometric calculations, ensure to validate the input to confirm if the given sides can form a valid triangle. This validation helps avoid unnecessary computations and returns appropriate results based on the geometric properties."
+  },
+  "m19": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e19"
+   ],
+   "id": "m19",
+   "kind": "memory",
+   "path": "memory/m19.md",
+   "sources": [
+    "m6",
+    "m4"
+   ],
+   "text": "When comparing lists of strings, consider the total length of all strings in each list. This approach can simplify logic and reduce the need to compare individual strings, especially when the lengths of the strings are not directly comparable."
+  },
+  "m2": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e2"
+   ],
+   "id": "m2",
+   "kind": "memory",
+   "path": "memory/m2.md",
+   "sources": [
+    "m1",
+    "m0"
+   ],
+   "text": "When implementing a function to factorize integers, consider using a more efficient divisor search strategy, such as starting from the smallest possible divisor and incrementing, which can simplify the logic and reduce computational complexity."
+  },
+  "m20": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e20"
+   ],
+   "id": "m20",
+   "kind": "memory",
+   "path": "memory/m20.md",
+   "sources": [
+    "m9",
+    "m16"
+   ],
+   "text": "When dealing with string manipulation, particularly when replacing characters or substrings, it's important to consider the order of operations and potential edge cases. This ensures that the function handles all inputs correctly and avoids unintended replacements or errors."
+  },
+  "m21": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e21"
+   ],
+   "id": "m21",
+   "kind": "memory",
+   "path": "memory/m21.md",
+   "sources": [
+    "m16",
+    "m20"
+   ],
+   "text": "When working with string manipulation, particularly when splitting and checking conditions on substrings, ensure that your conditions are clearly defined and consistently applied. This helps avoid errors and ensures that the function behaves as expected for all possible inputs."
+  },
+  "m22": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e22"
+   ],
+   "id": "m22",
+   "kind": "memory",
+   "path": "memory/m22.md",
+   "sources": [
+    "m7",
+    "m10"
+   ],
+   "text": "When solving problems involving arrays and palindromes, consider using list slicing to easily reverse the array for comparison. This can simplify the logic and reduce the number of lines of code needed to check if an array is a palindrome."
+  },
+  "m23": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e23"
+   ],
+   "id": "m23",
+   "kind": "memory",
+   "path": "memory/m23.md",
+   "sources": [
+    "m22",
+    "m7"
+   ],
+   "text": "When working with nested loops to iterate through elements in an array, consider using list comprehensions to make the code more concise and readable. This can help reduce the complexity of the code and make it easier to understand and maintain."
+  },
+  "m3": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e3"
+   ],
+   "id": "m3",
+   "kind": "memory",
+   "path": "memory/m3.md",
+   "sources": [
+    "m0",
+    "m1"
+   ],
+   "text": "When converting integers to Roman numerals, consider the order of Roman numeral values to minimize the number of characters in the result. Start with the largest values and work downwards to avoid unnecessary concatenation of multiple smaller numeral characters. This approach optimizes the conversion process and ensures the Roman numeral string is concise and readable."
+  },
+  "m4": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e4"
+   ],
+   "id": "m4",
+   "kind": "memory",
+   "path": "memory/m4.md",
+   "sources": [
+    "m0",
+    "m1"
+   ],
+   "text": "When working with arrays, consider the first and last elements to determine the sorting direction. This approach can simplify logic and improve the efficiency of operations like sorting based on the sum of the first and last elements."
+  },
+  "m5": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e5"
+   ],
+   "id": "m5",
+   "kind": "memory",
+   "path": "memory/m5.md",
+   "sources": [
+    "m0",
+    "m3"
+   ],
+   "text": "When working with list indexing and conditional operations, ensure that the conditions are clearly defined to avoid unexpected behavior. This includes checking if an index is a multiple of a specific number and applying the appropriate operation based on the result. Properly handling these conditions helps maintain the integrity and correctness of the function's output."
+  },
+  "m6": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e6"
+   ],
+   "id": "m6",
+   "kind": "memory",
+   "path": "memory/m6.md",
+   "sources": [
+    "m2",
+    "m4"
+   ],
+   "text": "When solving problems involving even numbers, consider the properties of even numbers and how they relate to the sum of multiple even numbers. This can simplify the logic and reduce the number of edge cases to handle."
+  },
+  "m7": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e7"
+   ],
+   "id": "m7",
+   "kind": "memory",
+   "path": "memory/m7.md",
+   "sources": [
+    "m5",
+    "m0"
+   ],
+   "text": "When using list comprehensions in Python, ensure that the conditions are clearly defined to avoid unexpected behavior. This includes checking if an element meets a specific criterion and including it in the resulting list only if the condition is true. Properly handling these conditions helps maintain the integrity and correctness of the function's output."
+  },
+  "m8": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e8"
+   ],
+   "id": "m8",
+   "kind": "memory",
+   "path": "memory/m8.md",
+   "sources": [
+    "m1",
+    "m0"
+   ],
+   "text": "When working with nested loops to iterate over multi-dimensional data structures, consider the total number of elements to optimize performance. This can help in reducing unnecessary iterations and improve the efficiency of your code."
+  },
+  "m9": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e9"
+   ],
+   "id": "m9",
+   "kind": "memory",
+   "path": "memory/m9.md",
+   "sources": [
+    "m7",
+    "m8"
+   ],
+   "text": "When implementing functions that involve arithmetic operations and conditional checks, it's crucial to ensure that the logic is clear and correctly handles all edge cases. This includes checking the order of operations and handling potential errors gracefully, such as in the case where the start number is greater than the end number."
+  }
+ },
+ "config": {
+  "batch": 6,
+  "benchmark": "humaneval",
+  "compose_at": [
+   12,
+   24
+  ],
+  "expel_batch": 4,
+  "expel_top": 5,
+  "fault": null,
+  "k_memories": 3,
+  "k_reflect": 2,
+  "k_skills": 2,
+  "model": "deepseek-coder-v2:16b",
+  "n_evolve": 24,
+  "policy": "curate",
+  "seed": 3
+ },
+ "dataset": "evalplus/humanevalplus@d32357cf319e50e9c8d8dab5ea876c72b0fd321b",
+ "deployments": {
+  "D1": [
+   "D1-p24",
+   "k0",
+   "k1",
+   "k2",
+   "k3"
+  ],
+  "D2": [
+   "D2-p24",
+   "k2",
+   "k3"
+  ]
+ },
+ "environment": {
+  "cluster": "fir",
+  "git": "",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "host": "fc11017",
+  "phase": "gen",
+  "platform": "Linux-5.14.0-687.29.1.el9_8.x86_64-x86_64-AMD_EPYC_9454_48-Core_Processor-with-glibc2.37",
+  "python": "3.11.5",
+  "source_sha256": "2d88e045157d7f2e0be8389a406bfa28b5086242e483764e7320fe791809522f"
+ },
+ "eval": {
+  "clean": [
+   {
+    "context": [
+     "D1-p24",
+     "k2",
+     "k3",
+     "m12",
+     "m17",
+     "m6"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/49"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k3",
+     "k2",
+     "m0",
+     "m1",
+     "m19"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/20"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k3",
+     "k0",
+     "m7",
+     "m10",
+     "m13"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/132"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m7",
+     "m10",
+     "m15"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/154"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k3",
+     "k1",
+     "m1",
+     "m9",
+     "m0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/55"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m6",
+     "m7",
+     "m10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/100"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k3",
+     "k0",
+     "m9",
+     "m2",
+     "m7"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/69"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m7",
+     "m10",
+     "m22"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/48"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k0",
+     "k2",
+     "m7",
+     "m10",
+     "m18"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/75"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m4",
+     "m0",
+     "m13"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/122"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k3",
+     "k1",
+     "m7",
+     "m10",
+     "m13"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/33"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m20",
+     "m3",
+     "m9"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/16"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k3",
+     "k0",
+     "m13",
+     "m0",
+     "m5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/6"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k3",
+     "k2",
+     "m19",
+     "m7",
+     "m10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/95"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k2",
+     "k0",
+     "m6",
+     "m0",
+     "m3"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/163"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m7",
+     "m10",
+     "m21"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "HumanEval/153"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k1",
+     "k0",
+     "m6",
+     "m0",
+     "m3"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/37"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m13",
+     "m1",
+     "m11"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/94"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k3",
+     "k0",
+     "m4",
+     "m22",
+     "m9"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/146"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m0",
+     "m7",
+     "m10"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/0"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k0",
+     "k2",
+     "m22",
+     "m7",
+     "m10"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/109"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m4",
+     "m6",
+     "m17"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": true
+    },
+    "task": "HumanEval/130"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k2",
+     "k3",
+     "m6",
+     "m12",
+     "m18"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/155"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k3",
+     "k2",
+     "m9",
+     "m0",
+     "m16"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/41"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k0",
+     "k3",
+     "m9",
+     "m3",
+     "m0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/2"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k2",
+     "k3",
+     "m7",
+     "m10",
+     "m0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/4"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k0",
+     "k1",
+     "m16",
+     "m21",
+     "m18"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/51"
+   },
+   {
+    "context": [
+     "D2-p24",
+     "k3",
+     "k2",
+     "m6",
+     "m13",
+     "m4"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/121"
+   },
+   {
+    "context": [
+     "D1-p24",
+     "k3",
+     "k1",
+     "m7",
+     "m10",
+     "m13"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/52"
+   }
+  ],
+  "seed_only": [
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/49"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/20"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/132"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/154"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/55"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/100"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/69"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/48"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/75"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/122"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/33"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/16"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/6"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/95"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/163"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "HumanEval/153"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/37"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/94"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/146"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/0"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/109"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": true
+    },
+    "task": "HumanEval/130"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/155"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/41"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/2"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/4"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/51"
+   },
+   {
+    "context": [
+     "D2-p0"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/121"
+   },
+   {
+    "context": [
+     "D1-p0"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "HumanEval/52"
+   }
+  ]
+ },
+ "eval_tasks": [
+  "HumanEval/49",
+  "HumanEval/20",
+  "HumanEval/132",
+  "HumanEval/154",
+  "HumanEval/55",
+  "HumanEval/100",
+  "HumanEval/69",
+  "HumanEval/48",
+  "HumanEval/75",
+  "HumanEval/122",
+  "HumanEval/33",
+  "HumanEval/16",
+  "HumanEval/6",
+  "HumanEval/95",
+  "HumanEval/163",
+  "HumanEval/153",
+  "HumanEval/37",
+  "HumanEval/94",
+  "HumanEval/146",
+  "HumanEval/0",
+  "HumanEval/109",
+  "HumanEval/130",
+  "HumanEval/155",
+  "HumanEval/41",
+  "HumanEval/2",
+  "HumanEval/4",
+  "HumanEval/51",
+  "HumanEval/121",
+  "HumanEval/52"
+ ],
+ "evolution": [
+  {
+   "context": [
+    "D1-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 0,
+   "memory": "m0",
+   "passed": false,
+   "reflect_exposed": [],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/99"
+  },
+  {
+   "context": [
+    "D2-p0",
+    "m0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 1,
+   "memory": "m1",
+   "passed": true,
+   "reflect_exposed": [
+    "m0"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/24"
+  },
+  {
+   "context": [
+    "D1-p0",
+    "m0",
+    "m1"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 2,
+   "memory": "m2",
+   "passed": true,
+   "reflect_exposed": [
+    "m1",
+    "m0"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/25"
+  },
+  {
+   "context": [
+    "D2-p0",
+    "m0",
+    "m2",
+    "m1"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 3,
+   "memory": "m3",
+   "passed": true,
+   "reflect_exposed": [
+    "m0",
+    "m1"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/156"
+  },
+  {
+   "context": [
+    "D1-p0",
+    "m0",
+    "m3",
+    "m1"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 4,
+   "memory": "m4",
+   "passed": true,
+   "reflect_exposed": [
+    "m0",
+    "m1"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/88"
+  },
+  {
+   "context": [
+    "D2-p0",
+    "m0",
+    "m3",
+    "m2"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "FAILED: AssertionError",
+   "i": 5,
+   "memory": "m5",
+   "passed": false,
+   "reflect_exposed": [
+    "m0",
+    "m3"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "skill": {
+    "id": "k0",
+    "sources": [
+     "m0",
+     "m1",
+     "m2",
+     "m3",
+     "m4",
+     "m5"
+    ]
+   },
+   "task": "HumanEval/142"
+  },
+  {
+   "context": [
+    "D1-p0",
+    "m2",
+    "m4",
+    "m1"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 6,
+   "memory": "m6",
+   "passed": true,
+   "reflect_exposed": [
+    "m2",
+    "m4"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/138"
+  },
+  {
+   "context": [
+    "D2-p0",
+    "m5",
+    "m1",
+    "m0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 7,
+   "memory": "m7",
+   "passed": true,
+   "reflect_exposed": [
+    "m5",
+    "m0"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/29"
+  },
+  {
+   "context": [
+    "D1-p0",
+    "m7",
+    "m5",
+    "m0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 8,
+   "memory": "m8",
+   "passed": false,
+   "reflect_exposed": [
+    "m1",
+    "m0"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/115"
+  },
+  {
+   "context": [
+    "D2-p0",
+    "m0",
+    "m7",
+    "m5"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 9,
+   "memory": "m9",
+   "passed": true,
+   "reflect_exposed": [
+    "m7",
+    "m8"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/103"
+  },
+  {
+   "context": [
+    "D1-p0",
+    "m7",
+    "m5",
+    "m8"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 10,
+   "memory": "m10",
+   "passed": true,
+   "reflect_exposed": [
+    "m7",
+    "m1"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/62"
+  },
+  {
+   "context": [
+    "D2-p0",
+    "m9",
+    "m0",
+    "m7"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "FAILED: AssertionError",
+   "i": 11,
+   "memory": "m11",
+   "passed": false,
+   "profiles": {
+    "D1": {
+     "admitted": true,
+     "id": "D1-p12",
+     "sources": [
+      "D1-p0",
+      "k0",
+      "k1"
+     ]
+    },
+    "D2": {
+     "admitted": true,
+     "id": "D2-p12",
+     "sources": [
+      "D2-p0",
+      "k0",
+      "k1"
+     ]
+    }
+   },
+   "reflect_exposed": [
+    "m7",
+    "m10"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "skill": {
+    "id": "k1",
+    "sources": [
+     "m6",
+     "m7",
+     "m8",
+     "m9",
+     "m10",
+     "m11"
+    ]
+   },
+   "task": "HumanEval/127"
+  },
+  {
+   "context": [
+    "D1-p12",
+    "k0",
+    "k1",
+    "m0",
+    "m2",
+    "m11"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 12,
+   "memory": "m12",
+   "passed": false,
+   "reflect_exposed": [
+    "m0",
+    "m7"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/97"
+  },
+  {
+   "context": [
+    "D2-p12",
+    "k1",
+    "k0",
+    "m7",
+    "m10",
+    "m4"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 13,
+   "memory": "m13",
+   "passed": true,
+   "reflect_exposed": [
+    "m7",
+    "m10"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/42"
+  },
+  {
+   "context": [
+    "D1-p12",
+    "k1",
+    "k0",
+    "m0",
+    "m7",
+    "m10"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 14,
+   "memory": "m14",
+   "passed": true,
+   "reflect_exposed": [
+    "m0",
+    "m7"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/128"
+  },
+  {
+   "context": [
+    "D2-p12",
+    "k0",
+    "k1",
+    "m6",
+    "m3",
+    "m1"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 15,
+   "memory": "m15",
+   "passed": true,
+   "reflect_exposed": [
+    "m3",
+    "m1"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/18"
+  },
+  {
+   "context": [
+    "D1-p12",
+    "k1",
+    "k0",
+    "m7",
+    "m10",
+    "m15"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 16,
+   "memory": "m16",
+   "passed": true,
+   "reflect_exposed": [
+    "m7",
+    "m10"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/80"
+  },
+  {
+   "context": [
+    "D2-p12",
+    "k1",
+    "k0",
+    "m9",
+    "m16",
+    "m7"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 17,
+   "memory": "m17",
+   "passed": true,
+   "reflect_exposed": [
+    "m5",
+    "m12"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "skill": {
+    "id": "k2",
+    "sources": [
+     "m12",
+     "m13",
+     "m14",
+     "m15",
+     "m16",
+     "m17"
+    ]
+   },
+   "task": "HumanEval/139"
+  },
+  {
+   "context": [
+    "D1-p12",
+    "k1",
+    "k0",
+    "m9",
+    "m11",
+    "m0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 18,
+   "memory": "m18",
+   "passed": true,
+   "reflect_exposed": [
+    "m0",
+    "m9"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/71"
+  },
+  {
+   "context": [
+    "D2-p12",
+    "k1",
+    "k0",
+    "m13",
+    "m7",
+    "m10"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 19,
+   "memory": "m19",
+   "passed": true,
+   "reflect_exposed": [
+    "m6",
+    "m4"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/74"
+  },
+  {
+   "context": [
+    "D1-p12",
+    "k1",
+    "k0",
+    "m9",
+    "m16",
+    "m15"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "FAILED: AssertionError",
+   "i": 20,
+   "memory": "m20",
+   "passed": false,
+   "reflect_exposed": [
+    "m9",
+    "m16"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/140"
+  },
+  {
+   "context": [
+    "D2-p12",
+    "k1",
+    "k0",
+    "m16",
+    "m20",
+    "m12"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 21,
+   "memory": "m21",
+   "passed": true,
+   "reflect_exposed": [
+    "m16",
+    "m20"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/91"
+  },
+  {
+   "context": [
+    "D1-p12",
+    "k1",
+    "k0",
+    "m7",
+    "m10",
+    "m13"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 22,
+   "memory": "m22",
+   "passed": true,
+   "reflect_exposed": [
+    "m7",
+    "m10"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "HumanEval/73"
+  },
+  {
+   "context": [
+    "D2-p12",
+    "k1",
+    "k0",
+    "m18",
+    "m22",
+    "m5"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 23,
+   "memory": "m23",
+   "passed": true,
+   "profiles": {
+    "D1": {
+     "admitted": true,
+     "id": "D1-p24",
+     "sources": [
+      "D1-p12",
+      "k0",
+      "k1",
+      "k2",
+      "k3"
+     ]
+    },
+    "D2": {
+     "admitted": true,
+     "id": "D2-p24",
+     "sources": [
+      "D2-p12",
+      "k2",
+      "k3"
+     ]
+    }
+   },
+   "reflect_exposed": [
+    "m22",
+    "m7"
+   ],
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "skill": {
+    "id": "k3",
+    "sources": [
+     "m18",
+     "m19",
+     "m20",
+     "m21",
+     "m22",
+     "m23"
+    ]
+   },
+   "task": "HumanEval/147"
+  }
+ ],
+ "experiences": {
+  "e0": {
+   "id": "e0",
+   "outcome": "fail",
+   "run": "r0",
+   "task": "HumanEval/99"
+  },
+  "e1": {
+   "id": "e1",
+   "outcome": "pass",
+   "run": "r1",
+   "task": "HumanEval/24"
+  },
+  "e10": {
+   "id": "e10",
+   "outcome": "pass",
+   "run": "r10",
+   "task": "HumanEval/62"
+  },
+  "e11": {
+   "id": "e11",
+   "outcome": "fail",
+   "run": "r11",
+   "task": "HumanEval/127"
+  },
+  "e12": {
+   "id": "e12",
+   "outcome": "fail",
+   "run": "r12",
+   "task": "HumanEval/97"
+  },
+  "e13": {
+   "id": "e13",
+   "outcome": "pass",
+   "run": "r13",
+   "task": "HumanEval/42"
+  },
+  "e14": {
+   "id": "e14",
+   "outcome": "pass",
+   "run": "r14",
+   "task": "HumanEval/128"
+  },
+  "e15": {
+   "id": "e15",
+   "outcome": "pass",
+   "run": "r15",
+   "task": "HumanEval/18"
+  },
+  "e16": {
+   "id": "e16",
+   "outcome": "pass",
+   "run": "r16",
+   "task": "HumanEval/80"
+  },
+  "e17": {
+   "id": "e17",
+   "outcome": "pass",
+   "run": "r17",
+   "task": "HumanEval/139"
+  },
+  "e18": {
+   "id": "e18",
+   "outcome": "pass",
+   "run": "r18",
+   "task": "HumanEval/71"
+  },
+  "e19": {
+   "id": "e19",
+   "outcome": "pass",
+   "run": "r19",
+   "task": "HumanEval/74"
+  },
+  "e2": {
+   "id": "e2",
+   "outcome": "pass",
+   "run": "r2",
+   "task": "HumanEval/25"
+  },
+  "e20": {
+   "id": "e20",
+   "outcome": "fail",
+   "run": "r20",
+   "task": "HumanEval/140"
+  },
+  "e21": {
+   "id": "e21",
+   "outcome": "pass",
+   "run": "r21",
+   "task": "HumanEval/91"
+  },
+  "e22": {
+   "id": "e22",
+   "outcome": "pass",
+   "run": "r22",
+   "task": "HumanEval/73"
+  },
+  "e23": {
+   "id": "e23",
+   "outcome": "pass",
+   "run": "r23",
+   "task": "HumanEval/147"
+  },
+  "e3": {
+   "id": "e3",
+   "outcome": "pass",
+   "run": "r3",
+   "task": "HumanEval/156"
+  },
+  "e4": {
+   "id": "e4",
+   "outcome": "pass",
+   "run": "r4",
+   "task": "HumanEval/88"
+  },
+  "e5": {
+   "id": "e5",
+   "outcome": "fail",
+   "run": "r5",
+   "task": "HumanEval/142"
+  },
+  "e6": {
+   "id": "e6",
+   "outcome": "pass",
+   "run": "r6",
+   "task": "HumanEval/138"
+  },
+  "e7": {
+   "id": "e7",
+   "outcome": "pass",
+   "run": "r7",
+   "task": "HumanEval/29"
+  },
+  "e8": {
+   "id": "e8",
+   "outcome": "fail",
+   "run": "r8",
+   "task": "HumanEval/115"
+  },
+  "e9": {
+   "id": "e9",
+   "outcome": "pass",
+   "run": "r9",
+   "task": "HumanEval/103"
+  }
+ },
+ "fault_index": 8,
+ "history_events": 156,
+ "importance": {},
+ "llm": {
+  "cache_hits": 0,
+  "calls": 114,
+  "llm_seconds": 2925.865,
+  "tokens_in": 71070,
+  "tokens_out": 19894
+ },
+ "loaded": {
+  "r0": [
+   "D1-p0"
+  ],
+  "r1": [
+   "D2-p0",
+   "m0"
+  ],
+  "r10": [
+   "D1-p0",
+   "m5",
+   "m7",
+   "m8"
+  ],
+  "r11": [
+   "D2-p0",
+   "m0",
+   "m7",
+   "m9"
+  ],
+  "r12": [
+   "D1-p12",
+   "k0",
+   "k1",
+   "m0",
+   "m11",
+   "m2"
+  ],
+  "r13": [
+   "D2-p12",
+   "k0",
+   "k1",
+   "m10",
+   "m4",
+   "m7"
+  ],
+  "r14": [
+   "D1-p12",
+   "k0",
+   "k1",
+   "m0",
+   "m10",
+   "m7"
+  ],
+  "r15": [
+   "D2-p12",
+   "k0",
+   "k1",
+   "m1",
+   "m3",
+   "m6"
+  ],
+  "r16": [
+   "D1-p12",
+   "k0",
+   "k1",
+   "m10",
+   "m15",
+   "m7"
+  ],
+  "r17": [
+   "D2-p12",
+   "k0",
+   "k1",
+   "m16",
+   "m7",
+   "m9"
+  ],
+  "r18": [
+   "D1-p12",
+   "k0",
+   "k1",
+   "m0",
+   "m11",
+   "m9"
+  ],
+  "r19": [
+   "D2-p12",
+   "k0",
+   "k1",
+   "m10",
+   "m13",
+   "m7"
+  ],
+  "r2": [
+   "D1-p0",
+   "m0",
+   "m1"
+  ],
+  "r20": [
+   "D1-p12",
+   "k0",
+   "k1",
+   "m15",
+   "m16",
+   "m9"
+  ],
+  "r21": [
+   "D2-p12",
+   "k0",
+   "k1",
+   "m12",
+   "m16",
+   "m20"
+  ],
+  "r22": [
+   "D1-p12",
+   "k0",
+   "k1",
+   "m10",
+   "m13",
+   "m7"
+  ],
+  "r23": [
+   "D2-p12",
+   "k0",
+   "k1",
+   "m18",
+   "m22",
+   "m5"
+  ],
+  "r3": [
+   "D2-p0",
+   "m0",
+   "m1",
+   "m2"
+  ],
+  "r4": [
+   "D1-p0",
+   "m0",
+   "m1",
+   "m3"
+  ],
+  "r5": [
+   "D2-p0",
+   "m0",
+   "m2",
+   "m3"
+  ],
+  "r6": [
+   "D1-p0",
+   "m1",
+   "m2",
+   "m4"
+  ],
+  "r7": [
+   "D2-p0",
+   "m0",
+   "m1",
+   "m5"
+  ],
+  "r8": [
+   "D1-p0",
+   "m0",
+   "m5",
+   "m7"
+  ],
+  "r9": [
+   "D2-p0",
+   "m0",
+   "m5",
+   "m7"
+  ]
+ },
+ "models": {
+  "deepseek-coder-v2:16b": "63fb193b3a9b4322a18e8c6b250ca2e70a5ff531e962dbf95ba089b2566f2fa5",
+  "nomic-embed-text:latest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+ },
+ "tau": {
+  "embed": 0.55,
+  "tfidf": 0.05
+ },
+ "timing": {
+  "engine_total": 1.931290120817721,
+  "evolve_total": 430.21668274886906,
+  "wall_total": 877.8913652896881
+ },
+ "universe": [
+  "D1-p24",
+  "D2-p24",
+  "k0",
+  "k1",
+  "k2",
+  "k3",
+  "m0",
+  "m1",
+  "m10",
+  "m11",
+  "m12",
+  "m13",
+  "m14",
+  "m15",
+  "m16",
+  "m17",
+  "m18",
+  "m19",
+  "m2",
+  "m20",
+  "m21",
+  "m22",
+  "m23",
+  "m3",
+  "m4",
+  "m5",
+  "m6",
+  "m7",
+  "m8",
+  "m9"
+ ]
+}

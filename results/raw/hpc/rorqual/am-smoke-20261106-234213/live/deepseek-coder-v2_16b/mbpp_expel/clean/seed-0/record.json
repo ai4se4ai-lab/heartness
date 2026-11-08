@@ -1,0 +1,1282 @@
+{
+ "active": [
+  "D1-p0",
+  "D2-p0",
+  "r1",
+  "r2"
+ ],
+ "artifacts": {
+  "D1-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D1-p0",
+   "kind": "agent",
+   "path": "profiles/D1.md",
+   "sources": [],
+   "text": "You are a careful Python programmer. Write correct, readable functions that satisfy the docstring and examples exactly."
+  },
+  "D2-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D2-p0",
+   "kind": "agent",
+   "path": "profiles/D2.md",
+   "sources": [],
+   "text": "You are a pragmatic Python engineer. Solve the task directly and handle edge cases mentioned in the docstring."
+  },
+  "r0": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   "id": "r0",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [],
+   "text": "Use the `math.isclose` function for floating-point comparison in functions that return values related to geometry or physics."
+  },
+  "r1": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ],
+   "id": "r1",
+   "kind": "memory",
+   "path": "insights/r1.md",
+   "sources": [
+    "r0"
+   ],
+   "text": "Use list comprehensions for concise and readable code in tasks involving transformations or filtering of lists."
+  },
+  "r2": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ],
+   "id": "r2",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [
+    "r0"
+   ],
+   "text": "Use list comprehensions for concise and readable code in tasks involving transformations or filtering of lists."
+  }
+ },
+ "config": {
+  "batch": 6,
+  "benchmark": "mbpp",
+  "compose_at": [
+   12,
+   24
+  ],
+  "expel_batch": 4,
+  "expel_top": 5,
+  "fault": null,
+  "k_memories": 3,
+  "k_reflect": 2,
+  "k_skills": 2,
+  "model": "deepseek-coder-v2:16b",
+  "n_evolve": 8,
+  "policy": "expel",
+  "seed": 0
+ },
+ "dataset": "evalplus/mbppplus@b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+ "deployments": {
+  "D1": [
+   "r1",
+   "r2"
+  ],
+  "D2": [
+   "r1",
+   "r2"
+  ]
+ },
+ "environment": {
+  "cluster": "rorqual",
+  "git": "",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "host": "rg12703",
+  "phase": "gen",
+  "platform": "Linux-5.14.0-687.61.1.el9_8.x86_64-x86_64-Intel-R-_Xeon-R-_Gold_6448Y-with-glibc2.37",
+  "python": "3.11.5",
+  "source_sha256": "2d88e045157d7f2e0be8389a406bfa28b5086242e483764e7320fe791809522f"
+ },
+ "eval": {
+  "clean": [
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/807"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/560"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "Mbpp/427"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/105"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/4"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/238"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/311"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/118"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/754"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/299"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/11"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/591"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/428"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/250"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/137"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/129"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/572"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/394"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/256"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/792"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/165"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/7"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/262"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": true
+    },
+    "task": "Mbpp/479"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/763"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/450"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/20"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/451"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/772"
+   },
+   {
+    "context": [
+     "r2",
+     "r1"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/593"
+   }
+  ],
+  "seed_only": [
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/807"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/560"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "Mbpp/427"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/105"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/4"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/238"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/311"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/118"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/754"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/299"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/11"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/591"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/428"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/250"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/137"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/129"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/572"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/394"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/256"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/792"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/165"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/7"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/262"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": true
+    },
+    "task": "Mbpp/479"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/763"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/450"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/20"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/451"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/772"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/593"
+   }
+  ]
+ },
+ "eval_tasks": [
+  "Mbpp/807",
+  "Mbpp/560",
+  "Mbpp/427",
+  "Mbpp/105",
+  "Mbpp/4",
+  "Mbpp/238",
+  "Mbpp/311",
+  "Mbpp/118",
+  "Mbpp/754",
+  "Mbpp/299",
+  "Mbpp/11",
+  "Mbpp/591",
+  "Mbpp/428",
+  "Mbpp/250",
+  "Mbpp/137",
+  "Mbpp/129",
+  "Mbpp/572",
+  "Mbpp/394",
+  "Mbpp/256",
+  "Mbpp/792",
+  "Mbpp/165",
+  "Mbpp/7",
+  "Mbpp/262",
+  "Mbpp/479",
+  "Mbpp/763",
+  "Mbpp/450",
+  "Mbpp/20",
+  "Mbpp/451",
+  "Mbpp/772",
+  "Mbpp/593"
+ ],
+ "evolution": [
+  {
+   "context": [
+    "D1-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 0,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/805"
+  },
+  {
+   "context": [
+    "D2-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 1,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/139"
+  },
+  {
+   "context": [
+    "D1-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 2,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/602"
+  },
+  {
+   "context": [
+    "D2-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r0",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "target": null,
+      "verb": "EDIT"
+     },
+     {
+      "target": null,
+      "verb": "AGREE"
+     },
+     {
+      "target": null,
+      "verb": "REMOVE"
+     }
+    ],
+    "response": " ADD: Use the `math.isclose` function for floating-point comparison in functions that return values related to geometry or physics.\n\nEDIT 1: Use the `math.isclose` function for floating-point comparison in functions that return values related to geometry or physics.\n\nAGREE 1: Use the `math.isclose` function for floating-point comparison in functions that return values related to geometry or physics.\n\nREMOVE 1: Use the `math.isclose` function for floating-point comparison in functions that return values related to geometry or physics.",
+    "shown": []
+   },
+   "feedback": "PASSED all tests.",
+   "i": 3,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/425"
+  },
+  {
+   "context": [
+    "r0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 4,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/623"
+  },
+  {
+   "context": [
+    "r0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 5,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/18"
+  },
+  {
+   "context": [
+    "r0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 6,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/222"
+  },
+  {
+   "context": [
+    "r0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r1",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r2",
+      "target": "r0",
+      "verb": "EDIT"
+     },
+     {
+      "target": "r0",
+      "verb": "AGREE"
+     },
+     {
+      "target": "r0",
+      "verb": "REMOVE"
+     }
+    ],
+    "response": " ADD: Use list comprehensions for concise and readable code in tasks involving transformations or filtering of lists.\n\nEDIT 1: Use list comprehensions for concise and readable code in tasks involving transformations or filtering of lists.\n\nAGREE 1: List comprehensions are powerful and concise way to create lists in Python, making the code more readable and efficient.\n\nREMOVE 1: Use loops instead of list comprehensions for tasks that require more complex logic or operations that cannot be easily expressed in a list comprehension.",
+    "shown": [
+     "r0"
+    ]
+   },
+   "feedback": "PASSED all tests.",
+   "i": 7,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/242"
+  }
+ ],
+ "experiences": {
+  "e0": {
+   "id": "e0",
+   "outcome": "pass",
+   "run": "r0",
+   "task": "Mbpp/805"
+  },
+  "e1": {
+   "id": "e1",
+   "outcome": "pass",
+   "run": "r1",
+   "task": "Mbpp/139"
+  },
+  "e2": {
+   "id": "e2",
+   "outcome": "pass",
+   "run": "r2",
+   "task": "Mbpp/602"
+  },
+  "e3": {
+   "id": "e3",
+   "outcome": "pass",
+   "run": "r3",
+   "task": "Mbpp/425"
+  },
+  "e4": {
+   "id": "e4",
+   "outcome": "pass",
+   "run": "r4",
+   "task": "Mbpp/623"
+  },
+  "e5": {
+   "id": "e5",
+   "outcome": "pass",
+   "run": "r5",
+   "task": "Mbpp/18"
+  },
+  "e6": {
+   "id": "e6",
+   "outcome": "pass",
+   "run": "r6",
+   "task": "Mbpp/222"
+  },
+  "e7": {
+   "id": "e7",
+   "outcome": "pass",
+   "run": "r7",
+   "task": "Mbpp/242"
+  }
+ },
+ "fault_index": 7,
+ "history_events": 37,
+ "importance": {
+  "r0": 2,
+  "r1": 2,
+  "r2": 3
+ },
+ "llm": {
+  "cache_hits": 5,
+  "calls": 70,
+  "llm_seconds": 2330.293,
+  "tokens_in": 14380,
+  "tokens_out": 6747
+ },
+ "loaded": {
+  "r0": [
+   "D1-p0"
+  ],
+  "r1": [
+   "D2-p0"
+  ],
+  "r2": [
+   "D1-p0"
+  ],
+  "r3": [
+   "D2-p0"
+  ],
+  "r4": [
+   "r0"
+  ],
+  "r5": [
+   "r0"
+  ],
+  "r6": [
+   "r0"
+  ],
+  "r7": [
+   "r0"
+  ]
+ },
+ "models": {
+  "deepseek-coder-v2:16b": "63fb193b3a9b4322a18e8c6b250ca2e70a5ff531e962dbf95ba089b2566f2fa5",
+  "nomic-embed-text:latest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+ },
+ "tau": {
+  "embed": 0.55,
+  "tfidf": 0.05
+ },
+ "timing": {
+  "engine_total": 0.042638570768758655,
+  "evolve_total": 53.67723025998566,
+  "wall_total": 487.37276434898376
+ },
+ "universe": [
+  "D1-p0",
+  "D2-p0",
+  "r1",
+  "r2"
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "cell": "3__qwen2.5-coder_7b__humaneval__expel",
+ "phase": "gen",
+ "ok": true,
+ "runs": [
+  {
+   "fault": "clean",
+   "rc": 0,
+   "seconds": 500.8,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-060101/results/live/qwen2.5-coder_7b/humaneval_expel/clean/seed-3\", \"timing\": {\"evolve_total\": 192.0670885629952, \"engine_total\": 1.1592632345855236, \"wall_total\": 500.43425941467285}, \"llm\": {\"calls\": 88, \"cache_hits\": 0, \"llm_seconds\": 1800.568, \"tokens_in\": 30846, \"tokens_out\": 12091}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F1",
+   "rc": 0,
+   "seconds": 535.9,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-060101/results/live/qwen2.5-coder_7b/humaneval_expel/F1/seed-3\", \"timing\": {\"evolve_total\": 204.02958515798673, \"R2_tfidf\": 0.0004671141505241394, \"R3_embed\": 0.3141578738577664, \"R4_judge\": 8.956611639354378, \"H\": 0.13523477129638195, \"H_noEME\": 0.04632623307406902, \"H_local\": 0.07090806402266026, \"H_noDeps\": 0.014126270078122616, \"engine_total\": 1.0135246450081468, \"wall_total\": 535.5501990318298}, \"llm\": {\"calls\": 181, \"cache_hits\": 87, \"llm_seconds\": 1990.01, \"tokens_in\": 31988, \"tokens_out\": 12366}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F2",
+   "rc": 0,
+   "seconds": 535.3,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-060101/results/live/qwen2.5-coder_7b/humaneval_expel/F2/seed-3\", \"timing\": {\"evolve_total\": 191.79397404985502, \"R2_tfidf\": 0.000382324680685997, \"R3_embed\": 6.314437432680279, \"R4_judge\": 9.38277150504291, \"H\": 0.09177624806761742, \"H_noEME\": 0.014214737806469202, \"H_local\": 0.014291898347437382, \"H_noDeps\": 6.651971489191055e-05, \"engine_total\": 0.7021945887245238, \"wall_total\": 535.0361380577087}, \"llm\": {\"calls\": 181, \"cache_hits\": 87, \"llm_seconds\": 1978.82, \"tokens_in\": 31593, \"tokens_out\": 12305}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F3",
+   "rc": 0,
+   "seconds": 533.6,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-060101/results/live/qwen2.5-coder_7b/humaneval_expel/F3/seed-3\", \"timing\": {\"evolve_total\": 191.91790952999145, \"R2_tfidf\": 0.00046650273725390434, \"R3_embed\": 6.2705992590636015, \"R4_judge\": 8.513623691629618, \"H\": 0.06293233716860414, \"H_noEME\": 0.020520569290965796, \"H_local\": 0.05520866671577096, \"H_noDeps\": 9.186798706650734e-05, \"engine_total\": 0.6982770473696291, \"wall_total\": 533.3001356124878}, \"llm\": {\"calls\": 181, \"cache_hits\": 87, \"llm_seconds\": 1922.73, \"tokens_in\": 31744, \"tokens_out\": 12206}}\n",
+   "stderr": ""
+  }
+ ],
+ "supplement": [
+  {
+   "fault": "F1",
+   "rc": 0,
+   "stderr": ""
+  },
+  {
+   "fault": "F2",
+   "rc": 0,
+   "stderr": ""
+  },
+  {
+   "fault": "F3",
+   "rc": 0,
+   "stderr": ""
+  }
+ ],
+ "seconds": 545.4
+}

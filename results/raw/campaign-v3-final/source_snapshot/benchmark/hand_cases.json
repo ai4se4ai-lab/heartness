@@ -1,0 +1,20 @@
+{
+  "purpose": "Hand-specified expected sets, independent of generator labels and query output",
+  "artifacts": [
+    {"id":"a0","kind":"memory","text":"source lesson","experiences":["e0"]},
+    {"id":"a1","kind":"prompt","text":"disconnected source","experiences":["e1"]},
+    {"id":"a2","kind":"skill","text":"summary","sources":["a0"]},
+    {"id":"a3","kind":"agent","text":"consumer","dependencies":["a2"],"experiences":["e3"]},
+    {"id":"a4","kind":"workflow","text":"consumer derivative","sources":["a3"]},
+    {"id":"a5","kind":"memory","text":"inactive disconnected anchor","experiences":["e5"]}
+  ],
+  "active": ["a1","a4"],
+  "deployments": {"d0":["a1","a4"],"d1":["a0","a2","a3","a4"]},
+  "cases": [
+    {"root":"a0","target":"a4","descendants":["a2"],"impact":["a4"],"origins":["e3"],"deployment_impact":["d0:a4","d1:a0","d1:a2","d1:a3","d1:a4"]},
+    {"root":"a1","target":"a2","descendants":[],"impact":["a1"],"origins":["e0"],"deployment_impact":["d0:a1"]},
+    {"root":"a2","target":"a3","descendants":[],"impact":["a4"],"origins":["e3"],"deployment_impact":["d0:a4","d1:a2","d1:a3","d1:a4"]},
+    {"root":"a4","target":"a0","descendants":[],"impact":["a4"],"origins":["e0"],"deployment_impact":["d0:a4","d1:a4"]},
+    {"root":"a5","target":"a5","descendants":[],"impact":[],"origins":["e5"],"deployment_impact":[]}
+  ]
+}

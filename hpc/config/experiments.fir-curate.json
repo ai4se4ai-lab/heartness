@@ -1,0 +1,178 @@
+{
+  "_comment": "HEARTNESS live study on Nibi (paper subject S1, RQ1/RQ3). One gen + one oracle array task per model x benchmark x policy x seed; each cell runs clean + three faulty runs. Thresholds TAU_* were tuned on the local pilot's development seeds (qwen2.5:7b, HumanEval+) and are fixed here; they are never tuned on reporting seeds. Cluster variant fir-curate: humaneval x curate (moved from Nibi; same H100 slice as fir).",
+  "project": "heartness",
+  "require_gpu": true,
+  "vars": {
+    "CAMPAIGN": "{RESULTS}/live",
+    "N_EVOLVE": "24",
+    "TAU_TFIDF": "0.05",
+    "TAU_EMBED": "0.55",
+    "PULL_MODELS": "qwen2.5-coder:7b llama3.1:8b deepseek-coder-v2:16b gemma2:9b granite3.3:8b mistral-small:24b phi4:14b nomic-embed-text:latest"
+  },
+  "smoke": {
+    "vars": {
+      "N_EVOLVE": "8"
+    },
+    "time": "01:00:00",
+    "matrix_limit": 4,
+    "array_throttle": 4
+  },
+  "stages": [
+    {
+      "name": "setup",
+      "description": "Gate: pinned Ollama, pinned model tags (digests recorded), pinned EvalPlus datasets, canonical-solution validation.",
+      "internet": true,
+      "resources": {
+        "gpus": "h100_2g.20gb:1",
+        "cpus": 4,
+        "mem": "48G",
+        "time": "02:00:00"
+      },
+      "steps": [
+        {
+          "name": "check_gpu",
+          "builtin": "check_gpu",
+          "always": true
+        },
+        {
+          "name": "install_and_pull",
+          "cmd": "bash scripts/hpc/setup_nibi.sh {RESULTS} {PULL_MODELS}",
+          "produces": [
+            "setup/verify.json",
+            "setup/model_digests.json",
+            "setup/data_sha256.json"
+          ],
+          "critical": true
+        }
+      ]
+    },
+    {
+      "name": "gen",
+      "description": "RQ1/RQ3: self-evolution, remedies, held-out evaluation and closure-bounded revalidation for clean+F1+F2+F3 of one cell.",
+      "depends": [
+        {
+          "stage": "setup",
+          "type": "afterok"
+        }
+      ],
+      "matrix": {
+        "seed": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "model": [
+          "qwen2.5-coder:7b",
+          "llama3.1:8b",
+          "deepseek-coder-v2:16b",
+          "gemma2:9b",
+          "granite3.3:8b"
+        ],
+        "benchmark": [
+          "humaneval"
+        ],
+        "policy": [
+          "curate"
+        ]
+      },
+      "resources": {
+        "gpus": "h100_2g.20gb:1",
+        "cpus": 8,
+        "mem": "32G",
+        "time": "03:00:00",
+        "requeue": true
+      },
+      "array_throttle": 40,
+      "steps": [
+        {
+          "name": "cell",
+          "cmd": "python -m experiments.live.cell --campaign {CAMPAIGN} --model {model} --benchmark {benchmark} --policy {policy} --seed {seed} --phase gen --n-evolve {N_EVOLVE} --tau-tfidf {TAU_TFIDF} --tau-embed {TAU_EMBED} --cell {CELL}",
+          "needs": [
+            "setup/verify.json"
+          ],
+          "produces": [
+            "live/cells/{CELL}.gen.json"
+          ],
+          "retries": 1
+        }
+      ]
+    },
+    {
+      "name": "oracle",
+      "description": "RQ1 ground truth: two judge models (mistral-small:24b, phi4:14b) label the artifacts of the same cell (aftercorr pipelining).",
+      "depends": [
+        {
+          "stage": "gen",
+          "type": "aftercorr"
+        }
+      ],
+      "matrix_from": "gen",
+      "resources": {
+        "gpus": "h100_2g.20gb:1",
+        "cpus": 4,
+        "mem": "32G",
+        "time": "02:00:00",
+        "requeue": true
+      },
+      "steps": [
+        {
+          "name": "cell",
+          "cmd": "python -m experiments.live.cell --campaign {CAMPAIGN} --model {model} --benchmark {benchmark} --policy {policy} --seed {seed} --phase oracle --n-evolve {N_EVOLVE} --tau-tfidf {TAU_TFIDF} --tau-embed {TAU_EMBED} --cell {CELL}",
+          "needs": [
+            "live/cells/{CELL}.gen.json"
+          ],
+          "produces": [
+            "live/cells/{CELL}.oracle.json"
+          ],
+          "retries": 1
+        }
+      ]
+    },
+    {
+      "name": "collect",
+      "description": "Statistics per model/benchmark/policy and collection to project storage.",
+      "depends": [
+        {
+          "stage": "oracle",
+          "type": "afterany"
+        }
+      ],
+      "resources": {
+        "gpus": "h100_2g.20gb:1",
+        "cpus": 2,
+        "mem": "16G",
+        "time": "01:00:00"
+      },
+      "steps": [
+        {
+          "name": "analysis",
+          "cmd": "python -m experiments.live.process report {CAMPAIGN}",
+          "always": true
+        },
+        {
+          "name": "collect",
+          "builtin": "collect",
+          "always": true
+        }
+      ]
+    }
+  ],
+  "results": {
+    "tables": [
+      {
+        "name": "cells",
+        "glob": "live/cells/*.json",
+        "description": "per-cell run status and timing"
+      }
+    ],
+    "summaries": [],
+    "plots": [],
+    "copy": [
+      "setup/*.json",
+      "setup/*.txt"
+    ],
+    "archive": []
+  }
+}

@@ -1,0 +1,1486 @@
+{
+ "active": [
+  "D1-p0",
+  "D2-p0",
+  "r1",
+  "r2",
+  "r3",
+  "r4",
+  "r5"
+ ],
+ "artifacts": {
+  "D1-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D1-p0",
+   "kind": "agent",
+   "path": "profiles/D1.md",
+   "sources": [],
+   "text": "You are a careful Python programmer. Write correct, readable functions that satisfy the docstring and examples exactly."
+  },
+  "D2-p0": {
+   "authorized_seed": true,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "seed",
+   "experiences": [],
+   "id": "D2-p0",
+   "kind": "agent",
+   "path": "profiles/D2.md",
+   "sources": [],
+   "text": "You are a pragmatic Python engineer. Solve the task directly and handle edge cases mentioned in the docstring."
+  },
+  "r0": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   "id": "r0",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [],
+   "text": "When solving a problem, consider using a loop to iterate through the input data."
+  },
+  "r1": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   "id": "r1",
+   "kind": "memory",
+   "path": "insights/r1.md",
+   "sources": [],
+   "text": "Utilize built-in functions like `sum` and `len` for common operations."
+  },
+  "r2": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   "id": "r2",
+   "kind": "memory",
+   "path": "insights/r2.md",
+   "sources": [],
+   "text": "Define a variable to store the maximum value encountered and update it accordingly."
+  },
+  "r3": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "summary",
+   "experiences": [
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   "id": "r3",
+   "kind": "memory",
+   "path": "insights/r3.md",
+   "sources": [],
+   "text": "Use sets to efficiently track encountered elements."
+  },
+  "r4": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "edit",
+   "experiences": [
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ],
+   "id": "r4",
+   "kind": "memory",
+   "path": "insights/r0.md",
+   "sources": [
+    "r0",
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "text": "When solving a problem, consider using loops or list comprehensions to process input data efficiently."
+  },
+  "r5": {
+   "authorized_seed": false,
+   "contract": {
+    "provides": [],
+    "requires": []
+   },
+   "dependencies": [],
+   "derivation": "merge",
+   "experiences": [
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ],
+   "id": "r5",
+   "kind": "memory",
+   "path": "insights/r5.md",
+   "sources": [
+    "r0",
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "text": "Leverage conditional statements (if/else) to make decisions based on input conditions."
+  }
+ },
+ "config": {
+  "batch": 6,
+  "benchmark": "mbpp",
+  "compose_at": [
+   12,
+   24
+  ],
+  "expel_batch": 4,
+  "expel_top": 5,
+  "fault": null,
+  "k_memories": 3,
+  "k_reflect": 2,
+  "k_skills": 2,
+  "model": "gemma2:9b",
+  "n_evolve": 8,
+  "policy": "expel",
+  "seed": 0
+ },
+ "dataset": "evalplus/mbppplus@b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+ "deployments": {
+  "D1": [
+   "r1",
+   "r2",
+   "r3",
+   "r4",
+   "r5"
+  ],
+  "D2": [
+   "r1",
+   "r2",
+   "r3",
+   "r4",
+   "r5"
+  ]
+ },
+ "environment": {
+  "cluster": "rorqual",
+  "git": "",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "host": "rg13102",
+  "phase": "gen",
+  "platform": "Linux-5.14.0-687.64.1.el9_8.x86_64-x86_64-Intel-R-_Xeon-R-_Gold_6448Y-with-glibc2.37",
+  "python": "3.11.5",
+  "source_sha256": "2d88e045157d7f2e0be8389a406bfa28b5086242e483764e7320fe791809522f"
+ },
+ "eval": {
+  "clean": [
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/807"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/560"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "Mbpp/427"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/105"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/4"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/238"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/311"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/118"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/754"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/299"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/11"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/591"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/428"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/250"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/137"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": true
+    },
+    "task": "Mbpp/129"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/572"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/394"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/256"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/792"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/165"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/7"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/262"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/479"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/763"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/450"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/20"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/451"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/772"
+   },
+   {
+    "context": [
+     "r1",
+     "r2",
+     "r4",
+     "r3",
+     "r5"
+    ],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/593"
+   }
+  ],
+  "seed_only": [
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/807"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/560"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": true,
+     "F3": false
+    },
+    "task": "Mbpp/427"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/105"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/4"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/238"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/311"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/118"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/754"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/299"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/11"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/591"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/428"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/250"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/137"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": true
+    },
+    "task": "Mbpp/129"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/572"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/394"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/256"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/792"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/165"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/7"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/262"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/479"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/763"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/450"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/20"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/451"
+   },
+   {
+    "context": [],
+    "deployment": "D1",
+    "fault_signature": null,
+    "passed": true,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/772"
+   },
+   {
+    "context": [],
+    "deployment": "D2",
+    "fault_signature": null,
+    "passed": false,
+    "signature": {
+     "F1": false,
+     "F2": false,
+     "F3": false
+    },
+    "task": "Mbpp/593"
+   }
+  ]
+ },
+ "eval_tasks": [
+  "Mbpp/807",
+  "Mbpp/560",
+  "Mbpp/427",
+  "Mbpp/105",
+  "Mbpp/4",
+  "Mbpp/238",
+  "Mbpp/311",
+  "Mbpp/118",
+  "Mbpp/754",
+  "Mbpp/299",
+  "Mbpp/11",
+  "Mbpp/591",
+  "Mbpp/428",
+  "Mbpp/250",
+  "Mbpp/137",
+  "Mbpp/129",
+  "Mbpp/572",
+  "Mbpp/394",
+  "Mbpp/256",
+  "Mbpp/792",
+  "Mbpp/165",
+  "Mbpp/7",
+  "Mbpp/262",
+  "Mbpp/479",
+  "Mbpp/763",
+  "Mbpp/450",
+  "Mbpp/20",
+  "Mbpp/451",
+  "Mbpp/772",
+  "Mbpp/593"
+ ],
+ "evolution": [
+  {
+   "context": [
+    "D1-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 0,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/805"
+  },
+  {
+   "context": [
+    "D2-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 1,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/139"
+  },
+  {
+   "context": [
+    "D1-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 2,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/602"
+  },
+  {
+   "context": [
+    "D2-p0"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r0",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r1",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r2",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "admitted": true,
+      "id": "r3",
+      "target": null,
+      "verb": "ADD"
+     }
+    ],
+    "response": "ADD: When solving a problem, consider using a loop to iterate through the input data.\nADD:  Utilize built-in functions like `sum` and `len` for common operations.\nADD:  Define a variable to store the maximum value encountered and update it accordingly.\nADD:  Use sets to efficiently track encountered elements. \n\n\n",
+    "shown": []
+   },
+   "feedback": "PASSED all tests.",
+   "i": 3,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/425"
+  },
+  {
+   "context": [
+    "r0",
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 4,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/623"
+  },
+  {
+   "context": [
+    "r0",
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "feedback": "PASSED all tests.",
+   "i": 5,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/18"
+  },
+  {
+   "context": [
+    "r0",
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D1",
+   "feedback": "PASSED all tests.",
+   "i": 6,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/222"
+  },
+  {
+   "context": [
+    "r0",
+    "r1",
+    "r2",
+    "r3"
+   ],
+   "corrupted": false,
+   "deployment": "D2",
+   "extraction": {
+    "ops": [
+     {
+      "admitted": true,
+      "id": "r4",
+      "target": "r0",
+      "verb": "EDIT"
+     },
+     {
+      "admitted": true,
+      "id": "r5",
+      "target": null,
+      "verb": "ADD"
+     },
+     {
+      "target": "r1",
+      "verb": "AGREE"
+     },
+     {
+      "target": "r2",
+      "verb": "AGREE"
+     }
+    ],
+    "response": "EDIT 1: When solving a problem, consider using loops or list comprehensions to process input data efficiently.\nADD:  Leverage conditional statements (if/else) to make decisions based on input conditions.\nAGREE 2\nAGREE 3 \nREMOVE 4 \n\n\n",
+    "shown": [
+     "r0",
+     "r1",
+     "r2",
+     "r3"
+    ]
+   },
+   "feedback": "PASSED all tests.",
+   "i": 7,
+   "passed": true,
+   "signature": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+   },
+   "task": "Mbpp/242"
+  }
+ ],
+ "experiences": {
+  "e0": {
+   "id": "e0",
+   "outcome": "pass",
+   "run": "r0",
+   "task": "Mbpp/805"
+  },
+  "e1": {
+   "id": "e1",
+   "outcome": "pass",
+   "run": "r1",
+   "task": "Mbpp/139"
+  },
+  "e2": {
+   "id": "e2",
+   "outcome": "pass",
+   "run": "r2",
+   "task": "Mbpp/602"
+  },
+  "e3": {
+   "id": "e3",
+   "outcome": "pass",
+   "run": "r3",
+   "task": "Mbpp/425"
+  },
+  "e4": {
+   "id": "e4",
+   "outcome": "pass",
+   "run": "r4",
+   "task": "Mbpp/623"
+  },
+  "e5": {
+   "id": "e5",
+   "outcome": "pass",
+   "run": "r5",
+   "task": "Mbpp/18"
+  },
+  "e6": {
+   "id": "e6",
+   "outcome": "pass",
+   "run": "r6",
+   "task": "Mbpp/222"
+  },
+  "e7": {
+   "id": "e7",
+   "outcome": "pass",
+   "run": "r7",
+   "task": "Mbpp/242"
+  }
+ },
+ "fault_index": 7,
+ "history_events": 46,
+ "importance": {
+  "r0": 2,
+  "r1": 3,
+  "r2": 3,
+  "r3": 2,
+  "r4": 3,
+  "r5": 2
+ },
+ "llm": {
+  "cache_hits": 0,
+  "calls": 70,
+  "llm_seconds": 630.65,
+  "tokens_in": 16851,
+  "tokens_out": 4004
+ },
+ "loaded": {
+  "r0": [
+   "D1-p0"
+  ],
+  "r1": [
+   "D2-p0"
+  ],
+  "r2": [
+   "D1-p0"
+  ],
+  "r3": [
+   "D2-p0"
+  ],
+  "r4": [
+   "r0",
+   "r1",
+   "r2",
+   "r3"
+  ],
+  "r5": [
+   "r0",
+   "r1",
+   "r2",
+   "r3"
+  ],
+  "r6": [
+   "r0",
+   "r1",
+   "r2",
+   "r3"
+  ],
+  "r7": [
+   "r0",
+   "r1",
+   "r2",
+   "r3"
+  ]
+ },
+ "models": {
+  "gemma2:9b": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+  "nomic-embed-text:latest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+ },
+ "tau": {
+  "embed": 0.55,
+  "tfidf": 0.05
+ },
+ "timing": {
+  "engine_total": 0.1170854601659812,
+  "evolve_total": 102.63541138498113,
+  "wall_total": 224.17554688453674
+ },
+ "universe": [
+  "D1-p0",
+  "D2-p0",
+  "r1",
+  "r2",
+  "r3",
+  "r4",
+  "r5"
+ ]
+}

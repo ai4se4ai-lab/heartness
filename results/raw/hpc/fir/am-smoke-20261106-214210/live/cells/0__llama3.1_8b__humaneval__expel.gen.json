@@ -1,0 +1,53 @@
+{
+ "cell": "0__llama3.1_8b__humaneval__expel",
+ "phase": "gen",
+ "ok": true,
+ "runs": [
+  {
+   "fault": "clean",
+   "rc": 0,
+   "seconds": 329.2,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-smoke-20261106-214210/results/live/llama3.1_8b/humaneval_expel/clean/seed-0\", \"timing\": {\"evolve_total\": 92.95000384794548, \"engine_total\": 0.07402167096734047, \"wall_total\": 328.83312368392944}, \"llm\": {\"calls\": 68, \"cache_hits\": 0, \"llm_seconds\": 1343.612, \"tokens_in\": 21960, \"tokens_out\": 10856}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F1",
+   "rc": 0,
+   "seconds": 590.7,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-smoke-20261106-214210/results/live/llama3.1_8b/humaneval_expel/F1/seed-0\", \"timing\": {\"evolve_total\": 92.86575967585668, \"R2_tfidf\": 0.00032188696786761284, \"R3_embed\": 41.47054971009493, \"R4_judge\": 18.033270529005677, \"H\": 0.044207495637238026, \"H_noEME\": 0.047061472199857235, \"H_local\": 0.07478610379621387, \"H_noDeps\": 2.3549888283014297e-05, \"engine_total\": 0.13237347453832626, \"wall_total\": 590.3625631332397}, \"llm\": {\"calls\": 130, \"cache_hits\": 29, \"llm_seconds\": 2516.481, \"tokens_in\": 30822, \"tokens_out\": 15978}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F2",
+   "rc": 0,
+   "seconds": 627.4,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-smoke-20261106-214210/results/live/llama3.1_8b/humaneval_expel/F2/seed-0\", \"timing\": {\"evolve_total\": 92.75294642196968, \"R2_tfidf\": 0.00031891604885458946, \"R3_embed\": 41.58681643893942, \"R4_judge\": 11.325396209955215, \"H\": 0.0037110759876668453, \"H_noEME\": 0.0035894769243896008, \"H_local\": 0.0594023447483778, \"H_noDeps\": 3.653997555375099e-05, \"engine_total\": 0.18791793519631028, \"wall_total\": 627.0904705524445}, \"llm\": {\"calls\": 159, \"cache_hits\": 29, \"llm_seconds\": 2693.872, \"tokens_in\": 38361, \"tokens_out\": 20730}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F3",
+   "rc": 0,
+   "seconds": 595.8,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-smoke-20261106-214210/results/live/llama3.1_8b/humaneval_expel/F3/seed-0\", \"timing\": {\"evolve_total\": 92.94577007880434, \"R2_tfidf\": 0.00032403692603111267, \"R3_embed\": 41.680679835379124, \"R4_judge\": 17.183749760966748, \"H\": 0.0036924555897712708, \"H_noEME\": 0.0035978280939161777, \"H_local\": 0.003484819084405899, \"H_noDeps\": 1.7919111996889114e-05, \"engine_total\": 0.07043171487748623, \"wall_total\": 595.3871352672577}, \"llm\": {\"calls\": 159, \"cache_hits\": 58, \"llm_seconds\": 2441.009, \"tokens_in\": 30868, \"tokens_out\": 15833}}\n",
+   "stderr": ""
+  }
+ ],
+ "supplement": [
+  {
+   "fault": "F1",
+   "rc": 0,
+   "stderr": ""
+  },
+  {
+   "fault": "F2",
+   "rc": 0,
+   "stderr": ""
+  },
+  {
+   "fault": "F3",
+   "rc": 0,
+   "stderr": ""
+  }
+ ],
+ "seconds": 644.2
+}
