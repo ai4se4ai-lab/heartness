@@ -319,6 +319,10 @@ def live(tag: str) -> str:
                 add(p + "RunsTask" + w, v[1], src)
         add(p + "FaultyMissAmbiguous", st.get("faulty_root_misses_root_labels", {}).get("a", 0), src)
         add(p + "ProfileRuns", st.get("runs_with_contaminated_profile", 0), src)
+        add(p + "PreFaultCont", st.get("contaminated_before_fault", 0), src)
+        add(p + "PreFaultRuns", st.get("runs_contaminated_before_fault", 0), src)
+        add(p + "PostFaultCont", st.get("contaminated_after_fault", 0), src)
+        add(p + "PostFaultMissedH", st.get("h_missed_after_fault", 0), src)
         for name, w in (("HS_judge", "HSjudge"), ("HS_embed", "HSembed")):
             rv = st.get("revalidation_rejected", {}).get(name)
             if rv:
@@ -416,6 +420,11 @@ def main() -> None:
             "results/processed/live/live-fir*/live_summary.json")
         add("LiveRootAdoptedAll", sum(x["root_adopted"] for x in summ),
             "results/processed/live/live-fir*/live_summary.json")
+    late = LIVE["L"] / "live_summary.json"
+    if late.exists():
+        r = json.loads(late.read_text())["remedies"]
+        add("LiveLSavedPct", f"{100 * (1 - r['H']['suspended']['mean'] / r['T_since_fault']['suspended']['mean']):.0f}",
+            str(late))
     body = "\n".join(f"\\newcommand{{\\{k}}}{{{v}}}" for k, v in macros.items())
     paper = PAPER.read_text()
     start = paper.index("%% BEGIN GENERATED MACROS")

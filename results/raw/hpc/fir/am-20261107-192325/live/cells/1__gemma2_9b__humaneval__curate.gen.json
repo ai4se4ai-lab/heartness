@@ -1,0 +1,53 @@
+{
+ "cell": "1__gemma2_9b__humaneval__curate",
+ "phase": "gen",
+ "ok": true,
+ "runs": [
+  {
+   "fault": "clean",
+   "rc": 0,
+   "seconds": 748.5,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-192325/results/live/gemma2_9b/clean/seed-1\", \"timing\": {\"evolve_total\": 390.1144709470682, \"engine_total\": 1.79304145462811, \"wall_total\": 748.0051596164703}, \"llm\": {\"calls\": 114, \"cache_hits\": 0, \"llm_seconds\": 2209.321, \"tokens_in\": 53971, \"tokens_out\": 15468}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F1",
+   "rc": 0,
+   "seconds": 1392.5,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-192325/results/live/gemma2_9b/F1/seed-1\", \"timing\": {\"evolve_total\": 406.75211891997606, \"R2_tfidf\": 0.0007111206650733948, \"R3_embed\": 3.0706800227053463, \"R4_judge\": 77.31703258026391, \"H\": 0.009516173973679543, \"H_noEME\": 0.021140939090400934, \"H_local\": 0.03332095593214035, \"H_noDeps\": 8.582929149270058e-05, \"engine_total\": 1.5995123046450317, \"wall_total\": 1392.07164478302}, \"llm\": {\"calls\": 288, \"cache_hits\": 38, \"llm_seconds\": 5351.101, \"tokens_in\": 125046, \"tokens_out\": 30408}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F2",
+   "rc": 0,
+   "seconds": 1293.7,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-192325/results/live/gemma2_9b/F2/seed-1\", \"timing\": {\"evolve_total\": 315.6938683982007, \"R2_tfidf\": 0.0007314607501029968, \"R3_embed\": 9.838913090992719, \"R4_judge\": 17.432888886891305, \"H\": 0.020750410854816437, \"H_noEME\": 0.021881026215851307, \"H_local\": 0.01871133828535676, \"H_noDeps\": 7.341988384723663e-05, \"engine_total\": 1.643925913143903, \"wall_total\": 1293.203516960144}, \"llm\": {\"calls\": 317, \"cache_hits\": 57, \"llm_seconds\": 4975.803, \"tokens_in\": 127913, \"tokens_out\": 28464}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F3",
+   "rc": 0,
+   "seconds": 1428.8,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-192325/results/live/gemma2_9b/F3/seed-1\", \"timing\": {\"evolve_total\": 395.31719534192234, \"R2_tfidf\": 0.0007336712442338467, \"R3_embed\": 3.454956484027207, \"R4_judge\": 79.66488400707021, \"H\": 0.10421247221529484, \"H_noEME\": 0.008725333958864212, \"H_local\": 0.0483749657869339, \"H_noDeps\": 7.933937013149261e-05, \"engine_total\": 1.4247902501374483, \"wall_total\": 1428.3622806072235}, \"llm\": {\"calls\": 317, \"cache_hits\": 39, \"llm_seconds\": 5636.365, \"tokens_in\": 142874, \"tokens_out\": 32957}}\n",
+   "stderr": ""
+  }
+ ],
+ "supplement": [
+  {
+   "fault": "F1",
+   "rc": 0,
+   "stderr": ""
+  },
+  {
+   "fault": "F2",
+   "rc": 0,
+   "stderr": ""
+  },
+  {
+   "fault": "F3",
+   "rc": 0,
+   "stderr": ""
+  }
+ ],
+ "seconds": 1565.0
+}

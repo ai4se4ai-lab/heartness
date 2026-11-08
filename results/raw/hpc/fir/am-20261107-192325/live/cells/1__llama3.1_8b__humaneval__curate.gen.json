@@ -1,0 +1,53 @@
+{
+ "cell": "1__llama3.1_8b__humaneval__curate",
+ "phase": "gen",
+ "ok": true,
+ "runs": [
+  {
+   "fault": "clean",
+   "rc": 0,
+   "seconds": 710.1,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-192325/results/live/llama3.1_8b/clean/seed-1\", \"timing\": {\"evolve_total\": 377.3535069609061, \"engine_total\": 1.8107317611575127, \"wall_total\": 709.8101243972778}, \"llm\": {\"calls\": 114, \"cache_hits\": 0, \"llm_seconds\": 2180.941, \"tokens_in\": 63422, \"tokens_out\": 17627}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F1",
+   "rc": 0,
+   "seconds": 1398.6,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-192325/results/live/llama3.1_8b/F1/seed-1\", \"timing\": {\"evolve_total\": 356.11852110596374, \"R2_tfidf\": 0.000978028867393732, \"R3_embed\": 8.856084912084043, \"R4_judge\": 38.37763774814084, \"H\": 0.009500579908490181, \"H_noEME\": 0.009340702090412378, \"H_local\": 0.008775897789746523, \"H_noDeps\": 7.19795934855938e-05, \"engine_total\": 1.9134988863952458, \"wall_total\": 1398.2970235347748}, \"llm\": {\"calls\": 317, \"cache_hits\": 54, \"llm_seconds\": 5550.871, \"tokens_in\": 160662, \"tokens_out\": 33972}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F2",
+   "rc": 0,
+   "seconds": 1396.4,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-192325/results/live/llama3.1_8b/F2/seed-1\", \"timing\": {\"evolve_total\": 354.39243423193693, \"R2_tfidf\": 0.0009875791147351265, \"R3_embed\": 9.114475863054395, \"R4_judge\": 31.605821839999408, \"H\": 0.009760166984051466, \"H_noEME\": 0.009501510299742222, \"H_local\": 0.030583868268877268, \"H_noDeps\": 0.00010504899546504021, \"engine_total\": 1.6364952437579632, \"wall_total\": 1396.053905248642}, \"llm\": {\"calls\": 317, \"cache_hits\": 48, \"llm_seconds\": 5732.935, \"tokens_in\": 154909, \"tokens_out\": 38481}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F3",
+   "rc": 0,
+   "seconds": 1386.3,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-192325/results/live/llama3.1_8b/F3/seed-1\", \"timing\": {\"evolve_total\": 356.01295471098274, \"R2_tfidf\": 0.0010202988050878048, \"R3_embed\": 8.254563111811876, \"R4_judge\": 36.47781011508778, \"H\": 0.04787738574668765, \"H_noEME\": 0.06449641240760684, \"H_local\": 0.07045090897008777, \"H_noDeps\": 9.226007387042046e-05, \"engine_total\": 1.640394038055092, \"wall_total\": 1385.9258737564087}, \"llm\": {\"calls\": 317, \"cache_hits\": 50, \"llm_seconds\": 5782.235, \"tokens_in\": 157372, \"tokens_out\": 38685}}\n",
+   "stderr": ""
+  }
+ ],
+ "supplement": [
+  {
+   "fault": "F1",
+   "rc": 0,
+   "stderr": ""
+  },
+  {
+   "fault": "F2",
+   "rc": 0,
+   "stderr": ""
+  },
+  {
+   "fault": "F3",
+   "rc": 0,
+   "stderr": ""
+  }
+ ],
+ "seconds": 1451.3
+}

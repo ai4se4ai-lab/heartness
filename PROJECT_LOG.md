@@ -209,3 +209,24 @@ Four clusters tried for smoke runs; Fir/Rorqual/Narval completed, Nibi never sta
   different run processes: ExpeL 178/4,349 (4.1%), curation 2/273. Order-sensitivity claim withdrawn.
 - New post-hoc H_EMEfail (EME only from failed runs): curation recall 1.00, 17.24 suspended vs 20.79.
 - Job hook restart-on-CPU verified in the rerun (cell 0: t1 cpu -> t2 CUDA).
+
+## 2026-11-07 — Late-fault slice (review rounds 7-8)
+
+- Run am-20261107-192325 on Fir (config hpc/config/experiments.fir-late.json): curation, fault at
+  evolution task 15 (`--fault-index 14`), qwen2.5-coder:7b, llama3.1:8b, gemma2:9b x 5 seeds; all
+  cells ok, all inference on CUDA. Linked as results/raw/live-fir-late; `make live-fir` processes it.
+- H 8.02 vs T 13.00 suspended (38% less), strictly smaller in 42/45 runs; all 31 post-fault
+  contaminated revisions suspended; one pre-fault oracle false positive explains recall 0.96 for
+  every forward remedy. Signature rate lower after H (Holm p = 0.046).
+- Structural selectivity (oracle-free) and the clean frontier in revalidation were added in rounds
+  6-8; reviews in reviews/round_6..8.
+
+## 2026-11-08 — TOSEM manuscript conversion
+
+- Converted the current `docs/TSE/main.tex` into `docs/TOSEM/main.tex` using the ACM
+  `acmart` manuscript/review format with `\acmJournal{TOSEM}`; replaced IEEE title,
+  keywords, proof and bibliography formatting, and added ACM concepts and figure descriptions.
+- Preserved the full manuscript, generated result macros, citations and cross-references.
+  `docs/TOSEM/references.bib` already matched the TSE bibliography and remains the local source.
+- Kept only `main.tex` and `references.bib` in `docs/TOSEM/`; validated with `latexmk`,
+  writing the PDF and auxiliary files to `build/tosem/`. No unresolved citations or references.

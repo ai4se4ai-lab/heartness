@@ -53,7 +53,7 @@
 \newcommand{\LiveGPU}{H100 80GB HBM3}
 \newcommand{\LiveConditions}{15}
 \newcommand{\SrcLines}{1{,}209}
-\newcommand{\LiveHarnessLines}{1{,}800}
+\newcommand{\LiveHarnessLines}{1{,}810}
 \newcommand{\LiveEvalConditions}{11}
 \newcommand{\LiveCOracleCells}{25}
 \newcommand{\LiveCCPUCells}{2}
@@ -823,6 +823,10 @@
 \newcommand{\LiveERunsTaskNine}{15}
 \newcommand{\LiveEFaultyMissAmbiguous}{0}
 \newcommand{\LiveEProfileRuns}{0}
+\newcommand{\LiveEPreFaultCont}{0}
+\newcommand{\LiveEPreFaultRuns}{0}
+\newcommand{\LiveEPostFaultCont}{16}
+\newcommand{\LiveEPostFaultMissedH}{0}
 \newcommand{\LiveEHSjudgeRejected}{0}
 \newcommand{\LiveEHSjudgeRejectedRuns}{0}
 \newcommand{\LiveEHSjudgeRejectedCont}{0}
@@ -1565,6 +1569,10 @@
 \newcommand{\LiveCRunsTaskNine}{15}
 \newcommand{\LiveCFaultyMissAmbiguous}{3}
 \newcommand{\LiveCProfileRuns}{28}
+\newcommand{\LiveCPreFaultCont}{0}
+\newcommand{\LiveCPreFaultRuns}{0}
+\newcommand{\LiveCPostFaultCont}{90}
+\newcommand{\LiveCPostFaultMissedH}{0}
 \newcommand{\LiveCHSjudgeRejected}{19}
 \newcommand{\LiveCHSjudgeRejectedRuns}{18}
 \newcommand{\LiveCHSjudgeRejectedCont}{0}
@@ -1617,8 +1625,749 @@
 \newcommand{\LiveCLLMCalls}{305}
 \newcommand{\LiveCTokensIn}{169}
 \newcommand{\LiveCTokensOut}{38}
+\newcommand{\LiveLRuns}{45}
+\newcommand{\LiveLPropagated}{28}
+\newcommand{\LiveLRootAdopted}{34}
+\newcommand{\LiveLContaminated}{32}
+\newcommand{\LiveLAmbiguous}{12}
+\newcommand{\LiveLMeanArtifacts}{29.0}
+\newcommand{\LiveLKappa}{0.89}
+\newcommand{\LiveLJudgeItems}{2700}
+\newcommand{\LiveLJudgeRaw}{99.4}
+\newcommand{\LiveLJudgePositive}{0.89}
+\newcommand{\LiveLHSjudgeDiffersRfour}{26}
+\newcommand{\LiveLPassClean}{0.60}
+\newcommand{\LiveLPassSeed}{0.61}
+\newcommand{\LiveLCleanFalseLabels}{2}
+\newcommand{\LiveLCleanLabelItems}{1350}
+\newcommand{\LiveLCleanAmbLabels}{3}
+\newcommand{\LiveLBoundTfidfRec}{0.91}
+\newcommand{\LiveLBoundEmbedRec}{0.55}
+\newcommand{\LiveLNoneRec}{0.00}
+\newcommand{\LiveLNoneFone}{0.00}
+\newcommand{\LiveLNoneResid}{0.71}
+\newcommand{\LiveLNoneColl}{0.00}
+\newcommand{\LiveLNonePass}{0.59}
+\newcommand{\LiveLNoneSig}{0.03}
+\newcommand{\LiveLNoneSusp}{0.00}
+\newcommand{\LiveLNoneSuspProp}{0.00}
+\newcommand{\LiveLNoneCollProp}{0.00}
+\newcommand{\LiveLNonePassProp}{0.62}
+\newcommand{\LiveLNoneSigProp}{0.04}
+\newcommand{\LiveLNoneRecAmb}{0.00}
+\newcommand{\LiveLRoneRec}{0.00}
+\newcommand{\LiveLRoneFone}{0.00}
+\newcommand{\LiveLRoneResid}{0.71}
+\newcommand{\LiveLRoneColl}{0.00}
+\newcommand{\LiveLRonePass}{0.59}
+\newcommand{\LiveLRoneSig}{0.03}
+\newcommand{\LiveLRoneSusp}{0.00}
+\newcommand{\LiveLRoneSuspProp}{0.00}
+\newcommand{\LiveLRoneCollProp}{0.00}
+\newcommand{\LiveLRonePassProp}{0.62}
+\newcommand{\LiveLRoneSigProp}{0.03}
+\newcommand{\LiveLRoneRecAmb}{0.00}
+\newcommand{\LiveLRtwoPrec}{0.08}
+\newcommand{\LiveLRtwoRec}{0.96}
+\newcommand{\LiveLRtwoFone}{0.21}
+\newcommand{\LiveLRtwoResid}{0.02}
+\newcommand{\LiveLRtwoColl}{8.78}
+\newcommand{\LiveLRtwoPass}{0.59}
+\newcommand{\LiveLRtwoSig}{0.02}
+\newcommand{\LiveLRtwoSusp}{9.73}
+\newcommand{\LiveLRtwoPrecProp}{0.12}
+\newcommand{\LiveLRtwoSuspProp}{10.29}
+\newcommand{\LiveLRtwoCollProp}{8.96}
+\newcommand{\LiveLRtwoPassProp}{0.61}
+\newcommand{\LiveLRtwoSigProp}{0.03}
+\newcommand{\LiveLRtwoRecAmb}{0.96}
+\newcommand{\LiveLRthreePrec}{0.05}
+\newcommand{\LiveLRthreeRec}{0.80}
+\newcommand{\LiveLRthreeFone}{0.14}
+\newcommand{\LiveLRthreeResid}{0.18}
+\newcommand{\LiveLRthreeColl}{15.09}
+\newcommand{\LiveLRthreePass}{0.60}
+\newcommand{\LiveLRthreeSig}{0.02}
+\newcommand{\LiveLRthreeSusp}{15.80}
+\newcommand{\LiveLRthreePrecProp}{0.08}
+\newcommand{\LiveLRthreeSuspProp}{14.86}
+\newcommand{\LiveLRthreeCollProp}{13.89}
+\newcommand{\LiveLRthreePassProp}{0.63}
+\newcommand{\LiveLRthreeSigProp}{0.02}
+\newcommand{\LiveLRthreeRecAmb}{0.78}
+\newcommand{\LiveLRfourPrec}{0.51}
+\newcommand{\LiveLRfourRec}{0.96}
+\newcommand{\LiveLRfourFone}{0.79}
+\newcommand{\LiveLRfourResid}{0.02}
+\newcommand{\LiveLRfourColl}{1.87}
+\newcommand{\LiveLRfourPass}{0.59}
+\newcommand{\LiveLRfourSig}{0.02}
+\newcommand{\LiveLRfourSusp}{2.80}
+\newcommand{\LiveLRfourPrecProp}{0.75}
+\newcommand{\LiveLRfourSuspProp}{2.54}
+\newcommand{\LiveLRfourCollProp}{1.25}
+\newcommand{\LiveLRfourPassProp}{0.62}
+\newcommand{\LiveLRfourSigProp}{0.03}
+\newcommand{\LiveLRfourRecAmb}{0.95}
+\newcommand{\LiveLHPrec}{0.09}
+\newcommand{\LiveLHRec}{0.96}
+\newcommand{\LiveLHFone}{0.25}
+\newcommand{\LiveLHResid}{0.02}
+\newcommand{\LiveLHColl}{7.09}
+\newcommand{\LiveLHPass}{0.60}
+\newcommand{\LiveLHSig}{0.02}
+\newcommand{\LiveLHSusp}{8.02}
+\newcommand{\LiveLHPrecProp}{0.15}
+\newcommand{\LiveLHSuspProp}{8.50}
+\newcommand{\LiveLHCollProp}{7.21}
+\newcommand{\LiveLHPassProp}{0.62}
+\newcommand{\LiveLHSigProp}{0.02}
+\newcommand{\LiveLHRecAmb}{0.95}
+\newcommand{\LiveLHnoEMEPrec}{0.15}
+\newcommand{\LiveLHnoEMERec}{0.96}
+\newcommand{\LiveLHnoEMEFone}{0.36}
+\newcommand{\LiveLHnoEMEResid}{0.02}
+\newcommand{\LiveLHnoEMEColl}{4.78}
+\newcommand{\LiveLHnoEMEPass}{0.60}
+\newcommand{\LiveLHnoEMESig}{0.02}
+\newcommand{\LiveLHnoEMESusp}{5.71}
+\newcommand{\LiveLHnoEMEPrecProp}{0.24}
+\newcommand{\LiveLHnoEMESuspProp}{6.29}
+\newcommand{\LiveLHnoEMECollProp}{5.00}
+\newcommand{\LiveLHnoEMEPassProp}{0.62}
+\newcommand{\LiveLHnoEMESigProp}{0.02}
+\newcommand{\LiveLHnoEMERecAmb}{0.95}
+\newcommand{\LiveLHnoDepsPrec}{0.09}
+\newcommand{\LiveLHnoDepsRec}{0.96}
+\newcommand{\LiveLHnoDepsFone}{0.25}
+\newcommand{\LiveLHnoDepsResid}{0.02}
+\newcommand{\LiveLHnoDepsColl}{7.09}
+\newcommand{\LiveLHnoDepsPass}{0.60}
+\newcommand{\LiveLHnoDepsSig}{0.02}
+\newcommand{\LiveLHnoDepsSusp}{8.02}
+\newcommand{\LiveLHnoDepsPrecProp}{0.15}
+\newcommand{\LiveLHnoDepsSuspProp}{8.50}
+\newcommand{\LiveLHnoDepsCollProp}{7.21}
+\newcommand{\LiveLHnoDepsPassProp}{0.62}
+\newcommand{\LiveLHnoDepsSigProp}{0.02}
+\newcommand{\LiveLHnoDepsRecAmb}{0.95}
+\newcommand{\LiveLHlocalPrec}{0.00}
+\newcommand{\LiveLHlocalRec}{0.00}
+\newcommand{\LiveLHlocalFone}{0.00}
+\newcommand{\LiveLHlocalResid}{0.71}
+\newcommand{\LiveLHlocalColl}{4.18}
+\newcommand{\LiveLHlocalPass}{0.59}
+\newcommand{\LiveLHlocalSig}{0.03}
+\newcommand{\LiveLHlocalSusp}{4.18}
+\newcommand{\LiveLHlocalPrecProp}{0.00}
+\newcommand{\LiveLHlocalSuspProp}{4.61}
+\newcommand{\LiveLHlocalCollProp}{4.61}
+\newcommand{\LiveLHlocalPassProp}{0.61}
+\newcommand{\LiveLHlocalSigProp}{0.03}
+\newcommand{\LiveLHlocalRecAmb}{0.00}
+\newcommand{\LiveLHSjudgePrec}{0.25}
+\newcommand{\LiveLHSjudgeRec}{0.96}
+\newcommand{\LiveLHSjudgeFone}{0.53}
+\newcommand{\LiveLHSjudgeResid}{0.02}
+\newcommand{\LiveLHSjudgeColl}{2.04}
+\newcommand{\LiveLHSjudgePass}{0.60}
+\newcommand{\LiveLHSjudgeSig}{0.02}
+\newcommand{\LiveLHSjudgeSusp}{2.98}
+\newcommand{\LiveLHSjudgePrecProp}{0.38}
+\newcommand{\LiveLHSjudgeSuspProp}{3.29}
+\newcommand{\LiveLHSjudgeCollProp}{2.00}
+\newcommand{\LiveLHSjudgePassProp}{0.62}
+\newcommand{\LiveLHSjudgeSigProp}{0.03}
+\newcommand{\LiveLHSjudgeRecAmb}{0.95}
+\newcommand{\LiveLHSembedPrec}{0.13}
+\newcommand{\LiveLHSembedRec}{0.86}
+\newcommand{\LiveLHSembedFone}{0.30}
+\newcommand{\LiveLHSembedResid}{0.09}
+\newcommand{\LiveLHSembedColl}{4.60}
+\newcommand{\LiveLHSembedPass}{0.60}
+\newcommand{\LiveLHSembedSig}{0.02}
+\newcommand{\LiveLHSembedSusp}{5.42}
+\newcommand{\LiveLHSembedPrecProp}{0.21}
+\newcommand{\LiveLHSembedSuspProp}{5.50}
+\newcommand{\LiveLHSembedCollProp}{4.39}
+\newcommand{\LiveLHSembedPassProp}{0.62}
+\newcommand{\LiveLHSembedSigProp}{0.02}
+\newcommand{\LiveLHSembedRecAmb}{0.84}
+\newcommand{\LiveLTcutPrec}{0.05}
+\newcommand{\LiveLTcutRec}{0.96}
+\newcommand{\LiveLTcutFone}{0.16}
+\newcommand{\LiveLTcutResid}{0.02}
+\newcommand{\LiveLTcutColl}{12.07}
+\newcommand{\LiveLTcutSusp}{13.00}
+\newcommand{\LiveLTcutPrecProp}{0.09}
+\newcommand{\LiveLTcutSuspProp}{13.00}
+\newcommand{\LiveLTcutCollProp}{11.71}
+\newcommand{\LiveLTcutRecAmb}{0.95}
+\newcommand{\LiveLAresetPrec}{0.02}
+\newcommand{\LiveLAresetRec}{1.00}
+\newcommand{\LiveLAresetFone}{0.08}
+\newcommand{\LiveLAresetResid}{0.00}
+\newcommand{\LiveLAresetColl}{28.02}
+\newcommand{\LiveLAresetSusp}{29.00}
+\newcommand{\LiveLAresetPrecProp}{0.04}
+\newcommand{\LiveLAresetSuspProp}{29.00}
+\newcommand{\LiveLAresetCollProp}{27.64}
+\newcommand{\LiveLAresetRecAmb}{1.00}
+\newcommand{\LiveLHfaultyPrec}{0.12}
+\newcommand{\LiveLHfaultyRec}{0.93}
+\newcommand{\LiveLHfaultyFone}{0.24}
+\newcommand{\LiveLHfaultyResid}{0.07}
+\newcommand{\LiveLHfaultyColl}{5.40}
+\newcommand{\LiveLHfaultySusp}{6.29}
+\newcommand{\LiveLHfaultyPrecProp}{0.16}
+\newcommand{\LiveLHfaultySuspProp}{8.00}
+\newcommand{\LiveLHfaultyCollProp}{6.79}
+\newcommand{\LiveLHfaultyRecAmb}{0.91}
+\newcommand{\LiveLHEMEfailPrec}{0.13}
+\newcommand{\LiveLHEMEfailRec}{0.96}
+\newcommand{\LiveLHEMEfailFone}{0.32}
+\newcommand{\LiveLHEMEfailResid}{0.02}
+\newcommand{\LiveLHEMEfailColl}{5.60}
+\newcommand{\LiveLHEMEfailSusp}{6.53}
+\newcommand{\LiveLHEMEfailPrecProp}{0.21}
+\newcommand{\LiveLHEMEfailSuspProp}{6.93}
+\newcommand{\LiveLHEMEfailCollProp}{5.64}
+\newcommand{\LiveLHEMEfailRecAmb}{0.95}
+\newcommand{\LiveLNoneMs}{0.0}
+\newcommand{\LiveLRoneMs}{0.0}
+\newcommand{\LiveLRtwoMs}{1.3}
+\newcommand{\LiveLRthreeMs}{7377.4}
+\newcommand{\LiveLRfourMs}{56056.9}
+\newcommand{\LiveLHMs}{26.1}
+\newcommand{\LiveLHnoEMEMs}{45.7}
+\newcommand{\LiveLHnoDepsMs}{0.1}
+\newcommand{\LiveLHlocalMs}{30.5}
+\newcommand{\LiveLHSjudgeMs}{0.0}
+\newcommand{\LiveLHSembedMs}{0.0}
+\newcommand{\LiveLTcutMs}{0.0}
+\newcommand{\LiveLAresetMs}{0.0}
+\newcommand{\LiveLHfaultyMs}{0.0}
+\newcommand{\LiveLHEMEfailMs}{0.0}
+\newcommand{\LiveLTestResidNoneP}{<0.001}
+\newcommand{\LiveLTestResidNoneHi}{0}
+\newcommand{\LiveLTestResidNoneLo}{27}
+\newcommand{\LiveLTestResidNoneA}{0.20}
+\newcommand{\LiveLTestResidRoneP}{<0.001}
+\newcommand{\LiveLTestResidRoneHi}{0}
+\newcommand{\LiveLTestResidRoneLo}{27}
+\newcommand{\LiveLTestResidRoneA}{0.20}
+\newcommand{\LiveLTestResidRtwoP}{=1.000}
+\newcommand{\LiveLTestResidRtwoHi}{0}
+\newcommand{\LiveLTestResidRtwoLo}{0}
+\newcommand{\LiveLTestResidRtwoA}{0.50}
+\newcommand{\LiveLTestResidRthreeP}{=0.098}
+\newcommand{\LiveLTestResidRthreeHi}{0}
+\newcommand{\LiveLTestResidRthreeLo}{6}
+\newcommand{\LiveLTestResidRthreeA}{0.43}
+\newcommand{\LiveLTestResidRfourP}{=1.000}
+\newcommand{\LiveLTestResidRfourHi}{0}
+\newcommand{\LiveLTestResidRfourLo}{0}
+\newcommand{\LiveLTestResidRfourA}{0.50}
+\newcommand{\LiveLTestResidHnoEMEP}{--}
+\newcommand{\LiveLTestResidHnoEMEHi}{0}
+\newcommand{\LiveLTestResidHnoEMELo}{0}
+\newcommand{\LiveLTestResidHnoEMEA}{0.50}
+\newcommand{\LiveLTestResidHnoDepsP}{--}
+\newcommand{\LiveLTestResidHnoDepsHi}{0}
+\newcommand{\LiveLTestResidHnoDepsLo}{0}
+\newcommand{\LiveLTestResidHnoDepsA}{0.50}
+\newcommand{\LiveLTestResidHlocalP}{--}
+\newcommand{\LiveLTestResidHlocalHi}{0}
+\newcommand{\LiveLTestResidHlocalLo}{27}
+\newcommand{\LiveLTestResidHlocalA}{0.20}
+\newcommand{\LiveLTestResidHSjudgeP}{=1.000}
+\newcommand{\LiveLTestResidHSjudgeHi}{0}
+\newcommand{\LiveLTestResidHSjudgeLo}{0}
+\newcommand{\LiveLTestResidHSjudgeA}{0.50}
+\newcommand{\LiveLTestResidHSembedP}{=0.333}
+\newcommand{\LiveLTestResidHSembedHi}{0}
+\newcommand{\LiveLTestResidHSembedLo}{3}
+\newcommand{\LiveLTestResidHSembedA}{0.47}
+\newcommand{\LiveLTestResidTcutP}{--}
+\newcommand{\LiveLTestResidTcutHi}{0}
+\newcommand{\LiveLTestResidTcutLo}{0}
+\newcommand{\LiveLTestResidTcutA}{0.50}
+\newcommand{\LiveLTestResidAresetP}{--}
+\newcommand{\LiveLTestResidAresetHi}{1}
+\newcommand{\LiveLTestResidAresetLo}{0}
+\newcommand{\LiveLTestResidAresetA}{0.51}
+\newcommand{\LiveLTestResidHfaultyP}{--}
+\newcommand{\LiveLTestResidHfaultyHi}{0}
+\newcommand{\LiveLTestResidHfaultyLo}{1}
+\newcommand{\LiveLTestResidHfaultyA}{0.49}
+\newcommand{\LiveLTestResidHEMEfailP}{--}
+\newcommand{\LiveLTestResidHEMEfailHi}{0}
+\newcommand{\LiveLTestResidHEMEfailLo}{0}
+\newcommand{\LiveLTestResidHEMEfailA}{0.50}
+\newcommand{\LiveLTestRecNoneP}{<0.001}
+\newcommand{\LiveLTestRecNoneHi}{27}
+\newcommand{\LiveLTestRecNoneLo}{0}
+\newcommand{\LiveLTestRecNoneA}{0.98}
+\newcommand{\LiveLTestRecRoneP}{<0.001}
+\newcommand{\LiveLTestRecRoneHi}{27}
+\newcommand{\LiveLTestRecRoneLo}{0}
+\newcommand{\LiveLTestRecRoneA}{0.98}
+\newcommand{\LiveLTestRecRtwoP}{=1.000}
+\newcommand{\LiveLTestRecRtwoHi}{0}
+\newcommand{\LiveLTestRecRtwoLo}{0}
+\newcommand{\LiveLTestRecRtwoA}{0.50}
+\newcommand{\LiveLTestRecRthreeP}{=0.128}
+\newcommand{\LiveLTestRecRthreeHi}{6}
+\newcommand{\LiveLTestRecRthreeLo}{0}
+\newcommand{\LiveLTestRecRthreeA}{0.61}
+\newcommand{\LiveLTestRecRfourP}{=1.000}
+\newcommand{\LiveLTestRecRfourHi}{0}
+\newcommand{\LiveLTestRecRfourLo}{0}
+\newcommand{\LiveLTestRecRfourA}{0.50}
+\newcommand{\LiveLTestRecHnoEMEP}{--}
+\newcommand{\LiveLTestRecHnoEMEHi}{0}
+\newcommand{\LiveLTestRecHnoEMELo}{0}
+\newcommand{\LiveLTestRecHnoEMEA}{0.50}
+\newcommand{\LiveLTestRecHnoDepsP}{--}
+\newcommand{\LiveLTestRecHnoDepsHi}{0}
+\newcommand{\LiveLTestRecHnoDepsLo}{0}
+\newcommand{\LiveLTestRecHnoDepsA}{0.50}
+\newcommand{\LiveLTestRecHlocalP}{--}
+\newcommand{\LiveLTestRecHlocalHi}{27}
+\newcommand{\LiveLTestRecHlocalLo}{0}
+\newcommand{\LiveLTestRecHlocalA}{0.98}
+\newcommand{\LiveLTestRecHSjudgeP}{=1.000}
+\newcommand{\LiveLTestRecHSjudgeHi}{0}
+\newcommand{\LiveLTestRecHSjudgeLo}{0}
+\newcommand{\LiveLTestRecHSjudgeA}{0.50}
+\newcommand{\LiveLTestRecHSembedP}{=0.333}
+\newcommand{\LiveLTestRecHSembedHi}{3}
+\newcommand{\LiveLTestRecHSembedLo}{0}
+\newcommand{\LiveLTestRecHSembedA}{0.55}
+\newcommand{\LiveLTestRecTcutP}{--}
+\newcommand{\LiveLTestRecTcutHi}{0}
+\newcommand{\LiveLTestRecTcutLo}{0}
+\newcommand{\LiveLTestRecTcutA}{0.50}
+\newcommand{\LiveLTestRecAresetP}{--}
+\newcommand{\LiveLTestRecAresetHi}{0}
+\newcommand{\LiveLTestRecAresetLo}{1}
+\newcommand{\LiveLTestRecAresetA}{0.48}
+\newcommand{\LiveLTestRecHfaultyP}{--}
+\newcommand{\LiveLTestRecHfaultyHi}{1}
+\newcommand{\LiveLTestRecHfaultyLo}{0}
+\newcommand{\LiveLTestRecHfaultyA}{0.52}
+\newcommand{\LiveLTestRecHEMEfailP}{--}
+\newcommand{\LiveLTestRecHEMEfailHi}{0}
+\newcommand{\LiveLTestRecHEMEfailLo}{0}
+\newcommand{\LiveLTestRecHEMEfailA}{0.50}
+\newcommand{\LiveLTestPassNoneP}{=1.000}
+\newcommand{\LiveLTestPassNoneHi}{22}
+\newcommand{\LiveLTestPassNoneLo}{15}
+\newcommand{\LiveLTestPassNoneA}{0.56}
+\newcommand{\LiveLTestPassRoneP}{=1.000}
+\newcommand{\LiveLTestPassRoneHi}{22}
+\newcommand{\LiveLTestPassRoneLo}{16}
+\newcommand{\LiveLTestPassRoneA}{0.55}
+\newcommand{\LiveLTestPassRtwoP}{=1.000}
+\newcommand{\LiveLTestPassRtwoHi}{21}
+\newcommand{\LiveLTestPassRtwoLo}{11}
+\newcommand{\LiveLTestPassRtwoA}{0.56}
+\newcommand{\LiveLTestPassRthreeP}{=1.000}
+\newcommand{\LiveLTestPassRthreeHi}{19}
+\newcommand{\LiveLTestPassRthreeLo}{15}
+\newcommand{\LiveLTestPassRthreeA}{0.53}
+\newcommand{\LiveLTestPassRfourP}{=1.000}
+\newcommand{\LiveLTestPassRfourHi}{17}
+\newcommand{\LiveLTestPassRfourLo}{17}
+\newcommand{\LiveLTestPassRfourA}{0.52}
+\newcommand{\LiveLTestPassHnoEMEP}{--}
+\newcommand{\LiveLTestPassHnoEMEHi}{10}
+\newcommand{\LiveLTestPassHnoEMELo}{11}
+\newcommand{\LiveLTestPassHnoEMEA}{0.51}
+\newcommand{\LiveLTestPassHnoDepsP}{--}
+\newcommand{\LiveLTestPassHnoDepsHi}{0}
+\newcommand{\LiveLTestPassHnoDepsLo}{0}
+\newcommand{\LiveLTestPassHnoDepsA}{0.50}
+\newcommand{\LiveLTestPassHlocalP}{--}
+\newcommand{\LiveLTestPassHlocalHi}{22}
+\newcommand{\LiveLTestPassHlocalLo}{13}
+\newcommand{\LiveLTestPassHlocalA}{0.56}
+\newcommand{\LiveLTestPassHSjudgeP}{=1.000}
+\newcommand{\LiveLTestPassHSjudgeHi}{19}
+\newcommand{\LiveLTestPassHSjudgeLo}{15}
+\newcommand{\LiveLTestPassHSjudgeA}{0.52}
+\newcommand{\LiveLTestPassHSembedP}{=1.000}
+\newcommand{\LiveLTestPassHSembedHi}{10}
+\newcommand{\LiveLTestPassHSembedLo}{8}
+\newcommand{\LiveLTestPassHSembedA}{0.50}
+\newcommand{\LiveLTestCollNoneP}{<0.001}
+\newcommand{\LiveLTestCollNoneHi}{45}
+\newcommand{\LiveLTestCollNoneLo}{0}
+\newcommand{\LiveLTestCollNoneA}{1.00}
+\newcommand{\LiveLTestCollRoneP}{<0.001}
+\newcommand{\LiveLTestCollRoneHi}{45}
+\newcommand{\LiveLTestCollRoneLo}{0}
+\newcommand{\LiveLTestCollRoneA}{1.00}
+\newcommand{\LiveLTestCollRtwoP}{=0.019}
+\newcommand{\LiveLTestCollRtwoHi}{18}
+\newcommand{\LiveLTestCollRtwoLo}{24}
+\newcommand{\LiveLTestCollRtwoA}{0.36}
+\newcommand{\LiveLTestCollRthreeP}{<0.001}
+\newcommand{\LiveLTestCollRthreeHi}{12}
+\newcommand{\LiveLTestCollRthreeLo}{31}
+\newcommand{\LiveLTestCollRthreeA}{0.27}
+\newcommand{\LiveLTestCollRfourP}{<0.001}
+\newcommand{\LiveLTestCollRfourHi}{37}
+\newcommand{\LiveLTestCollRfourLo}{5}
+\newcommand{\LiveLTestCollRfourA}{0.90}
+\newcommand{\LiveLTestCollHnoEMEP}{--}
+\newcommand{\LiveLTestCollHnoEMEHi}{32}
+\newcommand{\LiveLTestCollHnoEMELo}{0}
+\newcommand{\LiveLTestCollHnoEMEA}{0.71}
+\newcommand{\LiveLTestCollHnoDepsP}{--}
+\newcommand{\LiveLTestCollHnoDepsHi}{0}
+\newcommand{\LiveLTestCollHnoDepsLo}{0}
+\newcommand{\LiveLTestCollHnoDepsA}{0.50}
+\newcommand{\LiveLTestCollHlocalP}{--}
+\newcommand{\LiveLTestCollHlocalHi}{45}
+\newcommand{\LiveLTestCollHlocalLo}{0}
+\newcommand{\LiveLTestCollHlocalA}{0.75}
+\newcommand{\LiveLTestCollHSjudgeP}{<0.001}
+\newcommand{\LiveLTestCollHSjudgeHi}{39}
+\newcommand{\LiveLTestCollHSjudgeLo}{0}
+\newcommand{\LiveLTestCollHSjudgeA}{0.94}
+\newcommand{\LiveLTestCollHSembedP}{<0.001}
+\newcommand{\LiveLTestCollHSembedHi}{27}
+\newcommand{\LiveLTestCollHSembedLo}{0}
+\newcommand{\LiveLTestCollHSembedA}{0.72}
+\newcommand{\LiveLTestCollTcutP}{--}
+\newcommand{\LiveLTestCollTcutHi}{0}
+\newcommand{\LiveLTestCollTcutLo}{42}
+\newcommand{\LiveLTestCollTcutA}{0.04}
+\newcommand{\LiveLTestCollAresetP}{--}
+\newcommand{\LiveLTestCollAresetHi}{0}
+\newcommand{\LiveLTestCollAresetLo}{45}
+\newcommand{\LiveLTestCollAresetA}{0.00}
+\newcommand{\LiveLTestCollHfaultyP}{--}
+\newcommand{\LiveLTestCollHfaultyHi}{11}
+\newcommand{\LiveLTestCollHfaultyLo}{0}
+\newcommand{\LiveLTestCollHfaultyA}{0.62}
+\newcommand{\LiveLTestCollHEMEfailP}{--}
+\newcommand{\LiveLTestCollHEMEfailHi}{26}
+\newcommand{\LiveLTestCollHEMEfailLo}{0}
+\newcommand{\LiveLTestCollHEMEfailA}{0.64}
+\newcommand{\LiveLTestFoneNoneP}{<0.001}
+\newcommand{\LiveLTestFoneNoneHi}{27}
+\newcommand{\LiveLTestFoneNoneLo}{0}
+\newcommand{\LiveLTestFoneNoneA}{0.98}
+\newcommand{\LiveLTestFoneRoneP}{<0.001}
+\newcommand{\LiveLTestFoneRoneHi}{27}
+\newcommand{\LiveLTestFoneRoneLo}{0}
+\newcommand{\LiveLTestFoneRoneA}{0.98}
+\newcommand{\LiveLTestFoneRtwoP}{=0.200}
+\newcommand{\LiveLTestFoneRtwoHi}{14}
+\newcommand{\LiveLTestFoneRtwoLo}{12}
+\newcommand{\LiveLTestFoneRtwoA}{0.60}
+\newcommand{\LiveLTestFoneRthreeP}{=0.008}
+\newcommand{\LiveLTestFoneRthreeHi}{21}
+\newcommand{\LiveLTestFoneRthreeLo}{5}
+\newcommand{\LiveLTestFoneRthreeA}{0.77}
+\newcommand{\LiveLTestFoneRfourP}{<0.001}
+\newcommand{\LiveLTestFoneRfourHi}{2}
+\newcommand{\LiveLTestFoneRfourLo}{23}
+\newcommand{\LiveLTestFoneRfourA}{0.10}
+\newcommand{\LiveLTestFoneHnoEMEP}{--}
+\newcommand{\LiveLTestFoneHnoEMEHi}{0}
+\newcommand{\LiveLTestFoneHnoEMELo}{20}
+\newcommand{\LiveLTestFoneHnoEMEA}{0.34}
+\newcommand{\LiveLTestFoneHnoDepsP}{--}
+\newcommand{\LiveLTestFoneHnoDepsHi}{0}
+\newcommand{\LiveLTestFoneHnoDepsLo}{0}
+\newcommand{\LiveLTestFoneHnoDepsA}{0.50}
+\newcommand{\LiveLTestFoneHlocalP}{--}
+\newcommand{\LiveLTestFoneHlocalHi}{27}
+\newcommand{\LiveLTestFoneHlocalLo}{0}
+\newcommand{\LiveLTestFoneHlocalA}{0.98}
+\newcommand{\LiveLTestFoneHSjudgeP}{<0.001}
+\newcommand{\LiveLTestFoneHSjudgeHi}{0}
+\newcommand{\LiveLTestFoneHSjudgeLo}{25}
+\newcommand{\LiveLTestFoneHSjudgeA}{0.12}
+\newcommand{\LiveLTestFoneHSembedP}{=0.128}
+\newcommand{\LiveLTestFoneHSembedHi}{3}
+\newcommand{\LiveLTestFoneHSembedLo}{15}
+\newcommand{\LiveLTestFoneHSembedA}{0.38}
+\newcommand{\LiveLTestFoneTcutP}{--}
+\newcommand{\LiveLTestFoneTcutHi}{25}
+\newcommand{\LiveLTestFoneTcutLo}{0}
+\newcommand{\LiveLTestFoneTcutA}{0.86}
+\newcommand{\LiveLTestFoneAresetP}{--}
+\newcommand{\LiveLTestFoneAresetHi}{27}
+\newcommand{\LiveLTestFoneAresetLo}{1}
+\newcommand{\LiveLTestFoneAresetA}{0.95}
+\newcommand{\LiveLTestFoneHfaultyP}{--}
+\newcommand{\LiveLTestFoneHfaultyHi}{1}
+\newcommand{\LiveLTestFoneHfaultyLo}{0}
+\newcommand{\LiveLTestFoneHfaultyA}{0.53}
+\newcommand{\LiveLTestFoneHEMEfailP}{--}
+\newcommand{\LiveLTestFoneHEMEfailHi}{0}
+\newcommand{\LiveLTestFoneHEMEfailLo}{16}
+\newcommand{\LiveLTestFoneHEMEfailA}{0.37}
+\newcommand{\LiveLTestSigNoneP}{=0.046}
+\newcommand{\LiveLTestSigNoneHi}{2}
+\newcommand{\LiveLTestSigNoneLo}{12}
+\newcommand{\LiveLTestSigNoneA}{0.42}
+\newcommand{\LiveLTestSigRoneP}{=0.071}
+\newcommand{\LiveLTestSigRoneHi}{2}
+\newcommand{\LiveLTestSigRoneLo}{11}
+\newcommand{\LiveLTestSigRoneA}{0.43}
+\newcommand{\LiveLTestSigRtwoP}{=0.814}
+\newcommand{\LiveLTestSigRtwoHi}{4}
+\newcommand{\LiveLTestSigRtwoLo}{6}
+\newcommand{\LiveLTestSigRtwoA}{0.47}
+\newcommand{\LiveLTestSigRthreeP}{=0.814}
+\newcommand{\LiveLTestSigRthreeHi}{2}
+\newcommand{\LiveLTestSigRthreeLo}{5}
+\newcommand{\LiveLTestSigRthreeA}{0.48}
+\newcommand{\LiveLTestSigRfourP}{=0.814}
+\newcommand{\LiveLTestSigRfourHi}{3}
+\newcommand{\LiveLTestSigRfourLo}{5}
+\newcommand{\LiveLTestSigRfourA}{0.47}
+\newcommand{\LiveLTestSigHnoEMEP}{--}
+\newcommand{\LiveLTestSigHnoEMEHi}{0}
+\newcommand{\LiveLTestSigHnoEMELo}{2}
+\newcommand{\LiveLTestSigHnoEMEA}{0.48}
+\newcommand{\LiveLTestSigHnoDepsP}{--}
+\newcommand{\LiveLTestSigHnoDepsHi}{0}
+\newcommand{\LiveLTestSigHnoDepsLo}{0}
+\newcommand{\LiveLTestSigHnoDepsA}{0.50}
+\newcommand{\LiveLTestSigHlocalP}{--}
+\newcommand{\LiveLTestSigHlocalHi}{1}
+\newcommand{\LiveLTestSigHlocalLo}{9}
+\newcommand{\LiveLTestSigHlocalA}{0.44}
+\newcommand{\LiveLTestSigHSjudgeP}{=0.228}
+\newcommand{\LiveLTestSigHSjudgeHi}{0}
+\newcommand{\LiveLTestSigHSjudgeLo}{4}
+\newcommand{\LiveLTestSigHSjudgeA}{0.47}
+\newcommand{\LiveLTestSigHSembedP}{=0.629}
+\newcommand{\LiveLTestSigHSembedHi}{0}
+\newcommand{\LiveLTestSigHSembedLo}{2}
+\newcommand{\LiveLTestSigHSembedA}{0.48}
+\newcommand{\LiveLTestPassPropNoneP}{=1.000}
+\newcommand{\LiveLTestPassPropNoneHi}{10}
+\newcommand{\LiveLTestPassPropNoneLo}{11}
+\newcommand{\LiveLTestPassPropNoneA}{0.52}
+\newcommand{\LiveLTestPassPropRoneP}{=1.000}
+\newcommand{\LiveLTestPassPropRoneHi}{11}
+\newcommand{\LiveLTestPassPropRoneLo}{11}
+\newcommand{\LiveLTestPassPropRoneA}{0.52}
+\newcommand{\LiveLTestPassPropRtwoP}{=1.000}
+\newcommand{\LiveLTestPassPropRtwoHi}{11}
+\newcommand{\LiveLTestPassPropRtwoLo}{7}
+\newcommand{\LiveLTestPassPropRtwoA}{0.53}
+\newcommand{\LiveLTestPassPropRthreeP}{=1.000}
+\newcommand{\LiveLTestPassPropRthreeHi}{11}
+\newcommand{\LiveLTestPassPropRthreeLo}{12}
+\newcommand{\LiveLTestPassPropRthreeA}{0.49}
+\newcommand{\LiveLTestPassPropRfourP}{=1.000}
+\newcommand{\LiveLTestPassPropRfourHi}{8}
+\newcommand{\LiveLTestPassPropRfourLo}{11}
+\newcommand{\LiveLTestPassPropRfourA}{0.50}
+\newcommand{\LiveLTestPassPropHnoEMEP}{--}
+\newcommand{\LiveLTestPassPropHnoEMEHi}{6}
+\newcommand{\LiveLTestPassPropHnoEMELo}{6}
+\newcommand{\LiveLTestPassPropHnoEMEA}{0.50}
+\newcommand{\LiveLTestPassPropHnoDepsP}{--}
+\newcommand{\LiveLTestPassPropHnoDepsHi}{0}
+\newcommand{\LiveLTestPassPropHnoDepsLo}{0}
+\newcommand{\LiveLTestPassPropHnoDepsA}{0.50}
+\newcommand{\LiveLTestPassPropHlocalP}{--}
+\newcommand{\LiveLTestPassPropHlocalHi}{11}
+\newcommand{\LiveLTestPassPropHlocalLo}{8}
+\newcommand{\LiveLTestPassPropHlocalA}{0.53}
+\newcommand{\LiveLTestPassPropHSjudgeP}{=1.000}
+\newcommand{\LiveLTestPassPropHSjudgeHi}{11}
+\newcommand{\LiveLTestPassPropHSjudgeLo}{9}
+\newcommand{\LiveLTestPassPropHSjudgeA}{0.51}
+\newcommand{\LiveLTestPassPropHSembedP}{=1.000}
+\newcommand{\LiveLTestPassPropHSembedHi}{6}
+\newcommand{\LiveLTestPassPropHSembedLo}{5}
+\newcommand{\LiveLTestPassPropHSembedA}{0.50}
+\newcommand{\LiveLTestSigPropNoneP}{=0.046}
+\newcommand{\LiveLTestSigPropNoneHi}{2}
+\newcommand{\LiveLTestSigPropNoneLo}{12}
+\newcommand{\LiveLTestSigPropNoneA}{0.36}
+\newcommand{\LiveLTestSigPropRoneP}{=0.071}
+\newcommand{\LiveLTestSigPropRoneHi}{2}
+\newcommand{\LiveLTestSigPropRoneLo}{11}
+\newcommand{\LiveLTestSigPropRoneA}{0.38}
+\newcommand{\LiveLTestSigPropRtwoP}{=0.527}
+\newcommand{\LiveLTestSigPropRtwoHi}{2}
+\newcommand{\LiveLTestSigPropRtwoLo}{6}
+\newcommand{\LiveLTestSigPropRtwoA}{0.43}
+\newcommand{\LiveLTestSigPropRthreeP}{=0.527}
+\newcommand{\LiveLTestSigPropRthreeHi}{2}
+\newcommand{\LiveLTestSigPropRthreeLo}{5}
+\newcommand{\LiveLTestSigPropRthreeA}{0.46}
+\newcommand{\LiveLTestSigPropRfourP}{=0.527}
+\newcommand{\LiveLTestSigPropRfourHi}{2}
+\newcommand{\LiveLTestSigPropRfourLo}{5}
+\newcommand{\LiveLTestSigPropRfourA}{0.44}
+\newcommand{\LiveLTestSigPropHnoEMEP}{--}
+\newcommand{\LiveLTestSigPropHnoEMEHi}{0}
+\newcommand{\LiveLTestSigPropHnoEMELo}{2}
+\newcommand{\LiveLTestSigPropHnoEMEA}{0.47}
+\newcommand{\LiveLTestSigPropHnoDepsP}{--}
+\newcommand{\LiveLTestSigPropHnoDepsHi}{0}
+\newcommand{\LiveLTestSigPropHnoDepsLo}{0}
+\newcommand{\LiveLTestSigPropHnoDepsA}{0.50}
+\newcommand{\LiveLTestSigPropHlocalP}{--}
+\newcommand{\LiveLTestSigPropHlocalHi}{1}
+\newcommand{\LiveLTestSigPropHlocalLo}{9}
+\newcommand{\LiveLTestSigPropHlocalA}{0.40}
+\newcommand{\LiveLTestSigPropHSjudgeP}{=0.228}
+\newcommand{\LiveLTestSigPropHSjudgeHi}{0}
+\newcommand{\LiveLTestSigPropHSjudgeLo}{4}
+\newcommand{\LiveLTestSigPropHSjudgeA}{0.45}
+\newcommand{\LiveLTestSigPropHSembedP}{=0.527}
+\newcommand{\LiveLTestSigPropHSembedHi}{0}
+\newcommand{\LiveLTestSigPropHSembedLo}{2}
+\newcommand{\LiveLTestSigPropHSembedA}{0.47}
+\newcommand{\LiveLBoundTfidfFone}{0.77}
+\newcommand{\LiveLBoundTfidfTau}{0.15}
+\newcommand{\LiveLBoundEmbedFone}{0.15}
+\newcommand{\LiveLBoundEmbedTau}{0.60}
+\newcommand{\LiveLNotAdopted}{0}
+\newcommand{\LiveLFaulty}{45}
+\newcommand{\LiveLFoneAdopted}{11}
+\newcommand{\LiveLFonePropagated}{5}
+\newcommand{\LiveLFtwoAdopted}{9}
+\newcommand{\LiveLFtwoPropagated}{9}
+\newcommand{\LiveLFthreeAdopted}{14}
+\newcommand{\LiveLFthreePropagated}{14}
+\newcommand{\LiveLHnoEMEDiffers}{32}
+\newcommand{\LiveLHnoDepsDiffers}{0}
+\newcommand{\LiveLNoiseFlips}{2}
+\newcommand{\LiveLNoisePairs}{47}
+\newcommand{\LiveLNoiseRate}{4.3}
+\newcommand{\LiveLNoiseFlipsNoLearned}{2}
+\newcommand{\LiveLSelOneRoots}{420}
+\newcommand{\LiveLSelOneRatio}{0.92}
+\newcommand{\LiveLSelOneRatioFail}{0.81}
+\newcommand{\LiveLSelOneStrict}{40}
+\newcommand{\LiveLSelOneLater}{25.9}
+\newcommand{\LiveLSelOneSpared}{1.9}
+\newcommand{\LiveLSelOneReachFinal}{420}
+\newcommand{\LiveLSelTwoRoots}{420}
+\newcommand{\LiveLSelTwoRatio}{0.95}
+\newcommand{\LiveLSelTwoRatioFail}{0.72}
+\newcommand{\LiveLSelTwoStrict}{51}
+\newcommand{\LiveLSelTwoLater}{18.9}
+\newcommand{\LiveLSelTwoSpared}{1.1}
+\newcommand{\LiveLSelTwoReachFinal}{420}
+\newcommand{\LiveLSelThreeRoots}{420}
+\newcommand{\LiveLSelThreeRatio}{0.48}
+\newcommand{\LiveLSelThreeRatioFail}{0.40}
+\newcommand{\LiveLSelThreeStrict}{95}
+\newcommand{\LiveLSelThreeLater}{11.9}
+\newcommand{\LiveLSelThreeSpared}{5.9}
+\newcommand{\LiveLSelThreeReachFinal}{420}
+\newcommand{\LiveLSelFourRoots}{300}
+\newcommand{\LiveLSelFourRatio}{0.62}
+\newcommand{\LiveLSelFourRatioFail}{0.59}
+\newcommand{\LiveLSelFourStrict}{94}
+\newcommand{\LiveLSelFourLater}{6.0}
+\newcommand{\LiveLSelFourSpared}{2.4}
+\newcommand{\LiveLSelFourReachFinal}{300}
+\newcommand{\LiveLContMemory}{1}
+\newcommand{\LiveLMissRthreeMemory}{1}
+\newcommand{\LiveLMissRfourMemory}{1}
+\newcommand{\LiveLMissRtwoMemory}{1}
+\newcommand{\LiveLContSkill}{25}
+\newcommand{\LiveLMissRthreeSkill}{2}
+\newcommand{\LiveLMissRfourSkill}{0}
+\newcommand{\LiveLMissRtwoSkill}{0}
+\newcommand{\LiveLContProfile}{6}
+\newcommand{\LiveLMissRthreeProfile}{5}
+\newcommand{\LiveLMissRfourProfile}{0}
+\newcommand{\LiveLMissRtwoProfile}{0}
+\newcommand{\LiveLContInsight}{0}
+\newcommand{\LiveLMissRthreeInsight}{0}
+\newcommand{\LiveLMissRfourInsight}{0}
+\newcommand{\LiveLMissRtwoInsight}{0}
+\newcommand{\LiveLMissRunsRthree}{7}
+\newcommand{\LiveLMissRunsComposedRthree}{6}
+\newcommand{\LiveLMissRunsRfour}{1}
+\newcommand{\LiveLMissRunsComposedRfour}{0}
+\newcommand{\LiveLMissRunsRtwo}{1}
+\newcommand{\LiveLMissRunsComposedRtwo}{0}
+\newcommand{\LiveLCutSubset}{45}
+\newcommand{\LiveLCutStrict}{42}
+\newcommand{\LiveLCutGap}{224}
+\newcommand{\LiveLCutGapBeforeCompose}{0}
+\newcommand{\LiveLProfilesInClosure}{45}
+\newcommand{\LiveLEMEOnlyRuns}{0}
+\newcommand{\LiveLEMEOnlyItems}{0}
+\newcommand{\LiveLFaultyMissAmbiguous}{1}
+\newcommand{\LiveLProfileRuns}{5}
+\newcommand{\LiveLPreFaultCont}{1}
+\newcommand{\LiveLPreFaultRuns}{1}
+\newcommand{\LiveLPostFaultCont}{31}
+\newcommand{\LiveLPostFaultMissedH}{0}
+\newcommand{\LiveLHSjudgeRejected}{52}
+\newcommand{\LiveLHSjudgeRejectedRuns}{33}
+\newcommand{\LiveLHSjudgeRejectedCont}{0}
+\newcommand{\LiveLHSembedRejected}{63}
+\newcommand{\LiveLHSembedRejectedRuns}{36}
+\newcommand{\LiveLHSembedRejectedCont}{4}
+\newcommand{\LiveLPassPropHigher}{10}
+\newcommand{\LiveLPassPropLower}{11}
+\newcommand{\LiveLRootsMean}{1.0}
+\newcommand{\LiveLRootsMax}{1}
+\newcommand{\LiveLRootsSingle}{45}
+\newcommand{\LiveLFaultPositions}{15}
+\newcommand{\LiveLAdoptedAmb}{35}
+\newcommand{\LiveLCleanRevisions}{450}
+\newcommand{\LiveLAdoptNoneColl}{0.00}
+\newcommand{\LiveLAdoptNoneSusp}{0.00}
+\newcommand{\LiveLAdoptRoneColl}{0.00}
+\newcommand{\LiveLAdoptRoneSusp}{0.00}
+\newcommand{\LiveLAdoptRtwoColl}{8.74}
+\newcommand{\LiveLAdoptRtwoSusp}{9.94}
+\newcommand{\LiveLAdoptRthreeColl}{13.06}
+\newcommand{\LiveLAdoptRthreeSusp}{13.97}
+\newcommand{\LiveLAdoptRfourColl}{1.18}
+\newcommand{\LiveLAdoptRfourSusp}{2.35}
+\newcommand{\LiveLAdoptHColl}{7.15}
+\newcommand{\LiveLAdoptHSusp}{8.32}
+\newcommand{\LiveLAdoptHnoEMEColl}{4.91}
+\newcommand{\LiveLAdoptHnoEMESusp}{6.09}
+\newcommand{\LiveLAdoptHnoDepsColl}{7.15}
+\newcommand{\LiveLAdoptHnoDepsSusp}{8.32}
+\newcommand{\LiveLAdoptHlocalColl}{4.41}
+\newcommand{\LiveLAdoptHlocalSusp}{4.41}
+\newcommand{\LiveLAdoptHSjudgeColl}{1.82}
+\newcommand{\LiveLAdoptHSjudgeSusp}{3.00}
+\newcommand{\LiveLAdoptHSembedColl}{4.21}
+\newcommand{\LiveLAdoptHSembedSusp}{5.24}
+\newcommand{\LiveLAdoptTcutColl}{11.82}
+\newcommand{\LiveLAdoptTcutSusp}{13.00}
+\newcommand{\LiveLAdoptAresetColl}{27.79}
+\newcommand{\LiveLAdoptAresetSusp}{29.00}
+\newcommand{\LiveLAdoptHfaultyColl}{7.15}
+\newcommand{\LiveLAdoptHfaultySusp}{8.32}
+\newcommand{\LiveLAdoptHEMEfailColl}{5.47}
+\newcommand{\LiveLAdoptHEMEfailSusp}{6.65}
+\newcommand{\LiveLEvolveMinutes}{5.6}
+\newcommand{\LiveLEngineSeconds}{1.69}
+\newcommand{\LiveLEnginePercent}{0.50}
+\newcommand{\LiveLEnginePercentMax}{0.70}
+\newcommand{\LiveLHistoryEvents}{156}
+\newcommand{\LiveLLLMCalls}{305}
+\newcommand{\LiveLTokensIn}{144}
+\newcommand{\LiveLTokensOut}{33}
 \newcommand{\LivePropagatedAll}{52}
 \newcommand{\LiveRootAdoptedAll}{74}
+\newcommand{\LiveLSavedPct}{38}
 \newcommand{\SearchRows}{
 reference & 0/30 & 0/30 & 0/30 \\
 P2 & 1/30 & 0/30 & 30/30 \\
@@ -1720,6 +2469,33 @@ Qwen2.5-Coder 7B & 15 & 14 & 11 & 32 & 29.0 & 20.9 & 0.76 \\
 }
 \newcommand{\LiveCCurveTfidf}{(0.05,0.356) (0.1,0.612) (0.15,0.695) (0.2,0.687) (0.25,0.410) (0.3,0.302) (0.35,0.234) (0.4,0.147) (0.45,0.067) (0.5,0.044) (0.55,0.028) (0.6,0.012) (0.65,0.012) (0.7,0.000) (0.75,0.000) (0.8,0.000) (0.85,0.000) (0.9,0.000) (0.95,0.000)}
 \newcommand{\LiveCCurveEmbed}{(0.05,0.136) (0.1,0.136) (0.15,0.136) (0.2,0.136) (0.25,0.136) (0.3,0.136) (0.35,0.136) (0.4,0.137) (0.45,0.142) (0.5,0.158) (0.55,0.165) (0.6,0.215) (0.65,0.170) (0.7,0.068) (0.75,0.047) (0.8,0.039) (0.85,0.034) (0.9,0.028) (0.95,0.012)}
+\newcommand{\LiveLRows}{
+No remedy & 0.00 & 0.00 & -- & 0.00 & 0.00 & 0.71 & 0.00 & 0.59 & 0.03 \\
+R1 delete root & 0.00 & 0.00 & -- & 0.00 & 0.00 & 0.71 & 0.00 & 0.59 & 0.03 \\
+T rollback before fault & 13.00 & 13.00 & 0.09 & 0.96 & 0.16 & 0.02 & 12.07 & -- & -- \\
+A reset learned state & 29.00 & 29.00 & 0.04 & 1.00 & 0.08 & 0.00 & 28.02 & -- & -- \\
+\midrule
+R2 TF-IDF & 9.73 & 10.29 & 0.12 & 0.96 & 0.21 & 0.02 & 8.78 & 0.59 & 0.02 \\
+R3 embedding & 15.80 & 14.86 & 0.08 & 0.80 & 0.14 & 0.18 & 15.09 & 0.60 & 0.02 \\
+R4 LLM judge & 2.80 & 2.54 & 0.75 & 0.96 & 0.79 & 0.02 & 1.87 & 0.59 & 0.02 \\
+\midrule
+\sys{} (H) & 8.02 & 8.50 & 0.15 & 0.96 & 0.25 & 0.02 & 7.09 & 0.60 & 0.02 \\
+HS$_{\mathrm{judge}}$ & 2.98 & 3.29 & 0.38 & 0.96 & 0.53 & 0.02 & 2.04 & 0.60 & 0.02 \\
+HS$_{\mathrm{emb}}$ & 5.42 & 5.50 & 0.21 & 0.86 & 0.30 & 0.09 & 4.60 & 0.60 & 0.02 \\
+\midrule
+H$_{\neg\mathrm{EME}}$ & 5.71 & 6.29 & 0.24 & 0.96 & 0.36 & 0.02 & 4.78 & 0.60 & 0.02 \\
+H$_{\neg\mathrm{dep}}$ & 8.02 & 8.50 & 0.15 & 0.96 & 0.25 & 0.02 & 7.09 & 0.60 & 0.02 \\
+H$_{\mathrm{local}}$ & 4.18 & 4.61 & 0.00 & 0.00 & 0.00 & 0.71 & 4.18 & 0.59 & 0.03 \\
+H$_{\mathrm{faulty}}$ & 6.29 & 8.00 & 0.16 & 0.93 & 0.24 & 0.07 & 5.40 & -- & -- \\
+H$_{\mathrm{EME\text{-}fail}}$ & 6.53 & 6.93 & 0.21 & 0.96 & 0.32 & 0.02 & 5.60 & -- & -- \\
+}
+\newcommand{\LiveLModelRows}{
+Gemma 2 9B & 15 & 10 & 8 & 10 & 29.0 & 8.8 & 0.56 \\
+Llama 3.1 8B & 15 & 9 & 8 & 10 & 29.0 & 6.7 & 0.48 \\
+Qwen2.5-Coder 7B & 15 & 15 & 12 & 12 & 29.0 & 8.6 & 0.76 \\
+}
+\newcommand{\LiveLCurveTfidf}{(0.05,0.211) (0.1,0.532) (0.15,0.767) (0.2,0.673) (0.25,0.554) (0.3,0.321) (0.35,0.095) (0.4,0.024) (0.45,0.024) (0.5,0.000) (0.55,0.000) (0.6,0.000) (0.65,0.000) (0.7,0.000) (0.75,0.000) (0.8,0.000) (0.85,0.000) (0.9,0.000) (0.95,0.000)}
+\newcommand{\LiveLCurveEmbed}{(0.05,0.076) (0.1,0.076) (0.15,0.076) (0.2,0.076) (0.25,0.076) (0.3,0.076) (0.35,0.076) (0.4,0.076) (0.45,0.081) (0.5,0.098) (0.55,0.138) (0.6,0.151) (0.65,0.096) (0.7,0.076) (0.75,0.095) (0.8,0.000) (0.85,0.000) (0.9,0.000) (0.95,0.000)}
 %% END GENERATED MACROS
 
 \begin{document}
@@ -1736,7 +2512,7 @@ Qwen2.5-Coder 7B & 15 & 14 & 11 & 32 & 29.0 & 20.9 & 0.76 \\
 
 %% ABSTRACT
 \begin{abstract}
-Self-evolving LLM agents rewrite their own harness (memories, skills, system prompts) from experience. A wrong lesson does not stay put: it is merged into skills, compiled into deployed prompts, and re-learned through the agent's behaviour, so deleting its file leaves its derivatives in use. We present \sys{}, a model-driven approach that records on the host side what every generation step and agent run was exposed to, including \emph{experience-mediated exposure} (a lesson shapes behaviour that becomes a new lesson), and withdraws a faulty revision or experience with its exposure closure in every deployment, refusing admissions and rollbacks that would reactivate it. We show that withdrawal never suspends more than a rollback to before the fault, sketch a proof that the suspension invariant holds under all operators, and check a finite projection with two independent encodings whose witnesses replay on the implementation. In a live study in which five open-weight LLMs evolved a coding harness on HumanEval+ under two policies (\LiveTotalRuns{} runs), an LLM-judge oracle found the practice planted by one corrupted feedback message in the lesson it created in \LiveRootAdoptedAll{} of \LiveFaultyRuns{} faulty runs and in further revisions in \LivePropagatedAll. Like a rollback to before the fault, withdrawal suspended every contaminated derivative, and deleting the root removed none; but for these early faults withdrawal also suspended almost as much as the rollback. Every detector was more precise, and under curation TF-IDF and the LLM judge had clearly higher F1, but detectors missed contamination folded into skills and profiles in up to \LiveCMissRunsComposedRthree{} of \LiveCPropagated{} curation runs. Experience-mediated edges captured one otherwise untraceable lesson at a large cost in collateral.
+Self-evolving LLM agents rewrite their own harness (memories, skills, system prompts) from experience. A wrong lesson does not stay put: it is merged into skills, compiled into deployed prompts and re-learned through the agent's behaviour, so deleting its file leaves its derivatives in use. We present \sys{}, a model-driven approach that records on the host side what every generation step and agent run was exposed to, including \emph{experience-mediated exposure} (a lesson shapes behaviour that becomes a new lesson), and withdraws a faulty revision or experience with its exposure closure in every deployment, refusing admissions and rollbacks that would reactivate it. We show that withdrawal never suspends more than a rollback to before the fault, sketch a proof that the suspension invariant holds under all operators, and check a finite projection with two independent encodings. In a live study in which five open-weight LLMs evolved a coding harness on HumanEval+ under two policies (\LiveTotalRuns{} runs), an LLM-judge oracle found the practice planted by one corrupted feedback message beyond its root in \LivePropagatedAll{} of \LiveFaultyRuns{} faulty runs. Withdrawal suspended every contaminated derivative, as a rollback did, while deleting the root removed none; for these early faults it suspended almost as much as the rollback, but for faults planted after the first prompt composition \LiveLSavedPct\% less. Content detectors were more precise but missed contamination folded into skills and profiles in up to \LiveCMissRunsComposedRthree{} of \LiveCPropagated{} runs.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -1761,7 +2537,7 @@ This paper presents \sys{}, a model-driven approach that makes harness self-evol
 \item a \emph{runtime conformance monitor}.
 \end{enumerate}
 
-We evaluate \sys{} on a live self-evolving coding harness that five open-weight LLMs evolved on HumanEval+ under two self-evolution policies (\LiveTotalRuns{} runs), on a controlled synthetic benchmark (\RawRecords{} records), and on a public skill library. The live study shows that a single corrupted test message often outlives the lesson it created, especially when a curator folds lessons into skills and system prompts. Closure-based withdrawal removed every contaminated derivative in every such run; deleting the faulty lesson removed none. The study also shows the limits of the approach plainly. Closure suspended almost as much as a rollback to before the fault, which we prove it can never exceed (Proposition~\ref{prop:cut}), because both of our harness policies broadcast synthesized state into every later context and experience-mediated edges then reach nearly everything learned afterwards. An oracle-free analysis of the recorded structure shows where this changes: under curation, revisions created after the first composition have closures covering on average \LiveCSelThreeRatio--\LiveCSelFourRatio{} of the later state until the next composition, a position our planted faults did not cover. Content detectors were consistently more precise and lost recall mainly where faulty advice was folded into larger artifacts. Experience-mediated exposure was the only record of a contaminated lesson's origin in one run, a channel that occurs in practice but rarely in our setting, and its cost in collateral is large; counting it only for failed runs, a variant we defined after seeing the data, kept full recall at lower cost, a result that rests on that single run. Withdrawal is therefore the high-recall end of a trade-off that a maintainer should choose deliberately, and \sys{} supplies the lineage that makes either end auditable.
+We evaluate \sys{} on a live self-evolving coding harness that five open-weight LLMs evolved on HumanEval+ under two self-evolution policies (\LiveTotalRuns{} runs), on a controlled synthetic benchmark (\RawRecords{} records), and on a public skill library. The live study shows that a single corrupted test message often outlives the lesson it created, especially when a curator folds lessons into skills and system prompts. Closure-based withdrawal removed every contaminated derivative in every such run; deleting the faulty lesson removed none. The study also shows the limits of the approach plainly. Closure suspended almost as much as a rollback to before the fault, which we prove it can never exceed (Proposition~\ref{prop:cut}), because both of our harness policies broadcast synthesized state into every later context and experience-mediated edges then reach nearly everything learned afterwards. An oracle-free analysis of the recorded structure predicted where this changes, and a follow-up slice with faults planted after the first composition confirmed it: closure again suspended every contaminated revision created after the fault, but \LiveLSavedPct\% fewer revisions than the rollback, strictly fewer in \LiveLCutStrict{} of \LiveLRuns{} runs. Content detectors were consistently more precise and lost recall mainly where faulty advice was folded into larger artifacts. Experience-mediated exposure was the only record of a contaminated lesson's origin in one run, a channel that occurs in practice but rarely in our setting, and its cost in collateral is large; counting it only for failed runs, a variant we defined after seeing the data, kept full recall at lower cost, a result that rests on that single run. Withdrawal is therefore the high-recall end of a trade-off that a maintainer should choose deliberately, and \sys{} supplies the lineage that makes either end auditable.
 
 \noindent The contributions of this paper are:
 \begin{itemize}
@@ -2179,7 +2955,7 @@ Table~\ref{tab:subjects} lists the three subjects and which RQs use them.
 \end{itemize}
 The two policies differ in exactly the structure that matters for containment: insight editing keeps one flat, heavily cross-sourced list, whereas curation builds a layered hierarchy (memory, skill, profile) with use dependencies.
 
-In each \emph{faulty} run exactly one test-feedback message, at a seed-dependent position (task \LiveEFaultPositions{} for our seeds), is replaced by misleading grader feedback of one of three types: F1 \emph{print instead of return}, F2 \emph{stringify return values}, F3 \emph{use floor division}. All three are plausible misreadings of real test failures, and all three are wrong for HumanEval+. A paired \emph{clean} run with the same seed receives no corrupted feedback. The \emph{roots} of a faulty run are the revisions the controller recorded as motivated by the corrupted experience; they are known by construction and given to every remedy. Under curation this is the single memory written from that experience; under the ExpeL-style policy it is every insight the extraction step wrote from the batch containing it (\LiveERootsMean{} on average, at most \LiveERootsMax{}), of which typically at most one carries the faulty advice. Identifying the root is thus given to all remedies alike; we do not evaluate how an operator finds it. We used \LiveModels{} open-weight generators from five organizations that are common in code-generation studies: \texttt{qwen2.5-coder:7b}, \texttt{llama3.1:8b}, \texttt{deepseek-coder-v2:16b}, \texttt{gemma2:9b} and \texttt{granite3.3:8b}. For each policy, generator and reporting seed (\LiveSeeds{} seeds) we ran the three faulty runs and the clean run, \LiveTotalRuns{} runs in total. Thresholds were tuned beforehand on a separate local pilot (\PilotDevRuns{} development runs, Section~\ref{sec:baselines}) that is not part of the reported data.
+In each \emph{faulty} run exactly one test-feedback message, at a seed-dependent position (task \LiveEFaultPositions{} for our seeds), is replaced by misleading grader feedback of one of three types: F1 \emph{print instead of return}, F2 \emph{stringify return values}, F3 \emph{use floor division}. All three are plausible misreadings of real test failures, and all three are wrong for HumanEval+. A paired \emph{clean} run with the same seed receives no corrupted feedback. The \emph{roots} of a faulty run are the revisions the controller recorded as motivated by the corrupted experience; they are known by construction and given to every remedy. Under curation this is the single memory written from that experience; under the ExpeL-style policy it is every insight the extraction step wrote from the batch containing it (\LiveERootsMean{} on average, at most \LiveERootsMax{}), of which typically at most one carries the faulty advice. Identifying the root is thus given to all remedies alike; we do not evaluate how an operator finds it. We used \LiveModels{} open-weight generators from five organizations that are common in code-generation studies: \texttt{qwen2.5-coder:7b}, \texttt{llama3.1:8b}, \texttt{deepseek-coder-v2:16b}, \texttt{gemma2:9b} and \texttt{granite3.3:8b}. For each policy, generator and reporting seed (\LiveSeeds{} seeds) we ran the three faulty runs and the clean run, \LiveTotalRuns{} runs in total. A follow-up slice planted the fault at task~15, after the first composition, under curation for three of the generators (\LiveLRuns{} faulty runs plus clean runs; Section~\ref{sec:rq1-live}). Thresholds were tuned beforehand on a separate local pilot (\PilotDevRuns{} development runs, Section~\ref{sec:baselines}) that is not part of the reported data.
 
 \emph{(S2) Controlled synthetic benchmark.} Live runs give realistic content but no control over graph structure, and their ground truth is only as good as the content oracle. The synthetic benchmark (EvoTraceBench~1.1, \texttt{benchmark/}) generates provenance DAGs with seven artifact kinds, nine structural motif families (e.g., multi-source synthesis, adversarial lexical decoupling, dependency-only consumers, deployment-only membership), sizes 16--256 (up to 2{,}048 for scaling), controlled capture rates and lexical decoupling, with exact construction-time ground truth computed independently of \sys{}'s graph code. Hand-specified cases supply additional controls that do not depend on the generator.
 
@@ -2194,7 +2970,7 @@ In each \emph{faulty} run exactly one test-feedback message, at a seed-dependent
 \toprule
 Subject & Size & RQs \\
 \midrule
-S1 live harness & \LiveTotalRuns{} runs (\LiveModels{} generators $\times$ \LivePolicies{} policies $\times$ \LiveSeeds{} seeds $\times$ (3 faults + clean)); \LiveEvalTasks{} held-out tasks $\times$ \LiveEvalConditions{} evaluated conditions per faulty run (\LiveConditions{} conditions in total); \LiveLLMCalls{} LLM calls & RQ1, RQ3 \\
+S1 live harness & \LiveTotalRuns{} runs (\LiveModels{} generators $\times$ \LivePolicies{} policies $\times$ \LiveSeeds{} seeds $\times$ (3 faults + clean)); \LiveEvalTasks{} held-out tasks $\times$ \LiveEvalConditions{} evaluated conditions per faulty run (\LiveConditions{} conditions in total); \LiveLLMCalls{} LLM calls & RQ1, RQ3 ; plus a late-fault slice of \LiveLRuns{} faulty runs\\
 S2 synthetic & \RawRecords{} raw records; \TraceCases{} traceability scenarios & RQ1, RQ2, RQ3 \\
 S3 Voyager & \PublicRevisions{} skill revisions, \PublicEvents{} events & RQ3 \\
 \bottomrule
@@ -2354,6 +3130,20 @@ Root task & Roots & Ratio & EME-fail & Smaller & Roots & Ratio & EME-fail & Smal
 \end{tabular}
 \end{table}
 
+\emph{Results: late faults.} To test the structural prediction with real faults, we ran a third slice after the analysis above: the curation policy with the corrupted message at task~15, after the first composition, for three generators (\texttt{qwen2.5-coder:7b}, \texttt{llama3.1:8b}, \texttt{gemma2:9b}) and the same five seeds, faults, thresholds, judges and revalidation (\LiveLRuns{} faulty runs and their paired clean runs; Table~\ref{tab:live-late}). The fault took hold in the root in \LiveLRootAdopted{} runs and spread in \LiveLPropagated{}, now mostly into skills (\LiveLContSkill{} contaminated skills, \LiveLContProfile{} profiles, \LiveLContMemory{} memory). \sys{} suspended every one of the \LiveLPostFaultCont{} contaminated revisions created after the fault, while suspending \LiveLHSusp{} revisions per run against \LiveLTcutSusp{} for the rollback T: its suspension set was a subset of T's in all \LiveLCutSubset{} runs and strictly smaller in \LiveLCutStrict{}, and its F1 was higher than T's in \LiveLTestFoneTcutHi{} propagated runs and never lower (\LiveLHFone{} against \LiveLTcutFone). Measured recall is \LiveLHRec{} for \sys{} and T alike because the oracle labelled one memory written seven tasks \emph{before} the fault, after a passing task, as stating the planted practice; the corresponding, slightly reworded lesson in the paired clean run received a split vote, so we read it as an oracle false positive that no forward remedy can attribute to the fault (the oracle also labelled \LiveLCleanFalseLabels{} of \LiveLCleanLabelItems{} clean-run labels contaminated in this slice). EME edges were not needed in any late run, and without them closure suspended \LiveLHnoEMESusp{} revisions per run (F1 \LiveLHnoEMEFone). Among the detectors, the LLM judge was again far more precise (F1 \LiveLRfourFone, higher than \sys{} in \LiveLTestFoneRfourLo{} runs), TF-IDF was comparable (F1 \LiveLRtwoFone, Holm $p\LiveLTestFoneRtwoP$) and the embedding detector missed contamination in \LiveLMissRunsRthree{} runs. The fault-signature rate on propagated runs fell from \LiveLNoneSigProp{} to \LiveLHSigProp{} after \sys{}, lower in \LiveLTestSigPropNoneLo{} runs and higher in \LiveLTestSigPropNoneHi{} (Holm $p\LiveLTestSigPropNoneP$), the only behavioural difference in the study below 0.05. For faults after the first composition, closure-based withdrawal thus contained the fault at about \LiveLSavedPct\% fewer suspensions than a rollback, as the structural analysis predicted.
+
+\begin{table*}[!t]
+\caption{Containment for late faults (curation policy, fault at task~15, three generators $\times$ five seeds). Columns as in Table~\ref{tab:live-expel}; precision, recall and F1 over the \LiveLPropagated{} propagated runs.}\label{tab:live-late}
+\centering\footnotesize
+\begin{tabular}{@{}lrrrrrrrrr@{}}
+\toprule
+Remedy & Susp. (all) & Susp. (prop.) & Precision & Recall & F1 & Residual & Collateral & Pass@1 & Signature\\
+\midrule
+\LiveLRows
+\bottomrule
+\end{tabular}
+\end{table*}
+
 \emph{Results (curation): which edges matter.} Without EME edges, the closure changed in \LiveCHnoEMEDiffers{} of \LiveCRuns{} runs: it suspended \LiveCHnoEMESusp{} instead of \LiveCHSusp{} revisions per run (F1 \LiveCHnoEMEFone{} instead of \LiveCHFone) but left contamination loadable in \LiveCEMEOnlyRuns{} run. That run is the behavioural inheritance of the running example: in \texttt{llama3.1:8b}, F3, seed~3, the corrupted feedback produced memory $m_8$ (\emph{``\ldots use integer division (//) instead of true division (/)\ldots''}); the next task retrieved $m_8$ into its context, the agent's solution used floor division, and the reflection, shown only two unrelated memories as sources, wrote $m_9$: \emph{``\ldots consider using the // operator for integer division instead of the / operator\ldots''}. Only the exposure of that run to $m_8$ connects $m_9$ to the fault. EME edges therefore bought one contaminated revision in \LiveCPropagated{} propagated runs at the price of more collateral in \LiveCTestCollHnoEMEHi{} runs, on average \LiveCHSusp{} instead of \LiveCHnoEMESusp{} suspended revisions per run. EME is a policy of the controller, not a fixed rule: counting exposure only for runs whose task failed (H$_\mathrm{EME\text{-}fail}$, a post-hoc variant computed from the recorded state) kept recall \LiveCHEMEfailRec{} including the run above, whose task had failed, and suspended \LiveCHEMEfailSusp{} revisions per run (F1 \LiveCHEMEfailFone); whether that price is worth paying depends on how costly a residual faulty lesson is relative to a temporarily suspended clean one, which is a deployment decision, not one our data can settle. Dependency edges changed nothing (\LiveCHnoDepsDiffers{} runs differ) because every profile's dependencies on skills are also its synthesis sources; dependency-only consumers are covered by the synthetic motifs of E-Q. Withdrawal without deployment propagation (H$_\mathrm{local}$) left contamination in use in every propagated run (recall \LiveCHlocalRec).
 
 \emph{Results (curation): revalidation.} Closure-bounded revalidation is limited by its screen, and helped by the dependency rule of Algorithm~\ref{alg:reval}. With the judge as screen, HS$_\mathrm{judge}$ kept \LiveCHSjudgeSuspProp{} revisions per propagated run suspended (F1 \LiveCHSjudgeFone) but, like the judge alone, restored contaminated revisions in \LiveCTestResidHSjudgeLo{} runs (recall \LiveCHSjudgeRec); under curation it differs from the judge alone in \LiveCHSjudgeDiffersRfour{} of \LiveCPropagated{} propagated runs but has the same recall and slightly lower F1 (\LiveCRfourFone{} for R4) because \LiveCHSjudgeRejected{} cleared profiles, none of them contaminated, were rejected while a skill they depend on stayed suspended. With the embedding screen the rule mattered: the screen cleared \LiveCHSembedRejectedCont{} contaminated revisions whose dependencies it did not clear, and admission rejected them (\LiveCHSembedRejected{} rejections in \LiveCHSembedRejectedRuns{} runs), so HS$_\mathrm{emb}$ reached recall \LiveCHSembedRec{} against \LiveCRthreeRec{} for the same screen applied to the whole state (R3). Revalidation never touches anything outside the closure, but under curation it cannot recover the detectors' precision without giving up part of the closure's recall; a screen with higher recall than the generator-as-judge would be needed.
@@ -2384,7 +3174,7 @@ Root task & Roots & Ratio & EME-fail & Smaller & Roots & Ratio & EME-fail & Smal
 
 \emph{Results.} Fig.~\ref{fig:capture} shows that recorded exposure is only as good as its capture: impact F1 fell from \CaptureOursFull{} with complete capture to \CaptureOursThreeQuarters, \CaptureOursHalf{} and \CaptureOursQuarter{} with 75\%, 50\% and 25\% of the edges, and to \CaptureOursZero{} with none, whereas lexical recovery, which does not use edges, stayed at \CaptureLexicalFull. Somewhere between half and three quarters of the edges, a lexical detector becomes the better tool. This is the quantitative reason for host-side capture (Section~\ref{sec:capture}): the controller, not the policy, must record exposure, and it must do so for every input it supplies.
 
-\noindent\fbox{\parbox{0.96\columnwidth}{\textbf{Answer to RQ1.} Closure-based withdrawal had recall 1.00 in all \LivePropagatedAll{} propagated runs, as did rollback, reset and the EME-fail variant. What it suspends is bounded by the time cut: the same set under the ExpeL-style policy, slightly less under curation. Every detector was more precise, and under curation TF-IDF and the LLM judge had significantly higher F1, but detectors missed contamination folded into skills and profiles (R3: \LiveCMissRunsComposedRthree, R4: \LiveCMissRunsComposedRfour, R2: \LiveCMissRunsComposedRtwo{} of \LiveCPropagated{} runs). Structurally, closure is markedly more selective than a time cut only for curation revisions created after the first composition, and only until the next composition. EME edges were necessary once, at a large collateral cost. Effects on held-out behaviour were not significant.}}
+\noindent\fbox{\parbox{0.96\columnwidth}{\textbf{Answer to RQ1.} Closure-based withdrawal had recall 1.00 in all \LivePropagatedAll{} propagated runs, as did rollback, reset and the EME-fail variant. What it suspends is bounded by the time cut: the same set under the ExpeL-style policy, slightly less under curation. Every detector was more precise, and under curation TF-IDF and the LLM judge had significantly higher F1, but detectors missed contamination folded into skills and profiles (R3: \LiveCMissRunsComposedRthree, R4: \LiveCMissRunsComposedRfour, R2: \LiveCMissRunsComposedRtwo{} of \LiveCPropagated{} runs). For faults planted after the first composition, closure still contained every post-fault contaminated revision while suspending \LiveLSavedPct\% less than the rollback. EME edges were necessary once, at a large collateral cost. Effects on held-out behaviour were not significant.}}
 
 
 \subsection{RQ2: Assurance of the Lifecycle Guards}\label{sec:rq2}
@@ -2471,7 +3261,7 @@ $n$ & Topology & States & Time (s) & Complete\\
 \subsection{Threats to Validity}\label{sec:threats}
 \emph{Construct validity.} Our ground truth for contamination is a content oracle of two LLM judges, not human annotation. We mitigate this by using judges from families different from every generator, schema-constrained answers, unanimity, reporting ambiguous labels and their effect, measuring agreement ($\kappa$), checking the judges' false-positive rate on clean runs, and complementing content labels with behavioural measures (HumanEval+ tests and static fault signatures). A judge can still miss a paraphrase or flag an artifact that merely mentions the practice. Exposure, which \sys{} records, is not influence; we therefore never evaluate \sys{} against its own records but against content and behaviour. Pass@1 on held-out tasks measures one aspect of harness quality and is sensitive to which state remains loadable; a remedy that removes useful state is penalized only insofar as that state helped on those tasks. In the synthetic benchmark, ground truth is exact by construction but its structures are generated, and with complete capture \sys{} and capture-only provenance answer queries identically by design.
 
-\emph{Internal validity.} The faults are planted by corrupting one feedback message; real faulty lessons can arise more gradually or from several experiences. The fault position took only three values (tasks \LiveEFaultPositions) for our seeds; early faults favour propagation and inflate closure sizes relative to late faults. Revalidation and the post-hoc conditions (T, A, H$_\mathrm{faulty}$) were designed after the local pilot, and H$_\mathrm{EME\text{-}fail}$ after the first analysis of the reported campaign, when the single run that only EME edges trace was known to have failed; its recall therefore rests on that run. The structural selectivity analysis was added late, in response to internal review of an earlier version of this paper, and its definition was revised once: a first version that counted revisions written in the same step as the root made the ExpeL-style policy look selective for late roots, which it is not. Revalidation was re-run once on the curation records with the dependency rule of Algorithm~\ref{alg:reval}, after a review found that the first evaluation had not applied it; the superseded results are kept in the package; revalidation was evaluated on the recorded state in a separate process rather than through the controller's admission operators. Thresholds of the similarity baselines were tuned on a local pilot with a different generator (\texttt{qwen2.5:7b}) and the curation policy and transferred unchanged to all generators and both policies; tuning per model and policy could improve them, which we bound with an oracle-tuned upper bound. The R4 judge is the generator itself, as a harness would use it; a stronger external judge could detect more, but would then be close to the oracle. LLM decoding used temperature~0 and fixed seeds, but batched GPU inference is not reproducible across processes: byte-identical prompts generated independently in two runs flipped pass/fail in \LiveENoiseRate\% (ExpeL-style) and \LiveCNoiseRate\% (curation) of pairs. On \LiveCCPUCells{} of the \LiveCOracleCells{} oracle jobs of the curation campaign the inference server fell back to CPU because GPU discovery timed out; those judges ran at temperature~0 and their labels were kept. Generation jobs whose server fell back to CPU failed, found their cells already complete, or (after we added a device check to the job script) restarted the server until it ran on GPU, so every reported evolution run and revalidation was generated on GPU (\texttt{inference\_devices.tsv} in the package lists the device of every job). Every response is cached, so the reported runs replay exactly, while a fresh run reproduces the protocol rather than the exact texts. The harness, the remedies and the oracle prompts were written by us; we report all prompts in the replication package.
+\emph{Internal validity.} The faults are planted by corrupting one feedback message; real faulty lessons can arise more gradually or from several experiences. The fault position took only three values (tasks \LiveEFaultPositions) for our seeds; early faults favour propagation and inflate closure sizes relative to late faults. Revalidation and the post-hoc conditions (T, A, H$_\mathrm{faulty}$) were designed after the local pilot, and H$_\mathrm{EME\text{-}fail}$ after the first analysis of the reported campaign, when the single run that only EME edges trace was known to have failed; its recall therefore rests on that run. The late-fault slice (three generators, chosen among those with the highest adoption in the main curation slice) and the structural selectivity analysis were added late, in response to internal review of an earlier version of this paper, and its definition was revised once: a first version that counted revisions written in the same step as the root made the ExpeL-style policy look selective for late roots, which it is not. Revalidation was re-run once on the curation records with the dependency rule of Algorithm~\ref{alg:reval}, after a review found that the first evaluation had not applied it; the superseded results are kept in the package; revalidation was evaluated on the recorded state in a separate process rather than through the controller's admission operators. Thresholds of the similarity baselines were tuned on a local pilot with a different generator (\texttt{qwen2.5:7b}) and the curation policy and transferred unchanged to all generators and both policies; tuning per model and policy could improve them, which we bound with an oracle-tuned upper bound. The R4 judge is the generator itself, as a harness would use it; a stronger external judge could detect more, but would then be close to the oracle. LLM decoding used temperature~0 and fixed seeds, but batched GPU inference is not reproducible across processes: byte-identical prompts generated independently in two runs flipped pass/fail in \LiveENoiseRate\% (ExpeL-style) and \LiveCNoiseRate\% (curation) of pairs. On \LiveCCPUCells{} of the \LiveCOracleCells{} oracle jobs of the curation campaign the inference server fell back to CPU because GPU discovery timed out; those judges ran at temperature~0 and their labels were kept. Generation jobs whose server fell back to CPU failed, found their cells already complete, or (after we added a device check to the job script) restarted the server until it ran on GPU, so every reported evolution run and revalidation was generated on GPU (\texttt{inference\_devices.tsv} in the package lists the device of every job). Every response is cached, so the reported runs replay exactly, while a fresh run reproduces the protocol rather than the exact texts. The harness, the remedies and the oracle prompts were written by us; we report all prompts in the replication package.
 
 \emph{Platform validity.} The live study ran on one cluster and one GPU type; we did not measure how much results vary across hardware, because the smoke runs on other sites were too short (8 tasks, one seed) to say. All compared conditions share the platform, which protects the comparisons but not the absolute numbers.
 
@@ -2482,7 +3272,7 @@ $n$ & Topology & States & Time (s) & Complete\\
 \subsection{Lessons Learned and Limitations}\label{sec:lessons}
 \emph{Report adoption, not only containment.} A corrupted feedback message became a contaminated revision in only part of the faulty runs, and how often depended strongly on the generator, the fault and the policy: propagation occurred in \LiveEPropagated{} of \LiveERuns{} ExpeL-style runs but \LiveCPropagated{} of \LiveCRuns{} curation runs (Tables~\ref{tab:live-models} and~\ref{tab:live-models-cur}). A containment study that plants faults and reports only averages over all runs would mostly measure runs with nothing to contain. We therefore report adoption and propagation counts, compute recall only where there was something to recall, and recommend the same for future studies of faulty or poisoned self-evolution.
 
-\emph{The policy decides what closure costs.} Closure suspends what was \emph{exposed}, and how much is exposed is a design decision of the self-evolving policy. By Proposition~\ref{prop:cut}, withdrawal never suspends more than a rollback to before the fault, and in our ExpeL-style runs, where every extraction step sees the whole insight list, it suspended exactly as much. Under curation it was smaller only until the first composed profile was deployed; from then on every task loaded it, and EME edges made every later lesson exposed. Conversely, for roots created after that composition, which reach later contexts only through retrieval, closures covered on average \LiveCSelThreeRatio--\LiveCSelFourRatio{} of the later state (Table~\ref{tab:selectivity}), but only until the next broadcast composition. Harness designers who want withdrawal to be cheaper than a rollback must give each generation step and each run only the inputs it needs, because the host records exactly what it supplies, and can restrict which runs count as exposure: counting only failed runs, a post-hoc variant, cut suspensions from \LiveCHSusp{} to \LiveCHEMEfailSusp{} per run and kept the one EME-only contamination in our data, which arose from a failed run; whether lessons from passing runs inherit faults is a question for future data. This is the trade-off of narrow interfaces in modular design, now measured on generated state.
+\emph{The policy decides what closure costs.} Closure suspends what was \emph{exposed}, and how much is exposed is a design decision of the self-evolving policy. By Proposition~\ref{prop:cut}, withdrawal never suspends more than a rollback to before the fault, and in our ExpeL-style runs, where every extraction step sees the whole insight list, it suspended exactly as much. Under curation it was smaller only until the first composed profile was deployed; from then on every task loaded it, and EME edges made every later lesson exposed. Conversely, for roots created after that composition, which reach later contexts only through retrieval, closures covered on average \LiveCSelThreeRatio--\LiveCSelFourRatio{} of the later state (Table~\ref{tab:selectivity}), but only until the next broadcast composition; with faults actually planted there, withdrawal suspended \LiveLSavedPct\% less than the rollback at the same recall. Harness designers who want withdrawal to be cheaper than a rollback must give each generation step and each run only the inputs it needs, because the host records exactly what it supplies, and can restrict which runs count as exposure: counting only failed runs, a post-hoc variant, cut suspensions from \LiveCHSusp{} to \LiveCHEMEfailSusp{} per run and kept the one EME-only contamination in our data, which arose from a failed run; whether lessons from passing runs inherit faults is a question for future data. This is the trade-off of narrow interfaces in modular design, now measured on generated state.
 
 \emph{Closure is a bound, detection is a filter.} Content detectors were more precise than closure throughout, and lost recall where synthesis folded contaminated advice into larger artifacts: under curation the embedding detector and the LLM judge missed a contaminated skill or profile in \LiveCMissRunsComposedRthree{} and \LiveCMissRunsComposedRfour{} of \LiveCPropagated{} propagated runs. Using the closure as the candidate set and a detector only to re-admit members bounds what the detector can touch and recovers precision, but it also re-admits whatever the detector misses: under curation, judge-screened revalidation restored contaminated revisions in \LiveCTestResidHSjudgeLo{} runs. The recorded dependencies help: requiring a re-admitted profile's skills to be re-admitted first kept \LiveCHSembedRejectedCont{} contaminated revisions out that the embedding screen had cleared. Closure gives recall, detection gives precision, and with today's screens a maintainer has to choose which error is cheaper for the deployment at hand.
 
@@ -2546,7 +3336,7 @@ RADIANT~\cite{wei2026radiant} & -- & \checkmark{} (design) & -- & -- & -- & -- &
 \section{Conclusion}\label{sec:conclusion}
 Self-evolving harnesses turn every lesson an agent learns into software that later runs depend on. We presented \sys{}, which treats that state as a versioned model: immutable revisions, host-recorded exposure including the experience-mediated path, guarded admission, withdrawal of revisions or experiences with their closure across deployments, revalidation under attestations, and rollback that cannot reactivate withdrawn lineage. We proved that withdrawal is bounded by a time cut, argued that the suspension invariant holds under all operators, checked a finite projection with two independent encodings, and replayed every witness on the implementation.
 
-The live study gives a nuanced answer to whether this machinery is worth it. Faulty lessons do spread, far more under layered curation than in flat insight lists. Closure-based withdrawal, like rollback and reset, removed every contaminated derivative under both policies, and it did so while recording why each revision was suspended. But for the planted faults closure was nearly as conservative as a rollback, because both of our policies broadcast synthesized state into every later context and experience-mediated edges then reach almost everything learned afterwards; structurally, it becomes markedly more selective only for revisions created after the first composition in a retrieval-based harness, until the next composition. Content detectors were more precise throughout and lost recall where synthesis folded the faulty advice into larger artifacts. The two are complementary, and closure-bounded revalidation combines them, with the screen's recall as its limit.
+The live study gives a nuanced answer to whether this machinery is worth it. Faulty lessons do spread, far more under layered curation than in flat insight lists. Closure-based withdrawal, like rollback and reset, removed every contaminated derivative under both policies, and it did so while recording why each revision was suspended. But for the planted faults closure was nearly as conservative as a rollback, because both of our policies broadcast synthesized state into every later context and experience-mediated edges then reach almost everything learned afterwards; for faults planted after the first composition, where later state reaches contexts only through retrieval, it contained the fault at \LiveLSavedPct\% fewer suspensions than the rollback. Content detectors were more precise throughout and lost recall where synthesis folded the faulty advice into larger artifacts. The two are complementary, and closure-bounded revalidation combines them, with the screen's recall as its limit.
 
 Four directions follow. First, harness designs that assemble contexts selectively, rather than broadcasting composed profiles, and EME policies that count only failed runs (a variant we tested only post hoc), could make closures more precise; our data suggest that both are design choices, not properties of containment. Second, the enforcement that distinguishes withdrawal from a one-off rollback, refusing re-admission, re-derivation and unsafe rollback after the fact, was exercised only in controlled scenarios; a study that withdraws in the middle of live evolution would measure how often it matters. Third, locating the root of a misbehaviour from symptoms, which we assumed given, is the natural complement to containment. Fourth, screens with higher recall than a generator acting as its own judge are needed before revalidation can restore precision without giving up containment.
 

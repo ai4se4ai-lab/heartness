@@ -94,6 +94,7 @@ def structure(runs: list[dict[str, Any]]) -> dict[str, Any]:
     strict_by_pos: dict[int, list[int]] = {}
     faulty_miss_root: Counter[str] = Counter()
     profile_runs = 0
+    pre_fault = pre_fault_runs = post_missed_by_h = post_total = 0
     for rec in runs:
         lab = labels(rec, rec["config"]["fault"])
         targets = [a for a in rec["universe"] if a not in rec["roots"]]
@@ -122,7 +123,14 @@ def structure(runs: list[dict[str, Any]]) -> dict[str, Any]:
         post = [a for a in cut if kind_of(a) == "profile"]
         profiles_in += all(a in h for a in post)
         no_eme = set(rec["remedies"]["H_noEME"]["suspended"])
-        lost = [a for a in c if a not in no_eme]
+        h_all = set(rec["remedies"]["H"]["suspended"])
+        lost = [a for a in c if a not in no_eme and a in h_all]  # only EME edges reach it
+        pre = [a for a in c if when.get(a, -1) < rec["fault_index"]]
+        pre_fault += len(pre)
+        pre_fault_runs += bool(pre)
+        post = [a for a in c if a not in pre]
+        post_missed_by_h += sum(a not in h_all for a in post)
+        post_total += len(post)
         if lost:
             eme_only.append({"run": str(Path(rec["_path"]).relative_to(Path(rec["_path"]).parents[3]))
                              if len(Path(rec["_path"]).parents) > 3 else rec["_path"],
@@ -140,6 +148,8 @@ def structure(runs: list[dict[str, Any]]) -> dict[str, Any]:
                                                        sorted(strict_by_pos.items())},
             "faulty_root_misses_root_labels": dict(faulty_miss_root),
             "runs_with_contaminated_profile": profile_runs,
+            "contaminated_before_fault": pre_fault, "runs_contaminated_before_fault": pre_fault_runs,
+            "contaminated_after_fault": post_total, "h_missed_after_fault": post_missed_by_h,
             "revalidation_rejected": reval_rejected(runs)}
 
 

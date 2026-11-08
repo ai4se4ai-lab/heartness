@@ -1,0 +1,53 @@
+{
+ "cell": "0__llama3.1_8b__humaneval__curate",
+ "phase": "gen",
+ "ok": true,
+ "runs": [
+  {
+   "fault": "clean",
+   "rc": 0,
+   "seconds": 634.8,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-192325/results/live/llama3.1_8b/clean/seed-0\", \"timing\": {\"evolve_total\": 363.0966127831489, \"engine_total\": 1.553913558833301, \"wall_total\": 634.5111470222473}, \"llm\": {\"calls\": 114, \"cache_hits\": 0, \"llm_seconds\": 1776.934, \"tokens_in\": 60391, \"tokens_out\": 16943}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F1",
+   "rc": 0,
+   "seconds": 1587.4,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-192325/results/live/llama3.1_8b/F1/seed-0\", \"timing\": {\"evolve_total\": 643.4018840501085, \"R2_tfidf\": 0.0010173600167036057, \"R3_embed\": 7.737223803065717, \"R4_judge\": 80.881245163735, \"H\": 0.020357124973088503, \"H_noEME\": 0.022197728045284748, \"H_local\": 0.008649738039821386, \"H_noDeps\": 6.126891821622849e-05, \"engine_total\": 1.6603105892427266, \"wall_total\": 1587.1265733242035}, \"llm\": {\"calls\": 317, \"cache_hits\": 50, \"llm_seconds\": 5440.994, \"tokens_in\": 148694, \"tokens_out\": 51809}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F2",
+   "rc": 0,
+   "seconds": 1395.6,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-192325/results/live/llama3.1_8b/F2/seed-0\", \"timing\": {\"evolve_total\": 346.43188200425357, \"R2_tfidf\": 0.0010144100524485111, \"R3_embed\": 8.863484012894332, \"R4_judge\": 28.341060710139573, \"H\": 0.03436307096853852, \"H_noEME\": 0.01191329536959529, \"H_local\": 0.008566530421376228, \"H_noDeps\": 6.43688254058361e-05, \"engine_total\": 1.3895947993732989, \"wall_total\": 1395.2440075874329}, \"llm\": {\"calls\": 288, \"cache_hits\": 10, \"llm_seconds\": 5894.53, \"tokens_in\": 176802, \"tokens_out\": 41649}}\n",
+   "stderr": ""
+  },
+  {
+   "fault": "F3",
+   "rc": 0,
+   "seconds": 1444.3,
+   "stdout": "{\"out\": \"/scratch/mbabaei/heartness-work/runs/am-20261107-192325/results/live/llama3.1_8b/F3/seed-0\", \"timing\": {\"evolve_total\": 365.2259945049882, \"R2_tfidf\": 0.0010135089978575706, \"R3_embed\": 3.839332768227905, \"R4_judge\": 76.23232284421101, \"H\": 0.037422186229377985, \"H_noEME\": 0.06722265155985951, \"H_local\": 0.04991655424237251, \"H_noDeps\": 7.799873128533363e-05, \"engine_total\": 1.804503068793565, \"wall_total\": 1443.947295665741}, \"llm\": {\"calls\": 317, \"cache_hits\": 47, \"llm_seconds\": 6063.582, \"tokens_in\": 164989, \"tokens_out\": 41018}}\n",
+   "stderr": ""
+  }
+ ],
+ "supplement": [
+  {
+   "fault": "F1",
+   "rc": 0,
+   "stderr": ""
+  },
+  {
+   "fault": "F2",
+   "rc": 0,
+   "stderr": ""
+  },
+  {
+   "fault": "F3",
+   "rc": 0,
+   "stderr": ""
+  }
+ ],
+ "seconds": 1669.7
+}

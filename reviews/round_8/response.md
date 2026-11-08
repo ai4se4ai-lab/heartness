@@ -9,7 +9,19 @@ Both reviewers named the same experiment: planted faults after the first composi
 curation, scored by the oracle. Launched on Fir (run am-20261107-192325): curation, HumanEval+,
 fault at evolution task 15 (`--fault-index 14`, new option of run.py/cell.py), qwen2.5-coder:7b,
 llama3.1:8b, gemma2:9b x 5 seeds = 15 cells (45 faulty + 15 clean runs); same harness, thresholds,
-judges and revalidation. Results: pending.
+judges and revalidation. Results (results/processed/live/live-fir-late): 45 faulty runs; root adopted in 34, propagated in 28
+(25 skills, 6 profiles, 1 memory contaminated). H suspended 8.02 revisions per run vs 13.00 for T
+(38% less), subset of T in 45/45 runs and strictly smaller in 42/45, F1 0.25 vs 0.16 (higher in 25
+propagated runs, never lower). H suspended all 31 contaminated revisions created after the fault;
+measured recall 0.96 for H and T alike because the oracle labelled one memory written seven tasks
+BEFORE the fault (after a passing task) as the F2 practice; the reworded counterpart in the clean
+run got a split vote (oracle false positive; also 2/1,350 clean-run labels contaminated in this
+slice). New pipeline fields: contaminated before/after the fault, H misses after the fault (0 in
+all slices). EME needed in no late run (eme_only now requires that H reaches the revision).
+Fault-signature rate on propagated runs 0.04 -> 0.02 after H (lower 12, higher 2, Holm p = 0.046).
+All 30 inference servers ran on CUDA. Integrated into E-L (new table), abstract, intro, RQ1 box,
+Lessons, conclusion, setup, subjects table and Threats (added late; generators chosen among those
+with the highest adoption).
 
 ## Code
 
